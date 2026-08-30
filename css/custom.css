@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Roboto+Mono:wght@400;500;600;700&display=swap');
+
+:root {
+  --bg-cad-dark: #0B0F17;
+  --bg-cad-panel: #141A24;
+  --bg-cad-card: #1C2433;
+  --bg-cad-hover: #242E40;
+  --color-telecom-blue: #0066FF;
+  --color-telecom-blue-hover: #0052CC;
+  --color-fiber-cyan: #00F0FF;
+  --color-optic-amber: #FF8C00;
+  --color-success-emerald: #00E676;
+  --border-cad: rgba(0, 240, 255, 0.15);
+  --border-subtle: rgba(255, 255, 255, 0.08);
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background-color: var(--bg-cad-dark);
+  color: #E2E8F0;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, .font-heading {
+  font-family: 'Outfit', sans-serif;
+  letter-spacing: -0.01em;
+  color: #F8FAFC;
+}
+
+.font-mono-tech {
+  font-family: 'Roboto Mono', monospace;
+}
+
+/* Soft White Anti-Glare Styling */
+.text-white {
+  color: #F1F5F9 !important;
+}
+
+/* CAD Grid Pattern */
+.bg-cad-grid {
+  background-image: 
+    linear-gradient(to right, rgba(0, 240, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 240, 255, 0.04) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+.bg-cad-grid-dense {
+  background-image: 
+    linear-gradient(to right, rgba(0, 240, 255, 0.06) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 240, 255, 0.06) 1px, transparent 1px);
+  background-size: 16px 16px;
+}
+
+/* Neon Glows & Accents */
+.glow-cyan {
+  box-shadow: 0 0 25px rgba(0, 240, 255, 0.25);
+}
+
+.glow-blue {
+  box-shadow: 0 0 30px rgba(0, 102, 255, 0.35);
+}
+
+.glow-amber {
+  box-shadow: 0 0 25px rgba(255, 140, 0, 0.3);
+}
+
+.glow-emerald {
+  box-shadow: 0 0 25px rgba(0, 230, 118, 0.3);
+}
+
+.text-glow-cyan {
+  text-shadow: 0 0 12px rgba(0, 240, 255, 0.6);
+}
+
+.text-glow-amber {
+  text-shadow: 0 0 12px rgba(255, 140, 0, 0.6);
+}
+
+/* Fiber Route Animation Line */
+.fiber-line-gradient {
+  background: linear-gradient(90deg, #0066FF 0%, #00F0FF 50%, #FF8C00 100%);
+}
+
+.fiber-pulse-line {
+  position: relative;
+  overflow: hidden;
+}
+
+.fiber-pulse-line::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(0, 240, 255, 0.8), transparent);
+  animation: fiberPulse 3s infinite linear;
+}
+
+@keyframes fiberPulse {
+  0% { left: -100%; }
+  100% { left: 200%; }
+}
+
+/* Glassmorphism Card */
+.cad-card {
+  background: rgba(20, 26, 36, 0.75);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--border-subtle);
+  border-radius: 12px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.cad-card:hover {
+  border-color: rgba(0, 240, 255, 0.35);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px -10px rgba(0, 102, 255, 0.2);
+}
+
+.cad-card-featured {
+  background: linear-gradient(180deg, rgba(28, 36, 51, 0.9) 0%, rgba(20, 26, 36, 0.95) 100%);
+  border: 1px solid rgba(0, 240, 255, 0.4);
+  box-shadow: 0 0 35px rgba(0, 102, 255, 0.2);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0B0F17;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1C2433;
+  border-radius: 4px;
+  border: 1px solid rgba(0, 240, 255, 0.2);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0066FF;
+}
+
+/* Interactive Image Zoom on Hover */
+.screenshot-preview {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.screenshot-preview img {
+  transition: transform 0.4s ease;
+}
+
+.screenshot-preview:hover img {
+  transform: scale(1.04);
+}
+
+.screenshot-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(11, 15, 23, 0.6);
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s ease;
+}
+
+.screenshot-preview:hover .screenshot-overlay {
+  opacity: 1;
+}
+
+/* Range Slider Custom Styling */
+input[type=range] {
+  -webkit-appearance: none;
+  background: #1C2433;
+  border-radius: 8px;
+  height: 8px;
+  outline: none;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #00F0FF;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 240, 255, 0.8);
+  transition: all 0.2s ease;
+}
+
+input[type=range]::-webkit-slider-thumb:hover {
+  transform: scale(1.2);
+  background: #FFFFFF;
+}
+
+/* Smooth Tab Fade Transition */
+.tab-content {
+  display: none;
+  animation: fadeIn 0.35s ease-in-out forwards;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Floating animation */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+/* Modal Lightbox */
+.modal-backdrop {
+  background: rgba(5, 8, 13, 0.92);
+  backdrop-filter: blur(10px);
+}

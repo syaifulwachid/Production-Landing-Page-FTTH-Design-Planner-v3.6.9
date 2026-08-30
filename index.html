@@ -1,0 +1,1621 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FTTH Design Planner v3.6.9 — Ekosistem Otomasi AutoCAD & FTTx Engineering</title>
+  <meta name="description" content="Ekosistem otomasi perancangan FTTH, konversi KMZ ke HPDB & BOQ, dan produktivitas drafting CAD terlengkap di Indonesia oleh Syaiful Wachid (SWD SOFT DEVELOPER). Pangkas waktu desain hingga 80%.">
+  <meta name="keywords" content="FTTH Design Planner, AutoCAD FTTH, Otomasi CAD, KMZ to HPDB, BOQ Fiber Optik, RadialMenu AutoCAD, Syaiful Wachid, FTTx Design">
+  <meta name="author" content="Syaiful Wachid (SWD SOFT DEVELOPER)">
+
+  <!-- Open Graph / Facebook / WhatsApp Preview -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="FTTH Design Planner v3.6.9 — Ekosistem Otomasi AutoCAD & FTTx Engineering">
+  <meta property="og:description" content="Ekosistem otomasi perancangan FTTH, konversi KMZ ke HPDB & BOQ, dan produktivitas drafting CAD terlengkap di Indonesia oleh Syaiful Wachid (SWD SOFT DEVELOPER).">
+  <meta property="og:image" content="assets/screenshots/ftth-design-planner/00_Windows_and_Modals/FTTH_Planner_Core_UI_Collage.png">
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="FTTH Design Planner v3.6.9 — Ekosistem Otomasi AutoCAD & FTTx Engineering">
+  <meta name="twitter:description" content="Ekosistem otomasi perancangan FTTH, konversi KMZ ke HPDB & BOQ, dan produktivitas drafting CAD terlengkap di Indonesia.">
+  <meta name="twitter:image" content="assets/screenshots/ftth-design-planner/00_Windows_and_Modals/FTTH_Planner_Core_UI_Collage.png">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  
+  <!-- Google Fonts: Perubahan 3 (Enterprise Telco Corporate - FINAL CHOICE) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Roboto+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            'cad-dark': '#0B0F17',
+            'cad-panel': '#141A24',
+            'cad-card': '#1C2433',
+            'cad-hover': '#242E40',
+            'telecom-blue': '#0066FF',
+            'telecom-hover': '#0052CC',
+            'fiber-cyan': '#00F0FF',
+            'optic-amber': '#FF8C00',
+            'success-emerald': '#00E676',
+          }
+        }
+      }
+    }
+  </script>
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+<body class="bg-cad-dark text-slate-200 antialiased selection:bg-cyan-500 selection:text-black">
+
+  <!-- TOP PROMO BANNER (Community Milestone Notice) -->
+  <aside aria-label="Pengumuman Komunitas" class="bg-gradient-to-r from-blue-900/90 via-cyan-900/80 to-blue-900/90 border-b border-cyan-500/30 text-xs py-2 px-4 text-center font-mono-tech sticky top-0 z-50 backdrop-blur-md">
+    <div class="container mx-auto flex items-center justify-center gap-2 flex-wrap">
+      <span class="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-bold bg-amber-500/20 text-amber-300 border border-amber-500/40 animate-pulse">
+        <i class="fa-solid fa-fire mr-1"></i> KOMITMEN KOMUNITAS
+      </span>
+      <span>Target Komunitas 600 Member Aktif: Harga Langganan Otomatis Turun Menjadi <strong class="text-cyan-300 underline font-bold">Rp 50.000 / Bulan</strong>!</span>
+      <a href="#community" onclick="scrollToCommunity(event)" class="ml-2 inline-flex items-center text-cyan-400 hover:text-white font-semibold underline underline-offset-2 cursor-pointer">
+        Lihat Progres <i class="fa-solid fa-arrow-right ml-1 text-[10px]"></i>
+      </a>
+    </div>
+  </aside>
+
+  <!-- NAVIGATION HEADER -->
+  <header id="main-header" class="sticky top-8 z-40 transition-all duration-300 bg-cad-dark/70 backdrop-blur-lg border-b border-slate-800/80">
+    <div class="container mx-auto px-4 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Brand Logo with Modern Sleek Lockup -->
+      <a href="#" class="flex items-center gap-3.5 group">
+        <div class="relative flex items-center justify-center shrink-0">
+          <div class="w-11 h-11 rounded-xl bg-slate-900/90 border border-cyan-500/30 p-1.5 shadow-lg group-hover:border-cyan-400 group-hover:shadow-[0_0_20px_rgba(0,240,255,0.25)] transition-all duration-300 flex items-center justify-center">
+            <img src="favicon.ico" alt="FTTH Planner Icon" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300">
+          </div>
+          <span class="absolute -top-1 -right-1 w-2.5 h-2.5 rounded-full bg-emerald-400 ring-2 ring-slate-950 animate-pulse" title="v3.6.9 Active Release"></span>
+        </div>
+        <div class="flex flex-col justify-center">
+          <div class="flex items-center gap-2">
+            <span class="font-heading font-extrabold text-lg text-slate-100 tracking-tight leading-none group-hover:text-white transition-colors">
+              FTTH <span class="bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">PLANNER</span>
+            </span>
+            <span class="text-[10px] font-mono-tech font-semibold px-2 py-0.5 rounded-full bg-cyan-500/10 text-cyan-300 border border-cyan-500/30 tracking-wide">
+              v3.6.9
+            </span>
+          </div>
+          <div class="text-[11px] font-sans text-slate-400 tracking-normal mt-1 flex items-center gap-1.5">
+            <span class="font-medium text-slate-300">SWD SOFT DEVELOPER</span>
+            <span class="text-slate-600">•</span>
+            <span class="text-slate-400">Syaiful Wachid</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Menu -->
+      <nav class="hidden lg:flex items-center gap-7 text-sm font-medium text-slate-300">
+        <a href="#ekosistem" class="hover:text-cyan-400 transition-colors flex items-center gap-1.5">
+          <i class="fa-solid fa-cubes text-xs text-cyan-500"></i> Ekosistem Produk
+        </a>
+        <a href="#showcase" class="hover:text-cyan-400 transition-colors flex items-center gap-1.5">
+          <i class="fa-solid fa-display text-xs text-blue-400"></i> Galeri CAD
+        </a>
+        <a href="#kalkulator" class="hover:text-cyan-400 transition-colors flex items-center gap-1.5">
+          <i class="fa-solid fa-calculator text-xs text-amber-400"></i> Simulasi ROI
+        </a>
+        <a href="#perbandingan" class="hover:text-cyan-400 transition-colors flex items-center gap-1.5">
+          <i class="fa-solid fa-code-compare text-xs text-emerald-400"></i> Manual vs Otomasi
+        </a>
+        <a href="#harga" class="hover:text-cyan-400 transition-colors flex items-center gap-1.5">
+          <i class="fa-solid fa-tags text-xs text-orange-400"></i> Paket Harga
+        </a>
+        <a href="#tutorial" class="hover:text-cyan-400 transition-colors flex items-center gap-1.5">
+          <i class="fa-brands fa-youtube text-xs text-red-500"></i> Tutorial
+        </a>
+      </nav>
+
+      <!-- Action Buttons -->
+      <div class="hidden lg:flex items-center gap-3">
+        <a href="#tools-gratis" class="px-4 py-2 rounded-lg text-xs font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 hover:bg-emerald-500/20 transition-all flex items-center gap-1.5">
+          <i class="fa-solid fa-gift"></i> Tool Gratis (Rp 0)
+        </a>
+        <a href="https://wa.me/6282230696953?text=Halo%20Pak%20Syaiful%20Wachid,%20saya%20tertarik%20dengan%20FTTH%20Design%20Planner%20v3.6.9.%20Mohon%20info%20lisensinya." target="_blank" class="px-5 py-2.5 rounded-lg text-xs font-bold bg-gradient-to-r from-blue-600 to-cyan-500 text-white hover:from-blue-500 hover:to-cyan-400 shadow-md glow-blue transition-all flex items-center gap-2">
+          <i class="fa-brands fa-whatsapp text-sm"></i> Order via WA
+        </a>
+      </div>
+
+      <!-- Mobile Hamburger Button -->
+      <button id="mobile-menu-btn" class="lg:hidden text-slate-300 hover:text-cyan-400 p-2 text-xl focus:outline-none">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Dropdown Menu -->
+    <div id="mobile-menu" class="hidden lg:hidden bg-cad-panel border-b border-slate-800 px-6 py-5 space-y-4">
+      <a href="#ekosistem" class="nav-link-mobile block text-sm font-medium text-slate-300 hover:text-cyan-400">Ekosistem Produk</a>
+      <a href="#showcase" class="nav-link-mobile block text-sm font-medium text-slate-300 hover:text-cyan-400">Galeri & Fitur CAD</a>
+      <a href="#kalkulator" class="nav-link-mobile block text-sm font-medium text-slate-300 hover:text-cyan-400">Simulasi Penghematan ROI</a>
+      <a href="#perbandingan" class="nav-link-mobile block text-sm font-medium text-slate-300 hover:text-cyan-400">Manual vs Otomasi</a>
+      <a href="#harga" class="nav-link-mobile block text-sm font-medium text-slate-300 hover:text-cyan-400">Paket Harga & Bundling</a>
+      <a href="#tutorial" class="nav-link-mobile block text-sm font-medium text-slate-300 hover:text-cyan-400">Tutorial & Panduan</a>
+      <div class="pt-3 border-t border-slate-800 flex flex-col gap-2">
+        <a href="#tools-gratis" class="w-full py-2.5 text-center text-xs font-semibold rounded-lg bg-emerald-500/10 text-emerald-400 border border-emerald-500/30">
+          <i class="fa-solid fa-gift mr-1"></i> Download Lead Magnets Gratis (Rp 0)
+        </a>
+        <a href="https://wa.me/6282230696953?text=Halo%20Pak%20Syaiful%20Wachid,%20saya%20tertarik%20konsultasi%20FTTH%20Design%20Planner." target="_blank" class="w-full py-2.5 text-center text-xs font-bold rounded-lg bg-blue-600 text-white">
+          <i class="fa-brands fa-whatsapp mr-1"></i> Hubungi WhatsApp CS
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="relative pt-12 pb-20 lg:pt-20 lg:pb-32 bg-cad-grid overflow-hidden">
+    <!-- Radial Ambient Glows -->
+    <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[650px] h-[650px] bg-blue-600/15 rounded-full blur-3xl pointer-events-none -z-10"></div>
+    <div class="absolute top-1/3 left-1/4 w-[400px] h-[400px] bg-cyan-500/10 rounded-full blur-3xl pointer-events-none -z-10"></div>
+    <div class="absolute bottom-10 right-10 w-[500px] h-[500px] bg-amber-500/10 rounded-full blur-3xl pointer-events-none -z-10"></div>
+
+    <div class="container mx-auto px-4 lg:px-8">
+      
+      <!-- Top Badges -->
+      <div class="flex items-center justify-center gap-3 flex-wrap mb-6">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-900/90 border border-cyan-500/40 text-cyan-400 text-xs font-mono-tech shadow-inner">
+          <span class="w-2 h-2 rounded-full bg-cyan-400 animate-ping"></span>
+          <span>AUTOCAD & GIS AUTOMATION FOR FTTX</span>
+        </div>
+        <div class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-amber-500/15 border border-amber-500/40 text-amber-300 text-xs font-medium">
+          <i class="fa-solid fa-bolt text-amber-400"></i> Desain 10x Lebih Cepat
+        </div>
+      </div>
+
+      <!-- Main Headline (Storytelling Soft Selling Principle) -->
+      <div class="max-w-4xl mx-auto text-center">
+        <h1 class="text-3xl sm:text-4xl lg:text-6xl font-extrabold text-white leading-tight tracking-tight mb-6">
+          Mengubah Cara Kita Bekerja: <br class="hidden sm:inline">
+          <span class="bg-gradient-to-r from-cyan-400 via-blue-400 to-amber-400 bg-clip-text text-transparent">
+            Biarkan Sistem Otomasi
+          </span> 
+          Menangani Rutinitas Desain FTTH
+        </h1>
+        <p class="text-base sm:text-lg lg:text-xl text-slate-300 leading-relaxed mb-8 max-w-3xl mx-auto font-normal">
+          Aset terbesar seorang engineer bukanlah seberapa kuat begadang, melainkan <strong class="text-white">waktu berharga Anda</strong>. 
+          Pangkas beban drafting ribuan FAT, routing kabel, dan hitungan BOQ manual berhari-hari menjadi <strong class="text-cyan-300 font-semibold">hitungan menit</strong> dengan presisi link budget loss 100% akurat.
+        </p>
+
+        <!-- CTA Action Buttons -->
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
+          <a href="#harga" class="w-full sm:w-auto px-8 py-4 rounded-xl font-heading font-bold text-sm bg-gradient-to-r from-blue-600 via-cyan-600 to-blue-500 text-white hover:glow-blue hover:scale-[1.02] transition-all shadow-xl flex items-center justify-center gap-3">
+            <i class="fa-solid fa-rocket text-cyan-200"></i>
+            <span>Dapatkan Paket Bundling (Rp 100rb/bln)</span>
+          </a>
+          <a href="#tools-gratis" class="w-full sm:w-auto px-6 py-4 rounded-xl font-heading font-semibold text-sm bg-cad-card border border-emerald-500/40 text-emerald-300 hover:bg-emerald-500/10 hover:border-emerald-400 transition-all flex items-center justify-center gap-2.5">
+            <i class="fa-solid fa-download text-emerald-400"></i>
+            <span>Download Tool Gratis (Rp 0)</span>
+          </a>
+          <a href="https://www.youtube.com/playlist?list=PLLr975-jxOLU" target="_blank" class="w-full sm:w-auto px-5 py-4 rounded-xl font-heading font-medium text-sm bg-slate-900/80 border border-slate-700 text-slate-300 hover:text-white hover:border-red-500/50 transition-all flex items-center justify-center gap-2">
+            <i class="fa-brands fa-youtube text-red-500"></i>
+            <span>Video Tutorial CAD</span>
+          </a>
+        </div>
+
+        <!-- 4 Stat Metric Cards -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-3 lg:gap-4 max-w-4xl mx-auto pt-4 border-t border-slate-800/80 font-mono-tech">
+          <div class="p-3.5 rounded-xl bg-cad-card/60 border border-slate-800 text-left">
+            <div class="text-2xl font-bold text-cyan-400">80%+</div>
+            <div class="text-xs text-slate-400 mt-0.5">Pangkas Waktu Drafting</div>
+          </div>
+          <div class="p-3.5 rounded-xl bg-cad-card/60 border border-slate-800 text-left">
+            <div class="text-2xl font-bold text-emerald-400">100%</div>
+            <div class="text-xs text-slate-400 mt-0.5">Akurasi BOQ & Redaman</div>
+          </div>
+          <div class="p-3.5 rounded-xl bg-cad-card/60 border border-slate-800 text-left">
+            <div class="text-2xl font-bold text-amber-400">Rp 50K</div>
+            <div class="text-xs text-slate-400 mt-0.5">Target Komunitas 600 User</div>
+          </div>
+          <div class="p-3.5 rounded-xl bg-cad-card/60 border border-slate-800 text-left">
+            <div class="text-2xl font-bold text-blue-400">2 Tool</div>
+            <div class="text-xs text-slate-400 mt-0.5">Gratis Rp 0 Tanpa Syarat</div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- HERO VISUAL SHOWCASE (AutoCAD Screen Mockup) -->
+      <div class="mt-14 max-w-5xl mx-auto">
+        <div class="p-2 sm:p-3 rounded-2xl bg-gradient-to-b from-cyan-500/30 via-slate-800/50 to-slate-900/80 border border-cyan-500/30 shadow-2xl glow-cyan">
+          
+          <!-- Mockup Window Bar -->
+          <div class="h-9 px-4 bg-slate-950 rounded-t-xl flex items-center justify-between border-b border-slate-800 text-xs font-mono-tech text-slate-400">
+            <div class="flex items-center gap-2">
+              <div class="w-3 h-3 rounded-full bg-red-500/80 inline-block"></div>
+              <div class="w-3 h-3 rounded-full bg-yellow-500/80 inline-block"></div>
+              <div class="w-3 h-3 rounded-full bg-green-500/80 inline-block"></div>
+              <span class="ml-2 text-slate-300 font-semibold hidden sm:inline">FTTH Design Planner v3.6.9 — Workspace Overview & CAD Topology</span>
+            </div>
+            <div class="flex items-center gap-3 text-[11px]">
+              <span class="text-emerald-400 flex items-center gap-1"><i class="fa-solid fa-circle text-[7px]"></i> ACTIVE LICENSE</span>
+              <span class="text-cyan-400 font-mono-tech">AUTOCAD & MAP 3D (2018-2027) READY</span>
+            </div>
+          </div>
+
+          <!-- Hero Image with interactive Lightbox Trigger -->
+          <div class="screenshot-preview bg-slate-950 rounded-b-xl relative group">
+            <img src="assets/screenshots/ftth-design-planner/00_Windows_and_Modals/01_workspace_overview.png" 
+                 alt="Tampilan Antarmuka FTTH Design Planner AutoCAD" 
+                 class="w-full h-auto object-cover rounded-b-xl shadow-inner cursor-pointer"
+                 data-lightbox-src="assets/screenshots/ftth-design-planner/00_Windows_and_Modals/01_workspace_overview.png"
+                 data-lightbox-title="Workspace Overview — FTTH Design Planner v3.6.9"
+                 data-lightbox-desc="Tampilan antarmuka terintegrasi di atas AutoCAD untuk otomasi basemap, homepass, pole generator, cable routing, hingga export laporan.">
+            
+            <div class="screenshot-overlay rounded-b-xl">
+              <span class="px-4 py-2 rounded-lg bg-cyan-500 text-slate-950 font-bold text-xs flex items-center gap-2 shadow-lg">
+                <i class="fa-solid fa-magnifying-glass-plus"></i> Klik untuk Memperbesar Resolusi Asli
+              </span>
+            </div>
+
+            <!-- Floating feature pills on top of screenshot -->
+            <div class="absolute bottom-4 left-4 right-4 hidden sm:flex items-center justify-between p-3 rounded-lg bg-cad-dark/90 border border-slate-700/80 backdrop-blur-md text-xs font-mono-tech">
+              <div class="flex items-center gap-2 text-cyan-300">
+                <i class="fa-solid fa-code-branch"></i> Auto Cable Route Generator
+              </div>
+              <div class="flex items-center gap-2 text-amber-300">
+                <i class="fa-solid fa-box-archive"></i> Smart FAT/FDT Matrix Placer
+              </div>
+              <div class="flex items-center gap-2 text-emerald-300">
+                <i class="fa-solid fa-file-excel"></i> Instant BOQ & Link Budget
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- COMMUNITY MILESTONE TRACKER SECTION (Gotong Royong Model) -->
+  <section id="community" class="py-16 bg-slate-950 border-y border-slate-800/80 relative scroll-mt-36">
+    <div class="container mx-auto px-4 lg:px-8 max-w-4xl">
+      <div id="community-card" class="cad-card p-6 lg:p-8 rounded-2xl border-cyan-500/30 glow-blue transition-all duration-700">
+        <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 mb-6">
+          <div>
+            <div class="inline-flex items-center gap-2 text-xs font-mono-tech text-amber-400 mb-1">
+              <i class="fa-solid fa-handshake"></i> VISI KOLABORASI KOMUNITAS GOTONG ROYONG
+            </div>
+            <h2 class="text-xl lg:text-2xl font-bold text-white">Target 600 Pengguna: Turun Harga Rp 50.000 / Bulan</h2>
+          </div>
+          <a href="https://chat.whatsapp.com/DFjsdcWkD6b8WkG9XRYCsr" target="_blank" class="px-4 py-2 rounded-lg bg-emerald-600/20 hover:bg-emerald-600/30 border border-emerald-500/40 text-emerald-300 text-xs font-bold flex items-center gap-2 transition-all shrink-0">
+            <i class="fa-brands fa-whatsapp text-emerald-400"></i> Gabung Grup Komunitas
+          </a>
+        </div>
+
+        <p class="text-sm text-slate-300 leading-relaxed mb-6">
+          Kami tidak ingin membebani engineer dengan biaya software yang mencekik. Semakin banyak rekan engineer yang bergabung ke dalam ekosistem ini, biaya operasional server lisensi dibagi bersama. Begitu kita menembus <strong>600 pengguna aktif</strong>, harga langganan FTTH Planner otomatis menjadi <strong>Rp 50.000/bln</strong> untuk seluruh pengguna tanpa terkecuali!
+        </p>
+
+        <!-- Progress Bar -->
+        <div class="space-y-2 mb-4 font-mono-tech">
+          <div class="flex justify-between text-xs text-slate-300">
+            <span>Status Komunitas Saat Ini: <strong id="community-count" class="text-cyan-400 font-bold">24</strong> Member Aktif</span>
+            <span>Target: <strong class="text-amber-400 font-bold">600</strong> Member (<span id="community-percent">4.0%</span>)</span>
+          </div>
+          <div class="w-full h-4 bg-slate-900 rounded-full overflow-hidden p-0.5 border border-slate-700">
+            <div id="community-progress-bar" class="h-full rounded-full bg-gradient-to-r from-blue-600 via-cyan-400 to-amber-400 transition-all duration-1000" style="width: 4.0%;"></div>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs text-slate-400 pt-3 border-t border-slate-800">
+          <div class="flex items-center gap-2">
+            <i class="fa-solid fa-check text-cyan-400"></i>
+            <span><strong>FTTH Design Planner</strong>: Rp 100rb &rarr; <strong>Rp 50rb/bln</strong> (Target 600 member)</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <i class="fa-solid fa-check text-amber-400"></i>
+            <span><strong>KMZ Converter Single</strong>: Rp 100rb &rarr; <strong>Rp 50rb</strong> (Target 300 member)</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCT ECOSYSTEM SECTION (5 Pilar Berdampingan & Gambar di Bawah Keterangan) -->
+  <section id="ekosistem" class="py-20 lg:py-28 bg-cad-dark relative">
+    <div class="container mx-auto px-4 lg:px-8">
+      
+      <!-- Section Title -->
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <div class="text-xs font-mono-tech text-cyan-400 tracking-wider mb-2">COMPLETE FTTX AUTOMATION SUITE</div>
+        <h2 class="text-2xl sm:text-4xl font-extrabold text-white mb-4">5 Pilar Ekosistem Software FTTH</h2>
+        <p class="text-sm sm:text-base text-slate-400">
+          Seluruh solusi perancangan jaringan FTTx disajikan berdampingan: mulai dari survei lapangan di smartphone, konversi data spasial KMZ Google Earth, otomasi CAD tingkat lanjut, hingga rekapitulasi laporan harian.
+        </p>
+      </div>
+
+      <!-- 5 PILLARS GRID LAYOUT (BERDAMPINGAN & BUKA GALERI SCREENSHOT) -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch">
+        
+        <!-- PILAR 1: FTTH DESIGN PLANNER v3.6.9 (Core Flagship - Featured Span) -->
+        <div class="cad-card-featured p-6 rounded-2xl flex flex-col justify-between border-cyan-500/40 glow-cyan md:col-span-2 lg:col-span-2">
+          <div>
+            <!-- Header & Badge -->
+            <div class="flex items-center justify-between gap-2 flex-wrap mb-3">
+              <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-md bg-blue-600/30 text-cyan-300 border border-cyan-500/40 text-xs font-mono-tech">
+                <i class="fa-solid fa-crown text-amber-400"></i> PILAR 1 • CORE FLAGSHIP CAD TOOL
+              </span>
+              <button onclick="openProductGallery('planner')" class="text-xs font-mono-tech text-cyan-400 hover:text-white flex items-center gap-1.5 cursor-pointer bg-slate-900/80 px-2.5 py-1 rounded-lg border border-cyan-500/30 transition-all hover:bg-cyan-500/20">
+                <i class="fa-solid fa-images text-cyan-300"></i> Buka Galeri (16 Modul CAD)
+              </button>
+            </div>
+
+            <!-- Title & Subtitle -->
+            <h3 class="text-xl sm:text-2xl font-extrabold text-white mb-2">
+              FTTH Design Planner v.3.6.9 — Otomasi Perancangan CAD Terpadu
+            </h3>
+            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed mb-4">
+              Software utama di atas platform AutoCAD yang mengotomasi seluruh tahapan perancangan: download basemap citra satelit, persil kavling rumah, penempatan tiang & FAT presisi, auto routing kabel multi-core, hingga kalkulasi redaman optical link budget loss (dB) 100% matematis.
+            </p>
+
+            <!-- Feature Checklist -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs font-mono-tech text-slate-300 mb-6">
+              <div class="flex items-center gap-2"><i class="fa-solid fa-check text-cyan-400"></i> Auto Basemap, Centerline & Trotoar</div>
+              <div class="flex items-center gap-2"><i class="fa-solid fa-check text-cyan-400"></i> Auto Parcel & Homepass Matrix</div>
+              <div class="flex items-center gap-2"><i class="fa-solid fa-check text-cyan-400"></i> Auto-Generate Tiang & Snapping Span</div>
+              <div class="flex items-center gap-2"><i class="fa-solid fa-check text-cyan-400"></i> Auto Routing Feeder/Distribusi & FAT Table</div>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="flex flex-wrap items-center gap-3 mb-6">
+              <a href="https://drive.google.com/file/d/1Qz9dod9d7QBkJ9iILU4R_FhAFuFuJ456/view" target="_blank" class="px-4 py-2 rounded-lg bg-blue-600 hover:bg-blue-500 text-white text-xs font-bold flex items-center gap-2 shadow-md">
+                <i class="fa-solid fa-download"></i> Download Installer v3.6.9
+              </a>
+              <a href="https://www.youtube.com/playlist?list=PLLr975-jxOLU" target="_blank" class="px-3.5 py-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-medium flex items-center gap-1.5 border border-slate-700">
+                <i class="fa-brands fa-youtube text-red-500"></i> Playlist Tutorial
+              </a>
+              <a href="https://www.linkedin.com/feed/update/urn:li:activity:7494699776912044032/" target="_blank" class="px-3.5 py-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs font-medium flex items-center gap-1.5 border border-slate-700">
+                <i class="fa-brands fa-linkedin text-blue-400"></i> Info Update
+              </a>
+            </div>
+          </div>
+
+          <!-- Screenshot Preview with Direct Gallery Album Trigger -->
+          <div class="pt-4 border-t border-slate-800">
+            <div class="text-[11px] font-mono-tech text-cyan-400 mb-2 flex items-center justify-between">
+              <span><i class="fa-solid fa-images mr-1"></i> GALERI ANTARMUKA & MODUL PRESISI (16 FOTO):</span>
+              <span class="text-slate-400 text-[10px]">Klik gambar untuk buka album lengkap</span>
+            </div>
+            <div class="screenshot-preview rounded-xl bg-slate-950 border border-slate-800 cursor-pointer group" onclick="openProductGallery('planner', 0)">
+              <img src="assets/screenshots/ftth-design-planner/00_Windows_and_Modals/FTTH_Planner_Core_UI_Collage.png" 
+                   alt="Kolase UI FTTH Design Planner AutoCAD" 
+                   class="w-full h-auto object-cover rounded-xl group-hover:scale-[1.01] transition-transform">
+              <div class="screenshot-overlay">
+                <span class="px-4 py-2 rounded-lg bg-blue-600 hover:bg-blue-500 text-white font-bold text-xs shadow-xl flex items-center gap-2">
+                  <i class="fa-solid fa-images"></i> Buka Galeri Screenshot Lengkap (16 Modul CAD)
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PILAR 2: KMZ TO HPDB AND BOQ CONVERTER v3.2 -->
+        <div class="cad-card p-6 rounded-2xl flex flex-col justify-between border-emerald-500/30">
+          <div>
+            <!-- Header & Badge -->
+            <div class="flex items-center justify-between gap-2 flex-wrap mb-3">
+              <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-md bg-emerald-500/10 text-emerald-300 border border-emerald-500/30 text-xs font-mono-tech">
+                <i class="fa-solid fa-arrows-split-up-and-left text-emerald-400"></i> PILAR 2 • SPATIAL DATA CONVERTER
+              </span>
+              <button onclick="openProductGallery('kmz')" class="text-xs font-mono-tech text-emerald-400 hover:text-white flex items-center gap-1.5 cursor-pointer bg-slate-900/80 px-2 py-0.5 rounded border border-emerald-500/30 transition-all hover:bg-emerald-500/20">
+                <i class="fa-solid fa-images"></i> 10 Foto Galeri
+              </button>
+            </div>
+
+            <!-- Title & Subtitle -->
+            <h3 class="text-lg font-bold text-white mb-2">
+              KMZ To HPDB & BOQ Converter v3.2
+            </h3>
+            <p class="text-xs text-slate-300 leading-relaxed mb-4">
+              Konversi file Google Earth (.KMZ/.KML) menjadi database Homepass (HPDB) terstruktur rapi dan tabel BOQ Excel instan siap audit proyek.
+            </p>
+
+            <!-- Feature Checklist -->
+            <div class="space-y-1.5 text-xs font-mono-tech text-slate-300 mb-6">
+              <div class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> Ekstraksi Ribuan Titik KMZ Instan</div>
+              <div class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> Format BOQ Excel Siap Audit Proyek</div>
+              <div class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> Sinkronisasi Metadata OLT & Area</div>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="flex flex-wrap items-center gap-2.5 mb-6">
+              <a href="https://drive.google.com/file/d/12czY1k1mWCfnPrcGLwA7bkyDLboUdIyU/view" target="_blank" class="px-3.5 py-2 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold flex items-center gap-1.5 shadow-md">
+                <i class="fa-solid fa-download"></i> Download v3.2
+              </a>
+              <a href="https://www.linkedin.com/feed/update/urn:li:activity:7495887930482274304/" target="_blank" class="px-3 py-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs font-medium flex items-center gap-1.5 border border-slate-700">
+                <i class="fa-brands fa-linkedin text-blue-400"></i> Update
+              </a>
+            </div>
+          </div>
+
+          <!-- Screenshot Preview with Direct Gallery Album Trigger -->
+          <div class="pt-4 border-t border-slate-800">
+            <div class="text-[11px] font-mono-tech text-emerald-400 mb-2 flex items-center justify-between">
+              <span><i class="fa-solid fa-images mr-1"></i> GALERI DASHBOARD CONVERTER (10 FOTO):</span>
+              <span class="text-slate-400 text-[10px]">Klik untuk buka</span>
+            </div>
+            <div class="screenshot-preview rounded-xl bg-slate-950 border border-slate-800 cursor-pointer group" onclick="openProductGallery('kmz', 0)">
+              <img src="assets/screenshots/kmz-to-hpdb-converter/06_high_res_marketing_showcase/01_hero_showcase_converter_process_tab1.png" 
+                   alt="KMZ To HPDB Converter Dashboard" 
+                   class="w-full h-48 object-cover rounded-xl group-hover:scale-[1.01] transition-transform">
+              <div class="screenshot-overlay">
+                <span class="px-3.5 py-2 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs shadow-xl flex items-center gap-2">
+                  <i class="fa-solid fa-images"></i> Buka Galeri KMZ Converter (10 Foto)
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PILAR 3: RADIALMENU SETUP v1.34.0 (Speed Booster - FREE in Bundle) -->
+        <div class="cad-card p-6 rounded-2xl flex flex-col justify-between border-amber-500/30">
+          <div>
+            <!-- Header & Badge -->
+            <div class="flex items-center justify-between gap-2 flex-wrap mb-3">
+              <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-md bg-amber-500/10 text-amber-300 border border-amber-500/30 text-xs font-mono-tech">
+                <i class="fa-solid fa-bolt text-amber-400"></i> PILAR 3 • SPEED BOOSTER
+              </span>
+              <button onclick="openProductGallery('radial')" class="text-xs font-mono-tech text-amber-400 hover:text-white flex items-center gap-1.5 cursor-pointer bg-slate-900/80 px-2 py-0.5 rounded border border-amber-500/30 transition-all hover:bg-amber-500/20">
+                <i class="fa-solid fa-images"></i> 11 Foto Galeri
+              </button>
+            </div>
+
+            <!-- Title & Subtitle -->
+            <h3 class="text-lg font-bold text-white mb-2">
+              RadialMenu Setup v1.34.0
+            </h3>
+            <p class="text-xs text-slate-300 leading-relaxed mb-4">
+              Menu shortcut melingkar interaktif di kursor AutoCAD untuk melipatgandakan kecepatan drafting hingga 3x lipat dengan dukungan macro runner otomatis.
+            </p>
+
+            <!-- Feature Checklist -->
+            <div class="space-y-1.5 text-xs font-mono-tech text-slate-300 mb-6">
+              <div class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-400"></i> Menu Melingkar Melayang di Kursor</div>
+              <div class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-400"></i> Macro Runner Otomasi Perintah CAD</div>
+              <div class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-400"></i> Tuning Inersia Fisika & Blur Modern</div>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="flex flex-wrap items-center gap-2.5 mb-6">
+              <a href="https://drive.google.com/file/d/1EelBNvlsPj5CcoQ5CGetpEaDXyRIbsfM/view" target="_blank" class="px-3.5 py-2 rounded-lg bg-amber-600 hover:bg-amber-500 text-white text-xs font-bold flex items-center gap-1.5 shadow-md">
+                <i class="fa-solid fa-download"></i> Download v1.34.0
+              </a>
+              <a href="https://www.linkedin.com/feed/update/urn:li:activity:7484253305095802880/" target="_blank" class="px-3 py-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs font-medium flex items-center gap-1.5 border border-slate-700">
+                <i class="fa-brands fa-linkedin text-blue-400"></i> Update
+              </a>
+            </div>
+          </div>
+
+          <!-- Screenshot Preview with Direct Gallery Album Trigger -->
+          <div class="pt-4 border-t border-slate-800">
+            <div class="text-[11px] font-mono-tech text-amber-400 mb-2 flex items-center justify-between">
+              <span><i class="fa-solid fa-images mr-1"></i> GALERI RADIAL OVERLAY (11 FOTO):</span>
+              <span class="text-slate-400 text-[10px]">Klik untuk buka</span>
+            </div>
+            <div class="screenshot-preview rounded-xl bg-slate-950 border border-slate-800 cursor-pointer group" onclick="openProductGallery('radial', 0)">
+              <img src="assets/screenshots/radial-menu/01_Radial_Overlay_UI/01_Radial_Overlay_Main_Menu.png" 
+                   alt="Radial Menu Active Overlay" 
+                   class="w-full h-48 object-cover rounded-xl group-hover:scale-[1.01] transition-transform">
+              <div class="screenshot-overlay">
+                <span class="px-3.5 py-2 rounded-lg bg-amber-600 hover:bg-amber-500 text-white font-bold text-xs shadow-xl flex items-center gap-2">
+                  <i class="fa-solid fa-images"></i> Buka Galeri RadialMenu (11 Foto)
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PILAR 4: TSSR GEO TAG CAPTURE v3.0 (Freeware) -->
+        <div class="cad-card p-6 rounded-2xl flex flex-col justify-between border-cyan-500/30">
+          <div>
+            <!-- Header & Badge -->
+            <div class="flex items-center justify-between gap-2 flex-wrap mb-3">
+              <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-md bg-cyan-500/10 text-cyan-300 border border-cyan-500/30 text-xs font-mono-tech">
+                <i class="fa-solid fa-gift text-cyan-400"></i> PILAR 4 • SURVEY FIELD TOOL
+              </span>
+              <button onclick="openProductGallery('tssr')" class="text-xs font-mono-tech text-cyan-400 hover:text-white flex items-center gap-1.5 cursor-pointer bg-slate-900/80 px-2 py-0.5 rounded border border-cyan-500/30 transition-all hover:bg-cyan-500/20">
+                <i class="fa-solid fa-images"></i> 10 Foto Galeri
+              </button>
+            </div>
+
+            <!-- Title & Subtitle -->
+            <h3 class="text-lg font-bold text-white mb-2">
+              TSSR Geo TAG Capture v3.0
+            </h3>
+            <p class="text-xs text-slate-300 leading-relaxed mb-4">
+              Aplikasi pendukung survei teknis site untuk memberikan stempel watermark koordinat GPS, alamat geocoding, tanggal presisi, dan bulk paste foto ke laporan.
+            </p>
+
+            <!-- Feature Checklist -->
+            <div class="space-y-1.5 text-xs font-mono-tech text-slate-300 mb-6">
+              <div class="flex items-center gap-2"><i class="fa-solid fa-check text-cyan-400"></i> Watermark GPS & Timestamp Otomatis</div>
+              <div class="flex items-center gap-2"><i class="fa-solid fa-check text-cyan-400"></i> Floating Snipping & Bulk Paste Word/Excel</div>
+              <div class="flex items-center gap-2"><i class="fa-solid fa-check text-cyan-400"></i> Dukungan Koordinat Lat/Lon & UTM</div>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="flex flex-wrap items-center gap-2.5 mb-6">
+              <a href="https://drive.google.com/file/d/1vWB3Zddbc4M5mK5e9V32nzn_nC3WLM_S/view?usp=sharing" target="_blank" class="px-3.5 py-2 rounded-lg bg-cyan-600 hover:bg-cyan-500 text-slate-950 text-xs font-bold flex items-center gap-1.5 shadow-md">
+                <i class="fa-solid fa-download"></i> Download TSSR (.zip)
+              </a>
+              <a href="https://youtu.be/6HAVGsoAnNc" target="_blank" class="px-3 py-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-medium flex items-center gap-1.5 border border-slate-700">
+                <i class="fa-brands fa-youtube text-red-500"></i> Video Review
+              </a>
+            </div>
+          </div>
+
+          <!-- Screenshot Preview with Direct Gallery Album Trigger -->
+          <div class="pt-4 border-t border-slate-800">
+            <div class="text-[11px] font-mono-tech text-cyan-400 mb-2 flex items-center justify-between">
+              <span><i class="fa-solid fa-images mr-1"></i> GALERI TSSR GEO TAG (10 FOTO):</span>
+              <span class="text-slate-400 text-[10px]">Klik untuk buka</span>
+            </div>
+            <div class="screenshot-preview rounded-xl bg-slate-950 border border-slate-800 cursor-pointer group" onclick="openProductGallery('tssr', 0)">
+              <img src="assets/screenshots/tssr-geo-tag/01_Settings_Window/00_Settings_Window_Overview.png" 
+                   alt="TSSR Geo TAG Settings Panel" 
+                   class="w-full h-48 object-cover rounded-xl group-hover:scale-[1.01] transition-transform">
+              <div class="screenshot-overlay">
+                <span class="px-3.5 py-2 rounded-lg bg-cyan-600 hover:bg-cyan-500 text-slate-950 font-bold text-xs shadow-xl flex items-center gap-2">
+                  <i class="fa-solid fa-images"></i> Buka Galeri TSSR (10 Foto)
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PILAR 5: FTTH-PRO REPORT ANDROID APK (Mobile App) -->
+        <div class="cad-card p-6 rounded-2xl flex flex-col justify-between border-green-500/30">
+          <div>
+            <!-- Header & Badge -->
+            <div class="flex items-center justify-between gap-2 flex-wrap mb-3">
+              <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-md bg-green-500/10 text-green-300 border border-green-500/30 text-xs font-mono-tech">
+                <i class="fa-brands fa-android text-green-400"></i> PILAR 5 • ANDROID MOBILE APP
+              </span>
+              <button onclick="openProductGallery('mobile')" class="text-xs font-mono-tech text-green-400 hover:text-white flex items-center gap-1.5 cursor-pointer bg-slate-900/80 px-2 py-0.5 rounded border border-green-500/30 transition-all hover:bg-green-500/20">
+                <i class="fa-solid fa-images"></i> 11 Foto Galeri
+              </button>
+            </div>
+
+            <!-- Title & Subtitle -->
+            <h3 class="text-lg font-bold text-white mb-2">
+              FTTH-Pro Report (Android APK)
+            </h3>
+            <p class="text-xs text-slate-300 leading-relaxed mb-4">
+              Aplikasi inspeksi lapangan mobile Android untuk teknisi & pengawas: kelola progres sipil harian, terminasi FAT/Closure, dan rekap redaman optik langsung di smartphone.
+            </p>
+
+            <!-- Feature Checklist -->
+            <div class="space-y-1.5 text-xs font-mono-tech text-slate-300 mb-6">
+              <div class="flex items-center gap-2"><i class="fa-solid fa-check text-green-400"></i> Checklist Progres Sipil & FAT Harian</div>
+              <div class="flex items-center gap-2"><i class="fa-solid fa-check text-green-400"></i> Validasi Redaman & Manajemen Subcon</div>
+              <div class="flex items-center gap-2"><i class="fa-solid fa-check text-green-400"></i> Export Laporan PDF Rapi Siap Kirim WA</div>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="flex flex-wrap items-center gap-2.5 mb-6">
+              <a href="https://drive.google.com/file/d/1U8c6DZGI4J2expnOzDQLPk1q9G_2D3pF/view" target="_blank" class="px-3.5 py-2 rounded-lg bg-green-600 hover:bg-green-500 text-white text-xs font-bold flex items-center gap-1.5 shadow-md">
+                <i class="fa-brands fa-android"></i> Download APK Android
+              </a>
+              <a href="https://www.linkedin.com/feed/update/urn:li:activity:7454903187209183235/" target="_blank" class="px-3 py-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs font-medium flex items-center gap-1.5 border border-slate-700">
+                <i class="fa-brands fa-linkedin text-blue-400"></i> Info Update
+              </a>
+            </div>
+          </div>
+
+          <!-- Screenshot Preview with Direct Gallery Album Trigger -->
+          <div class="pt-4 border-t border-slate-800">
+            <div class="text-[11px] font-mono-tech text-green-400 mb-2 flex items-center justify-between">
+              <span><i class="fa-solid fa-images mr-1"></i> GALERI ANDROID APP (11 FOTO):</span>
+              <span class="text-slate-400 text-[10px]">Klik untuk buka</span>
+            </div>
+            <div class="screenshot-preview rounded-xl bg-slate-950 border border-slate-800 cursor-pointer group" onclick="openProductGallery('mobile', 0)">
+              <img src="assets/screenshots/ftth-pro-report-apk/01_main_dashboard.jpeg" 
+                   alt="FTTH-Pro Report Android App Dashboard" 
+                   class="w-full h-48 object-cover object-top rounded-xl group-hover:scale-[1.01] transition-transform">
+              <div class="screenshot-overlay">
+                <span class="px-3.5 py-2 rounded-lg bg-green-600 hover:bg-green-500 text-white font-bold text-xs shadow-xl flex items-center gap-2">
+                  <i class="fa-solid fa-images"></i> Buka Galeri Android APK (11 Foto)
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- DETAILED CAD FEATURE & SCREENSHOT GALLERY SECTION -->
+  <section id="showcase" class="py-20 bg-cad-panel/60 border-y border-slate-800 relative">
+    <div class="container mx-auto px-4 lg:px-8">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+        <div>
+          <div class="text-xs font-mono-tech text-cyan-400 mb-1">HIGH RESOLUTION SCREENSHOT EXPLORER</div>
+          <h2 class="text-2xl sm:text-4xl font-extrabold text-white">Galeri & Pembuktian Fitur Software</h2>
+          <p class="text-sm text-slate-400 mt-2 max-w-xl">
+            Tinjau langsung tangkapan layar antarmuka asli dari setiap modul, dialog, dan form yang bekerja di seluruh 5 software ekosistem.
+          </p>
+        </div>
+
+        <!-- Filter Buttons (All 5 Categories) -->
+        <div class="flex items-center gap-2 flex-wrap font-mono-tech text-xs">
+          <button data-gallery-filter="all" class="px-3.5 py-1.5 rounded-lg bg-cyan-500/20 text-cyan-400 border border-cyan-400 transition-all">
+            Semua Modul (52)
+          </button>
+          <button data-gallery-filter="planner" class="px-3.5 py-1.5 rounded-lg bg-cad-card text-gray-400 border border-gray-800 hover:text-white transition-all">
+            FTTH Planner (16)
+          </button>
+          <button data-gallery-filter="converter" class="px-3.5 py-1.5 rounded-lg bg-cad-card text-gray-400 border border-gray-800 hover:text-white transition-all">
+            KMZ Converter (10)
+          </button>
+          <button data-gallery-filter="radial" class="px-3.5 py-1.5 rounded-lg bg-cad-card text-gray-400 border border-gray-800 hover:text-white transition-all">
+            RadialMenu (11)
+          </button>
+          <button data-gallery-filter="tssr" class="px-3.5 py-1.5 rounded-lg bg-cad-card text-gray-400 border border-gray-800 hover:text-white transition-all">
+            TSSR Geo TAG (10)
+          </button>
+          <button data-gallery-filter="mobile" class="px-3.5 py-1.5 rounded-lg bg-cad-card text-gray-400 border border-gray-800 hover:text-white transition-all">
+            Android APK (11)
+          </button>
+        </div>
+      </div>
+
+      <!-- GALLERY GRID WITH COMPREHENSIVE CARDS -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <!-- Planner 1: Workspace Overview -->
+        <div data-gallery-category="planner" class="cad-card p-3 rounded-xl flex flex-col justify-between group">
+          <div class="screenshot-preview rounded-lg mb-3 cursor-pointer" onclick="openProductGallery('planner', 1)">
+            <img src="assets/screenshots/ftth-design-planner/00_Windows_and_Modals/01_workspace_overview.png" 
+                 alt="Full AutoCAD Workspace" 
+                 class="w-full h-48 object-cover rounded-lg">
+            <div class="screenshot-overlay">
+              <span class="px-3 py-1.5 rounded-md bg-cyan-500 text-slate-950 font-bold text-xs"><i class="fa-solid fa-magnifying-glass mr-1"></i> Buka Galeri CAD</span>
+            </div>
+          </div>
+          <div>
+            <div class="flex items-center justify-between text-xs font-mono-tech mb-1">
+              <span class="text-cyan-400">FTTH PLANNER</span>
+              <span class="text-slate-500">AutoCAD Space</span>
+            </div>
+            <h4 class="text-sm font-bold text-white mb-1">AutoCAD Workspace & Docking</h4>
+            <p class="text-xs text-slate-400 line-clamp-2">Workspace AutoCAD terintegrasi penuh dengan panel docking FTTH Planner.</p>
+          </div>
+        </div>
+
+        <!-- Planner 2: OSM Boundary Downloader -->
+        <div data-gallery-category="planner" class="cad-card p-3 rounded-xl flex flex-col justify-between group">
+          <div class="screenshot-preview rounded-lg mb-3 cursor-pointer" onclick="openProductGallery('planner', 2)">
+            <img src="assets/screenshots/ftth-design-planner/01_Tab1_Basemap_Preparation/Sub1_Map_and_Basemap/01_Boundary_And_Map_Downloader.png" 
+                 alt="OSM Boundary Downloader" 
+                 class="w-full h-48 object-cover rounded-lg">
+            <div class="screenshot-overlay">
+              <span class="px-3 py-1.5 rounded-md bg-cyan-500 text-slate-950 font-bold text-xs"><i class="fa-solid fa-magnifying-glass mr-1"></i> Buka Galeri CAD</span>
+            </div>
+          </div>
+          <div>
+            <div class="flex items-center justify-between text-xs font-mono-tech mb-1">
+              <span class="text-cyan-400">FTTH PLANNER</span>
+              <span class="text-slate-500">Tab 1 / Basemap</span>
+            </div>
+            <h4 class="text-sm font-bold text-white mb-1">OSM Boundary & Map Downloader</h4>
+            <p class="text-xs text-slate-400 line-clamp-2">Download data batas wilayah dan jaringan jalan OpenStreetMap instan.</p>
+          </div>
+        </div>
+
+        <!-- Planner 3: Parcels & Homepass -->
+        <div data-gallery-category="planner" class="cad-card p-3 rounded-xl flex flex-col justify-between group">
+          <div class="screenshot-preview rounded-lg mb-3 cursor-pointer" onclick="openProductGallery('planner', 5)">
+            <img src="assets/screenshots/ftth-design-planner/01_Tab1_Basemap_Preparation/Sub2_Parcels_and_Homepass/01_Parcel_And_Point_Generator.png" 
+                 alt="Parcel and Point Generator" 
+                 class="w-full h-48 object-cover rounded-lg">
+            <div class="screenshot-overlay">
+              <span class="px-3 py-1.5 rounded-lg bg-cyan-500 text-slate-950 font-bold text-xs"><i class="fa-solid fa-magnifying-glass mr-1"></i> Buka Galeri CAD</span>
+            </div>
+          </div>
+          <div>
+            <div class="flex items-center justify-between text-xs font-mono-tech mb-1">
+              <span class="text-cyan-400">FTTH PLANNER</span>
+              <span class="text-slate-500">Tab 1 / Homepass</span>
+            </div>
+            <h4 class="text-sm font-bold text-white mb-1">Parcel & Homepass Generator</h4>
+            <p class="text-xs text-slate-400 line-clamp-2">Generasi poligon persil bangunan dan plot titik target calon pelanggan otomatis.</p>
+          </div>
+        </div>
+
+        <!-- Planner 4: Auto Pole Generator -->
+        <div data-gallery-category="planner" class="cad-card p-3 rounded-xl flex flex-col justify-between group">
+          <div class="screenshot-preview rounded-lg mb-3 cursor-pointer" onclick="openProductGallery('planner', 7)">
+            <img src="assets/screenshots/ftth-design-planner/02_Tab2_Survey_and_Assets/09_Auto_Generate_Poles_Otomatis.png" 
+                 alt="Auto Generate Poles Otomatis" 
+                 class="w-full h-48 object-cover rounded-lg">
+            <div class="screenshot-overlay">
+              <span class="px-3 py-1.5 rounded-lg bg-cyan-500 text-slate-950 font-bold text-xs"><i class="fa-solid fa-magnifying-glass mr-1"></i> Buka Galeri CAD</span>
+            </div>
+          </div>
+          <div>
+            <div class="flex items-center justify-between text-xs font-mono-tech mb-1">
+              <span class="text-cyan-400">FTTH PLANNER</span>
+              <span class="text-slate-500">Tab 2 / Poles</span>
+            </div>
+            <h4 class="text-sm font-bold text-white mb-1">Auto Generate Tiang (Poles)</h4>
+            <p class="text-xs text-slate-400 line-clamp-2">Plot ratusan tiang distribusi otomatis sepanjang rute dengan span terkontrol.</p>
+          </div>
+        </div>
+
+        <!-- Planner 5: Auto Route Cable -->
+        <div data-gallery-category="planner" class="cad-card p-3 rounded-xl flex flex-col justify-between group">
+          <div class="screenshot-preview rounded-lg mb-3 cursor-pointer" onclick="openProductGallery('planner', 9)">
+            <img src="assets/screenshots/ftth-design-planner/03_Tab3_Routing_and_Design/01_Auto_Route_Cable_Generator.png" 
+                 alt="Auto Route Cable Generator" 
+                 class="w-full h-48 object-cover rounded-lg">
+            <div class="screenshot-overlay">
+              <span class="px-3 py-1.5 rounded-lg bg-cyan-500 text-slate-950 font-bold text-xs"><i class="fa-solid fa-magnifying-glass mr-1"></i> Buka Galeri CAD</span>
+            </div>
+          </div>
+          <div>
+            <div class="flex items-center justify-between text-xs font-mono-tech mb-1">
+              <span class="text-cyan-400">FTTH PLANNER</span>
+              <span class="text-slate-500">Tab 3 / Routing</span>
+            </div>
+            <h4 class="text-sm font-bold text-white mb-1">Auto Route Cable Generator</h4>
+            <p class="text-xs text-slate-400 line-clamp-2">Penarikan kabel optik feeder dan distribusi otomatis tanpa tracing manual.</p>
+          </div>
+        </div>
+
+        <!-- Converter 1: KMZ Process Showcase -->
+        <div data-gallery-category="converter" class="cad-card p-3 rounded-xl flex flex-col justify-between group">
+          <div class="screenshot-preview rounded-lg mb-3 cursor-pointer" onclick="openProductGallery('kmz', 0)">
+            <img src="assets/screenshots/kmz-to-hpdb-converter/06_high_res_marketing_showcase/01_hero_showcase_converter_process_tab1.png" 
+                 alt="KMZ Process Showcase" 
+                 class="w-full h-48 object-cover rounded-lg">
+            <div class="screenshot-overlay">
+              <span class="px-3 py-1.5 rounded-lg bg-emerald-500 text-slate-950 font-bold text-xs"><i class="fa-solid fa-magnifying-glass mr-1"></i> Buka Galeri KMZ</span>
+            </div>
+          </div>
+          <div>
+            <div class="flex items-center justify-between text-xs font-mono-tech mb-1">
+              <span class="text-emerald-400">KMZ CONVERTER</span>
+              <span class="text-slate-500">Process Engine</span>
+            </div>
+            <h4 class="text-sm font-bold text-white mb-1">KMZ Processing Dashboard</h4>
+            <p class="text-xs text-slate-400 line-clamp-2">Ekstraksi data rute spasial Google Earth ke struktur database Homepass.</p>
+          </div>
+        </div>
+
+        <!-- Converter 2: Metadata Settings -->
+        <div data-gallery-category="converter" class="cad-card p-3 rounded-xl flex flex-col justify-between group">
+          <div class="screenshot-preview rounded-lg mb-3 cursor-pointer" onclick="openProductGallery('kmz', 1)">
+            <img src="assets/screenshots/kmz-to-hpdb-converter/06_high_res_marketing_showcase/02_hero_showcase_metadata_settings_tab2.png" 
+                 alt="KMZ Metadata Settings" 
+                 class="w-full h-48 object-cover rounded-lg">
+            <div class="screenshot-overlay">
+              <span class="px-3 py-1.5 rounded-lg bg-emerald-500 text-slate-950 font-bold text-xs"><i class="fa-solid fa-magnifying-glass mr-1"></i> Buka Galeri KMZ</span>
+            </div>
+          </div>
+          <div>
+            <div class="flex items-center justify-between text-xs font-mono-tech mb-1">
+              <span class="text-emerald-400">KMZ CONVERTER</span>
+              <span class="text-slate-500">Metadata Sync</span>
+            </div>
+            <h4 class="text-sm font-bold text-white mb-1">Sinkronisasi Metadata OLT</h4>
+            <p class="text-xs text-slate-400 line-clamp-2">Pemetaan wilayah administratif, nama cluster, dan alokasi port OLT.</p>
+          </div>
+        </div>
+
+        <!-- Radial 1: Main Radial Overlay -->
+        <div data-gallery-category="radial" class="cad-card p-3 rounded-xl flex flex-col justify-between group">
+          <div class="screenshot-preview rounded-lg mb-3 cursor-pointer" onclick="openProductGallery('radial', 0)">
+            <img src="assets/screenshots/radial-menu/01_Radial_Overlay_UI/01_Radial_Overlay_Main_Menu.png" 
+                 alt="RadialMenu Main Overlay" 
+                 class="w-full h-48 object-cover rounded-lg">
+            <div class="screenshot-overlay">
+              <span class="px-3 py-1.5 rounded-lg bg-amber-500 text-slate-950 font-bold text-xs"><i class="fa-solid fa-magnifying-glass mr-1"></i> Buka Galeri Radial</span>
+            </div>
+          </div>
+          <div>
+            <div class="flex items-center justify-between text-xs font-mono-tech mb-1">
+              <span class="text-amber-400">RADIAL MENU</span>
+              <span class="text-slate-500">Main Overlay</span>
+            </div>
+            <h4 class="text-sm font-bold text-white mb-1">Radial Menu Overlay</h4>
+            <p class="text-xs text-slate-400 line-clamp-2">Navigasi shortcut melingkar di kursor AutoCAD untuk kecepatan drafting 3x lipat.</p>
+          </div>
+        </div>
+
+        <!-- Radial 2: Macro Runner Editor -->
+        <div data-gallery-category="radial" class="cad-card p-3 rounded-xl flex flex-col justify-between group">
+          <div class="screenshot-preview rounded-lg mb-3 cursor-pointer" onclick="openProductGallery('radial', 9)">
+            <img src="assets/screenshots/radial-menu/06_Macro_Step_Editor/01_Macro_Step_Runner_Editor_Overview.png" 
+                 alt="Macro Step Runner Editor" 
+                 class="w-full h-48 object-cover rounded-lg">
+            <div class="screenshot-overlay">
+              <span class="px-3 py-1.5 rounded-lg bg-amber-500 text-slate-950 font-bold text-xs"><i class="fa-solid fa-magnifying-glass mr-1"></i> Buka Galeri Radial</span>
+            </div>
+          </div>
+          <div>
+            <div class="flex items-center justify-between text-xs font-mono-tech mb-1">
+              <span class="text-amber-400">RADIAL MENU</span>
+              <span class="text-slate-500">Macro Engine</span>
+            </div>
+            <h4 class="text-sm font-bold text-white mb-1">Macro Step Runner Editor</h4>
+            <p class="text-xs text-slate-400 line-clamp-2">Otomasi rangkaian aksi berurutan untuk eksekusi workflow CAD instan.</p>
+          </div>
+        </div>
+
+        <!-- TSSR 1: Watermark & Geocoding -->
+        <div data-gallery-category="tssr" class="cad-card p-3 rounded-xl flex flex-col justify-between group">
+          <div class="screenshot-preview rounded-lg mb-3 cursor-pointer" onclick="openProductGallery('tssr', 0)">
+            <img src="assets/screenshots/tssr-geo-tag/01_Settings_Window/00_Settings_Window_Overview.png" 
+                 alt="TSSR Settings Overview" 
+                 class="w-full h-48 object-cover rounded-lg">
+            <div class="screenshot-overlay">
+              <span class="px-3 py-1.5 rounded-lg bg-cyan-500 text-slate-950 font-bold text-xs"><i class="fa-solid fa-magnifying-glass mr-1"></i> Buka Galeri TSSR</span>
+            </div>
+          </div>
+          <div>
+            <div class="flex items-center justify-between text-xs font-mono-tech mb-1">
+              <span class="text-cyan-400">TSSR GEO TAG</span>
+              <span class="text-slate-500">Watermark Tool</span>
+            </div>
+            <h4 class="text-sm font-bold text-white mb-1">Panel Pengaturan Watermark GPS</h4>
+            <p class="text-xs text-slate-400 line-clamp-2">Stempel otomatis koordinat lintang/bujur, alamat geocoding, dan timestamp audit.</p>
+          </div>
+        </div>
+
+        <!-- TSSR 2: Bulk Paste Tool -->
+        <div data-gallery-category="tssr" class="cad-card p-3 rounded-xl flex flex-col justify-between group">
+          <div class="screenshot-preview rounded-lg mb-3 cursor-pointer" onclick="openProductGallery('tssr', 5)">
+            <img src="assets/screenshots/tssr-geo-tag/02_Bulk_Paste_Floating_Window/03_BulkPaste_Floating_Active_Paste_Mode.png" 
+                 alt="Bulk Paste Floating Window" 
+                 class="w-full h-48 object-cover rounded-lg">
+            <div class="screenshot-overlay">
+              <span class="px-3 py-1.5 rounded-lg bg-cyan-500 text-slate-950 font-bold text-xs"><i class="fa-solid fa-magnifying-glass mr-1"></i> Buka Galeri TSSR</span>
+            </div>
+          </div>
+          <div>
+            <div class="flex items-center justify-between text-xs font-mono-tech mb-1">
+              <span class="text-cyan-400">TSSR GEO TAG</span>
+              <span class="text-slate-500">Bulk Paste</span>
+            </div>
+            <h4 class="text-sm font-bold text-white mb-1">Floating Bulk Paste ke Word/Excel</h4>
+            <p class="text-xs text-slate-400 line-clamp-2">Tempel banyak foto dokumentasi lapangan sekaligus ke berkas laporan survei.</p>
+          </div>
+        </div>
+
+        <!-- Mobile 1: Android Main Dashboard -->
+        <div data-gallery-category="mobile" class="cad-card p-3 rounded-xl flex flex-col justify-between group">
+          <div class="screenshot-preview rounded-lg mb-3 cursor-pointer" onclick="openProductGallery('mobile', 0)">
+            <img src="assets/screenshots/ftth-pro-report-apk/01_main_dashboard.jpeg" 
+                 alt="FTTH-Pro Report Mobile Dashboard" 
+                 class="w-full h-48 object-cover object-top rounded-lg">
+            <div class="screenshot-overlay">
+              <span class="px-3 py-1.5 rounded-lg bg-green-500 text-slate-950 font-bold text-xs"><i class="fa-solid fa-magnifying-glass mr-1"></i> Buka Galeri APK</span>
+            </div>
+          </div>
+          <div>
+            <div class="flex items-center justify-between text-xs font-mono-tech mb-1">
+              <span class="text-green-400">ANDROID APK</span>
+              <span class="text-slate-500">Main Dashboard</span>
+            </div>
+            <h4 class="text-sm font-bold text-white mb-1">Dashboard Mobile Pelaporan FTTH</h4>
+            <p class="text-xs text-slate-400 line-clamp-2">Monitoring progres harian konstruksi dan status cluster aktif langsung dari smartphone.</p>
+          </div>
+        </div>
+
+        <!-- Mobile 2: Daily Progress Detail -->
+        <div data-gallery-category="mobile" class="cad-card p-3 rounded-xl flex flex-col justify-between group">
+          <div class="screenshot-preview rounded-lg mb-3 cursor-pointer" onclick="openProductGallery('mobile', 8)">
+            <img src="assets/screenshots/ftth-pro-report-apk/09_detail_laporan_daily_progress.jpeg" 
+                 alt="Daily Progress Detail" 
+                 class="w-full h-48 object-cover object-top rounded-lg">
+            <div class="screenshot-overlay">
+              <span class="px-3 py-1.5 rounded-md bg-green-500 text-slate-950 font-bold text-xs"><i class="fa-solid fa-magnifying-glass mr-1"></i> Buka Galeri APK</span>
+            </div>
+          </div>
+          <div>
+            <div class="flex items-center justify-between text-xs font-mono-tech mb-1">
+              <span class="text-green-400">ANDROID APK</span>
+              <span class="text-slate-500">Daily Report</span>
+            </div>
+            <h4 class="text-sm font-bold text-white mb-1">Detail Laporan Progres Sipil & FAT</h4>
+            <p class="text-xs text-slate-400 line-clamp-2">Rekapitulasi progres fisik harian dan checklist pemasangan aksesoris tiang.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- INTERACTIVE ROI & TIME SAVINGS CALCULATOR SECTION (Kiyosaki Mindset) -->
+  <section id="kalkulator" class="py-20 lg:py-28 bg-cad-grid relative">
+    <div class="container mx-auto px-4 lg:px-8 max-w-5xl">
+      
+      <div class="text-center max-w-3xl mx-auto mb-14">
+        <div class="text-xs font-mono-tech text-amber-400 tracking-wider mb-2">TIME IS YOUR GREATEST ASSET</div>
+        <h2 class="text-2xl sm:text-4xl font-extrabold text-white mb-4">Simulasi Penghematan Waktu & Biaya Proyek</h2>
+        <p class="text-sm sm:text-base text-slate-300">
+          Hitung berapa jam lembur dan biaya operasional yang dapat Anda selamatkan setiap bulan dengan memanfaatkan sistem otomasi FTTH Design Planner.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+        
+        <!-- Left: Sliders Input -->
+        <div class="lg:col-span-6 cad-card p-6 lg:p-8 rounded-2xl flex flex-col justify-between">
+          <div class="space-y-6">
+            <h3 class="text-lg font-bold text-white flex items-center gap-2">
+              <i class="fa-solid fa-sliders text-cyan-400"></i> Parameter Proyek Bulanan Anda
+            </h3>
+
+            <!-- Slider 1: Jumlah FAT -->
+            <div class="space-y-2">
+              <div class="flex justify-between text-xs font-mono-tech">
+                <label for="slider-fat" class="text-slate-300">Jumlah Titik FAT / ODP per Bulan:</label>
+                <span id="val-fat" class="text-cyan-400 font-bold text-sm">60</span>
+              </div>
+              <input type="range" id="slider-fat" min="10" max="300" step="5" value="60" class="w-full" aria-label="Jumlah Titik FAT per Bulan">
+              <div class="flex justify-between text-[10px] text-slate-500 font-mono-tech">
+                <span>10 FAT</span>
+                <span>150 FAT</span>
+                <span>300 FAT</span>
+              </div>
+            </div>
+
+            <!-- Slider 2: Estimasi Rate Lembur -->
+            <div class="space-y-2">
+              <div class="flex justify-between text-xs font-mono-tech">
+                <label for="slider-rate" class="text-slate-300">Nilai Waktu / Biaya Drafter per Jam:</label>
+                <span id="val-rate" class="text-amber-400 font-bold text-sm">Rp 50.000</span>
+              </div>
+              <input type="range" id="slider-rate" min="20000" max="150000" step="5000" value="50000" class="w-full" aria-label="Nilai Waktu Drafter per Jam">
+              <div class="flex justify-between text-[10px] text-slate-500 font-mono-tech">
+                <span>Rp 20.000/jam</span>
+                <span>Rp 75.000/jam</span>
+                <span>Rp 150.000/jam</span>
+              </div>
+            </div>
+
+            <div class="p-4 rounded-xl bg-slate-900/90 border border-slate-800 text-xs text-slate-400 leading-relaxed">
+              <i class="fa-solid fa-lightbulb text-amber-400 mr-1.5"></i>
+              <strong>Asumsi Standar</strong>: Perancangan manual 1 FAT (termasuk basemap, penomoran rumah, kabel & BOQ) rata-rata memakan waktu <strong>72 menit</strong>. Dengan otomasi FTTH Planner, hanya memakan waktu <strong>9 menit</strong>.
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Results Card -->
+        <div class="lg:col-span-6 cad-card-featured p-6 lg:p-8 rounded-2xl flex flex-col justify-between">
+          <div>
+            <div class="text-xs font-mono-tech text-emerald-400 mb-1">HASIL KALKULASI EFISIENSI</div>
+            <h3 class="text-xl font-bold text-white mb-6">Output Waktu & Biaya yang Anda Hemat</h3>
+
+            <div class="grid grid-cols-2 gap-4 mb-6 font-mono-tech">
+              <div class="p-4 rounded-xl bg-slate-950/80 border border-red-500/20">
+                <div class="text-xs text-slate-400">Waktu Cara Manual:</div>
+                <div id="res-manual-hours" class="text-2xl font-bold text-red-400 mt-1">72 Jam</div>
+                <div class="text-[10px] text-slate-500 mt-0.5">Lembur berhari-hari</div>
+              </div>
+
+              <div class="p-4 rounded-xl bg-slate-950/80 border border-cyan-500/30">
+                <div class="text-xs text-slate-400">Dengan FTTH Planner:</div>
+                <div id="res-auto-hours" class="text-2xl font-bold text-cyan-400 mt-1">9 Jam</div>
+                <div class="text-[10px] text-slate-500 mt-0.5">Selesai hari yang sama</div>
+              </div>
+            </div>
+
+            <!-- Big Highlight Savings -->
+            <div class="p-5 rounded-xl bg-gradient-to-r from-blue-900/40 via-cyan-900/40 to-blue-900/40 border border-cyan-500/40 mb-4">
+              <div class="flex items-center justify-between">
+                <div>
+                  <div class="text-xs font-mono-tech text-cyan-300">TOTAL WAKTU DIHEMAT / BULAN:</div>
+                  <div id="res-saved-hours" class="text-3xl font-extrabold text-white mt-1">63 Jam</div>
+                </div>
+                <div class="text-right">
+                  <div class="text-xs font-mono-tech text-emerald-300">EFISIENSI BIAYA DIHEMAT:</div>
+                  <div id="res-money-saved" class="text-2xl sm:text-3xl font-extrabold text-emerald-400 mt-1">Rp 3.150.000</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex items-center justify-between text-xs text-slate-300 font-mono-tech px-1">
+              <span>Peningkatan Kecepatan: <strong id="res-efficiency-percent" class="text-amber-400">88%</strong> Lebih Efisien</span>
+              <span class="text-cyan-400 font-bold">Investasi Rp 100rb &rarr; Balik Modal 30x Lipat!</span>
+            </div>
+          </div>
+
+          <div class="mt-6 pt-4 border-t border-slate-800">
+            <a href="#harga" class="w-full py-3.5 rounded-xl font-heading font-bold text-xs bg-gradient-to-r from-blue-600 to-cyan-500 text-white text-center flex items-center justify-center gap-2 hover:glow-blue transition-all">
+              <span>Amankan Akses Otomasi Sekarang</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- COMPARISON TABLE: CARA LAMA VS FTTH DESIGN PLANNER -->
+  <section id="perbandingan" class="py-20 bg-slate-950 border-t border-slate-800 relative">
+    <div class="container mx-auto px-4 lg:px-8 max-w-5xl">
+      
+      <div class="text-center max-w-3xl mx-auto mb-14">
+        <div class="text-xs font-mono-tech text-cyan-400 tracking-wider mb-2">HEAD-TO-HEAD COMPARISON</div>
+        <h2 class="text-2xl sm:text-4xl font-extrabold text-white mb-4">Cara Lama Drafting Manual vs. Ekosistem FTTH Planner</h2>
+        <p class="text-sm sm:text-base text-slate-400">
+          Lihat transformasi alur kerja Anda setelah beralih dari pekerjaan manual repetitif ke sistem otomasi terintegrasi.
+        </p>
+      </div>
+
+      <div class="overflow-x-auto">
+        <table class="w-full text-left border-collapse font-mono-tech text-xs sm:text-sm">
+          <thead>
+            <tr class="border-b border-slate-800 bg-cad-panel">
+              <th class="py-4 px-4 text-slate-300 font-semibold w-1/3">Alur Kerja Proyek</th>
+              <th class="py-4 px-4 text-red-400 font-semibold w-1/3">
+                <i class="fa-solid fa-xmark mr-1.5"></i> Cara Lama (Manual Drafting)
+              </th>
+              <th class="py-4 px-4 text-cyan-400 font-bold w-1/3 bg-cyan-950/20 border-x border-cyan-500/30">
+                <i class="fa-solid fa-check mr-1.5"></i> Ekosistem FTTH Planner
+              </th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-800/80">
+            <tr class="hover:bg-slate-900/50">
+              <td class="py-4 px-4 font-bold text-white">1. Persiapan Peta & Jalan</td>
+              <td class="py-4 px-4 text-slate-400">Tracing garis jalan satu per satu berjam-jam dari Google Earth / JPG raster.</td>
+              <td class="py-4 px-4 text-cyan-300 font-semibold bg-cyan-950/10 border-x border-cyan-500/20">Download boundary OSM & auto-generate centerline, trotoar, dan ROW dalam 30 detik.</td>
+            </tr>
+            <tr class="hover:bg-slate-900/50">
+              <td class="py-4 px-4 font-bold text-white">2. Plot Homepass & Rumah</td>
+              <td class="py-4 px-4 text-slate-400">Menghitung titik rumah manual, rawan terlewat, dan penomoran ID membingungkan.</td>
+              <td class="py-4 px-4 text-cyan-300 font-semibold bg-cyan-950/10 border-x border-cyan-500/20">Auto parcel poligon, klasifikasi tipe bangunan, dan grouping batas ODP otomatis.</td>
+            </tr>
+            <tr class="hover:bg-slate-900/50">
+              <td class="py-4 px-4 font-bold text-white">3. Penempatan Tiang & FAT</td>
+              <td class="py-4 px-4 text-slate-400">Pasang blok tiang manual, sering lupa jarak span maksimum dan salah atribut.</td>
+              <td class="py-4 px-4 text-cyan-300 font-semibold bg-cyan-950/10 border-x border-cyan-500/20">Auto-generate tiang dengan snap offset cerdas, insert FAT/FDT, dan slack loop seragam.</td>
+            </tr>
+            <tr class="hover:bg-slate-900/50">
+              <td class="py-4 px-4 font-bold text-white">4. Routing Kabel & Loss Budget</td>
+              <td class="py-4 px-4 text-slate-400">Tarik polyline manual, hitung redaman dB pakai kalkulator Excel terpisah (rawan gagal audit).</td>
+              <td class="py-4 px-4 text-cyan-300 font-semibold bg-cyan-950/10 border-x border-cyan-500/20">Auto cable generator dengan kalkulasi loss budget optik matematis 100% presisi.</td>
+            </tr>
+            <tr class="hover:bg-slate-900/50">
+              <td class="py-4 px-4 font-bold text-white">5. Rekap BOQ & Database HPDB</td>
+              <td class="py-4 px-4 text-slate-400">Ketik ulang ribuan baris Excel, selisih meter kabel berujung sanksi pemotongan fee proyek.</td>
+              <td class="py-4 px-4 text-cyan-300 font-semibold bg-cyan-950/10 border-x border-cyan-500/20">Sekali klik: Export tabel BOQ Excel formula rapi dan database Homepass sinkron KMZ.</td>
+            </tr>
+            <tr class="hover:bg-slate-900/50">
+              <td class="py-4 px-4 font-bold text-white">6. Kecepatan Perintah CAD</td>
+              <td class="py-4 px-4 text-slate-400">Mengetik ratusan command line di keyboard, jari lelah dan proses lambat.</td>
+              <td class="py-4 px-4 text-amber-300 font-semibold bg-cyan-950/10 border-x border-cyan-500/20">RadialMenu melayang di kursor: Eksekusi macro dan shortcut 3x lebih cepat (GRATIS di bundle).</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PRICING & BUNDLING PACKAGES SECTION (Tung Desem Waringin Value Stacking) -->
+  <section id="harga" class="py-20 lg:py-32 bg-cad-dark relative">
+    <div class="container mx-auto px-4 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <div class="text-xs font-mono-tech text-amber-400 tracking-wider mb-2">OFFER OF UNBEATABLE VALUE</div>
+        <h2 class="text-2xl sm:text-4xl font-extrabold text-white mb-4">Pilihan Paket Investasi Terjangkau</h2>
+        <p class="text-sm sm:text-base text-slate-300">
+          Dirancang untuk memberikan nilai berkali-kali lipat dari biaya langganan. Dapatkan bundle ekosistem utama dengan bonus RadialMenu senilai Rp 100.000 secara cuma-cuma!
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto items-stretch">
+        
+        <!-- CARD 1: SINGLE KMZ CONVERTER -->
+        <div class="cad-card p-6 lg:p-8 rounded-2xl flex flex-col justify-between border-slate-800">
+          <div>
+            <div class="text-xs font-mono-tech text-emerald-400 uppercase tracking-wider mb-2">Stand-Alone Tool</div>
+            <h3 class="text-xl font-bold text-white">KMZ To HPDB & BOQ Converter</h3>
+            <p class="text-xs text-slate-400 mt-2 mb-6">Khusus untuk pengolahan data spasial KMZ Google Earth ke database Homepass & BOQ Excel.</p>
+            
+            <div class="mb-6 pb-6 border-b border-slate-800">
+              <div class="text-3xl font-extrabold text-white">Rp 100.000</div>
+              <div class="text-xs font-mono-tech text-slate-400 mt-1">One-Time / Lifetime License</div>
+              <div class="text-[11px] text-amber-400 font-mono-tech mt-1">
+                <i class="fa-solid fa-users text-[10px]"></i> Menjadi Rp 50.000 saat 300 users
+              </div>
+            </div>
+
+            <!-- Features -->
+            <ul class="space-y-3 text-xs text-slate-300 font-mono-tech mb-8">
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> Converter KMZ/KML ke Excel BOQ</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> Generator Database Homepass (HPDB)</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> Metadata Area Administratif & OLT</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> Update Software & Support Telegram</li>
+              <li class="flex items-center gap-2 text-slate-500"><i class="fa-solid fa-xmark"></i> Tidak Termasuk FTTH Planner CAD</li>
+            </ul>
+          </div>
+
+          <button onclick="sendWhatsAppOrder('KMZ To HPDB Converter v3.2 Standalone', 'Rp 100.000 Lifetime')" class="w-full py-3.5 rounded-xl font-heading font-bold text-xs bg-slate-800 hover:bg-slate-700 text-white border border-slate-700 transition-all flex items-center justify-center gap-2">
+            <i class="fa-brands fa-whatsapp text-emerald-400"></i> Order Single KMZ
+          </button>
+        </div>
+
+        <!-- CARD 2: BUNDLING UTAMA (BEST VALUE - FEATURED) -->
+        <div class="cad-card-featured p-6 lg:p-8 rounded-2xl flex flex-col justify-between relative transform lg:-translate-y-4">
+          
+          <!-- Best Value Badge -->
+          <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full bg-gradient-to-r from-amber-500 to-orange-500 text-slate-950 text-xs font-black font-heading tracking-wider shadow-lg flex items-center gap-1.5">
+            <i class="fa-solid fa-crown"></i> PILIHAN PALING POPULER & HEMAT
+          </div>
+
+          <div>
+            <div class="text-xs font-mono-tech text-cyan-400 uppercase tracking-wider mb-2 pt-2">Full End-to-End Suite</div>
+            <h3 class="text-2xl font-extrabold text-white">Ekosistem Utama (Bundling)</h3>
+            <p class="text-xs text-slate-300 mt-2 mb-6">Solusi lengkap otomasi CAD, konversi KMZ, dan bonus menu navigasi kecepatan tinggi.</p>
+            
+            <div class="mb-6 pb-6 border-b border-slate-700/80 bg-slate-950/60 p-4 rounded-xl border border-cyan-500/30">
+              <div class="flex items-baseline gap-2">
+                <span class="text-3xl lg:text-4xl font-black text-cyan-300">Rp 100.000</span>
+                <span class="text-xs font-mono-tech text-slate-400">/ bulan</span>
+              </div>
+              <div class="text-xs font-mono-tech text-emerald-400 mt-1 font-bold">
+                <i class="fa-solid fa-handshake-angle mr-1"></i> Target 600 Member: Turun Jadi Rp 50.000/bln!
+              </div>
+              <div class="mt-2.5 pt-2.5 border-t border-slate-800 text-[11px] text-amber-300 font-mono-tech flex items-center gap-1">
+                <i class="fa-solid fa-gift text-amber-400"></i> BONUS: RadialMenu v1.34.0 (Senilai Rp 100k) 100% GRATIS!
+              </div>
+            </div>
+
+            <!-- Features -->
+            <ul class="space-y-3 text-xs text-slate-200 font-mono-tech mb-8">
+              <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-cyan-400"></i> <strong>FTTH Design Planner v3.6.9</strong> (Semua Tab)</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-cyan-400"></i> <strong>KMZ To HPDB & BOQ Converter v3.2</strong> Full</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-amber-400"></i> <strong>RadialMenu Setup v1.34.0 LIFETIME (GRATIS)</strong></li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-cyan-400"></i> Otomasi Basemap, Homepass, Tiang, Cable Route</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-cyan-400"></i> Akses Video Tutorial Komprehensif</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-400"></i> <strong>Support Langsung Developer Syaiful Wachid</strong></li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-400"></i> Masuk VIP Komunitas Diskusi FTTH</li>
+            </ul>
+          </div>
+
+          <button onclick="sendWhatsAppOrder('Paket Bundling Ekosistem Utama (FTTH Planner + KMZ Converter + Bonus RadialMenu)', 'Rp 100.000/bulan')" class="w-full py-4 rounded-xl font-heading font-black text-sm bg-gradient-to-r from-blue-600 via-cyan-500 to-blue-500 hover:from-blue-500 hover:to-cyan-400 text-white shadow-xl glow-blue transition-all flex items-center justify-center gap-2">
+            <i class="fa-brands fa-whatsapp text-base"></i> Ambil Paket Bundling Lengkap
+          </button>
+        </div>
+
+        <!-- CARD 3: SINGLE RADIAL MENU STANDALONE -->
+        <div class="cad-card p-6 lg:p-8 rounded-2xl flex flex-col justify-between border-slate-800">
+          <div>
+            <div class="text-xs font-mono-tech text-amber-400 uppercase tracking-wider mb-2">AutoCAD Productivity</div>
+            <h3 class="text-xl font-bold text-white">RadialMenu v1.34.0 Standalone</h3>
+            <p class="text-xs text-slate-400 mt-2 mb-6">Khusus untuk engineer yang ingin melipatgandakan kecepatan drafting di AutoCAD dengan shortcut radial.</p>
+            
+            <div class="mb-6 pb-6 border-b border-slate-800">
+              <div class="text-3xl font-extrabold text-white">Rp 100.000</div>
+              <div class="text-xs font-mono-tech text-slate-400 mt-1">One-Time / Lifetime License</div>
+              <div class="text-[11px] text-slate-400 font-mono-tech mt-1">
+                (Atau GRATIS jika ambil Paket Bundling)
+              </div>
+            </div>
+
+            <!-- Features -->
+            <ul class="space-y-3 text-xs text-slate-300 font-mono-tech mb-8">
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-400"></i> Radial Overlay Menu Navigasi Melingkar</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-400"></i> Macro Step Runner & Automation Steps</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-400"></i> Physics Flywheel & Blur Customizer</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-400"></i> Preset Library Icon & App Selector</li>
+              <li class="flex items-center gap-2 text-slate-500"><i class="fa-solid fa-xmark"></i> Tidak Termasuk FTTH Design Planner</li>
+            </ul>
+          </div>
+
+          <button onclick="sendWhatsAppOrder('RadialMenu Setup v1.34.0 Standalone', 'Rp 100.000 Lifetime')" class="w-full py-3.5 rounded-xl font-heading font-bold text-xs bg-slate-800 hover:bg-slate-700 text-white border border-slate-700 transition-all flex items-center justify-center gap-2">
+            <i class="fa-brands fa-whatsapp text-amber-400"></i> Order Single RadialMenu
+          </button>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 100% FREE TOOLS / LEAD MAGNETS SECTION -->
+  <section id="tools-gratis" class="py-16 bg-gradient-to-b from-slate-950 to-cad-dark border-t border-slate-800 relative">
+    <div class="container mx-auto px-4 lg:px-8 max-w-5xl">
+      
+      <div class="p-8 lg:p-10 rounded-2xl bg-gradient-to-r from-emerald-950/40 via-cad-panel to-cyan-950/40 border border-emerald-500/40 shadow-xl">
+        <div class="flex flex-col lg:flex-row items-center justify-between gap-8">
+          
+          <div class="space-y-4 max-w-xl">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-300 text-xs font-mono-tech border border-emerald-500/40">
+              <i class="fa-solid fa-gift"></i> ENTRY POINT GRATIS (Rp 0)
+            </div>
+            <h2 class="text-2xl lg:text-3xl font-extrabold text-white">
+              Unduh Tools Lapangan Gratis untuk Rekan Engineer
+            </h2>
+            <p class="text-sm text-slate-300 leading-relaxed">
+              Kami membagikan sebagian dari ekosistem ini secara 100% GRATIS tanpa biaya langganan untuk membantu efisiensi pekerjaan survei dan pelaporan harian Anda di lapangan.
+            </p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2 font-mono-tech text-xs">
+              <div class="p-3 rounded-lg bg-slate-900/90 border border-slate-800">
+                <div class="font-bold text-cyan-300 flex items-center gap-1.5 mb-1">
+                  <i class="fa-solid fa-location-crosshairs"></i> TSSR Geo TAG v3.0
+                </div>
+                <p class="text-[11px] text-slate-400 mb-3">Cap tanggal, jam, dan koordinat GPS foto survei site otomatis.</p>
+                <a href="https://drive.google.com/file/d/1vWB3Zddbc4M5mK5e9V32nzn_nC3WLM_S/view?usp=sharing" target="_blank" class="text-cyan-400 hover:text-white underline text-[11px] font-semibold">
+                  <i class="fa-solid fa-download mr-1"></i> Download TSSR (.zip)
+                </a>
+              </div>
+
+              <div class="p-3 rounded-lg bg-slate-900/90 border border-slate-800">
+                <div class="font-bold text-green-300 flex items-center gap-1.5 mb-1">
+                  <i class="fa-brands fa-android"></i> FTTH-Pro Report APK
+                </div>
+                <p class="text-[11px] text-slate-400 mb-3">Laporan inspeksi progres sipil, FAT, dan redaman di smartphone Android.</p>
+                <a href="https://drive.google.com/file/d/1U8c6DZGI4J2expnOzDQLPk1q9G_2D3pF/view" target="_blank" class="text-green-400 hover:text-white underline text-[11px] font-semibold">
+                  <i class="fa-solid fa-download mr-1"></i> Download APK (.apk)
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="flex flex-col items-center justify-center text-center p-6 rounded-xl bg-slate-950/80 border border-slate-800 w-full lg:w-72 shrink-0">
+            <div class="w-14 h-14 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-2xl mb-3">
+              <i class="fa-solid fa-users-line"></i>
+            </div>
+            <h3 class="text-base font-bold text-white mb-1">Bergabung ke Komunitas</h3>
+            <p class="text-xs text-slate-400 mb-4">Dapatkan update software, tutorial baru, dan diskusi kendala lapangan.</p>
+            <a href="https://chat.whatsapp.com/DFjsdcWkD6b8WkG9XRYCsr" target="_blank" class="w-full py-2.5 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs flex items-center justify-center gap-2 shadow-md">
+              <i class="fa-brands fa-whatsapp"></i> Masuk WhatsApp Group
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- VIDEO TUTORIALS & GETTING STARTED SECTION -->
+  <section id="tutorial" class="py-20 bg-cad-panel/60 border-t border-slate-800 relative">
+    <div class="container mx-auto px-4 lg:px-8 max-w-5xl">
+      
+      <div class="text-center max-w-3xl mx-auto mb-14">
+        <div class="text-xs font-mono-tech text-red-400 tracking-wider mb-2">OFFICIAL VIDEO GUIDES</div>
+        <h2 class="text-2xl sm:text-4xl font-extrabold text-white mb-4">Pusat Tutorial & Cara Mulai Menggunakan</h2>
+        <p class="text-sm sm:text-base text-slate-300">
+          Anda tidak ditinggalkan sendirian. Seluruh modul dilengkapi video panduan langkah-demi-langkah yang dapat Anda pelajari secara langsung.
+        </p>
+      </div>
+
+      <!-- 3 Steps Onboarding -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12 font-mono-tech">
+        <div class="cad-card p-5 rounded-xl border-slate-800">
+          <div class="w-8 h-8 rounded-lg bg-blue-600/30 text-cyan-400 flex items-center justify-center font-bold text-sm mb-3">1</div>
+          <h3 class="text-sm font-bold text-white mb-1">Download & Install</h3>
+          <p class="text-xs text-slate-400">Unduh installer dari Google Drive resmi dan jalankan setup di komputer CAD Anda.</p>
+        </div>
+        <div class="cad-card p-5 rounded-xl border-slate-800">
+          <div class="w-8 h-8 rounded-lg bg-cyan-600/30 text-cyan-300 flex items-center justify-center font-bold text-sm mb-3">2</div>
+          <h3 class="text-sm font-bold text-white mb-1">Aktivasi Lisensi</h3>
+          <p class="text-xs text-slate-400">Hubungi WhatsApp CS (082230696953) untuk verifikasi kode aktivasi komputer Anda.</p>
+        </div>
+        <div class="cad-card p-5 rounded-xl border-slate-800">
+          <div class="w-8 h-8 rounded-lg bg-emerald-600/30 text-emerald-300 flex items-center justify-center font-bold text-sm mb-3">3</div>
+          <h3 class="text-sm font-bold text-white mb-1">Tonton & Eksekusi</h3>
+          <p class="text-xs text-slate-400">Ikuti panduan video di playlist YouTube dan langsung kerjakan proyek FTTH 10x lebih cepat.</p>
+        </div>
+      </div>
+
+      <!-- Video Playlist Card -->
+      <div class="cad-card p-6 lg:p-8 rounded-2xl border-red-500/30 flex flex-col md:flex-row items-center justify-between gap-6">
+        <div class="flex items-center gap-4">
+          <div class="w-16 h-16 rounded-2xl bg-red-600/20 border border-red-500/40 text-red-500 flex items-center justify-center text-3xl shrink-0">
+            <i class="fa-brands fa-youtube"></i>
+          </div>
+          <div>
+            <h3 class="text-lg font-bold text-white">Playlist Tutorial Lengkap FTTH Design Planner</h3>
+            <p class="text-xs text-slate-400 mt-1">Pelajari modul basemap, homepass generator, auto routing, hingga export BOQ dari awal sampai mahir.</p>
+          </div>
+        </div>
+        <a href="https://www.youtube.com/playlist?list=PLLr975-jxOLU" target="_blank" class="px-6 py-3 rounded-xl bg-red-600 hover:bg-red-500 text-white font-bold text-xs flex items-center gap-2 shadow-lg shrink-0 transition-all">
+          <i class="fa-solid fa-play"></i> Tonton Seluruh Video
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ABOUT DEVELOPER & MISSION SECTION -->
+  <section class="py-16 bg-cad-dark border-t border-slate-800 relative">
+    <div class="container mx-auto px-4 lg:px-8 max-w-4xl">
+      <div class="cad-card p-6 lg:p-8 rounded-2xl border-cyan-500/30 glow-blue">
+        <div class="flex flex-col sm:flex-row items-center gap-6 sm:gap-8">
+          
+          <!-- HD Developer Portrait with Glowing Gradient Ring -->
+          <div class="relative group shrink-0">
+            <div class="w-28 h-28 sm:w-32 sm:h-32 rounded-full bg-gradient-to-br from-blue-600 via-cyan-400 to-amber-400 p-1 shadow-2xl glow-cyan group-hover:scale-105 transition-transform duration-300">
+              <img src="assets/developer_profile_hd.png" 
+                   alt="Foto Syaiful Wachid — Lead Developer FTTH Design Planner" 
+                   class="w-full h-full object-cover rounded-full bg-slate-950 shadow-inner">
+            </div>
+            <div class="absolute -bottom-1 -right-1 w-7 h-7 rounded-full bg-slate-950 border-2 border-cyan-400 flex items-center justify-center text-cyan-400 text-xs shadow-md" title="Verified Creator">
+              <i class="fa-solid fa-check"></i>
+            </div>
+          </div>
+
+          <div class="space-y-2 text-center sm:text-left flex-1">
+            <div class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-cyan-950/80 border border-cyan-500/40 text-[11px] font-mono-tech text-cyan-300">
+              <i class="fa-solid fa-code"></i> LEAD DEVELOPER & FOUNDER
+            </div>
+            <h2 class="text-xl sm:text-2xl font-extrabold text-white">Syaiful Wachid</h2>
+            <p class="text-xs text-slate-400 font-mono-tech flex flex-wrap items-center justify-center sm:justify-start gap-2">
+              <span>SWD SOFT DEVELOPER</span>
+              <span>•</span>
+              <span>Lumajang, Jawa Timur</span>
+              <span>•</span>
+              <a href="https://t.me/Syaiful_Wachid" target="_blank" class="text-cyan-400 hover:underline"><i class="fa-brands fa-telegram mr-0.5"></i> @Syaiful_Wachid</a>
+            </p>
+            <p class="text-xs text-slate-300 leading-relaxed pt-1 font-sans">
+              "Visi saya sederhana: menghentikan waktu berharga rekan-rekan engineer terbuang percuma untuk rutinitas drafting manual yang melelahkan. Dengan ekosistem otomasi terpadu ini, kita bisa menghasilkan gambar presisi, bebas dari revisi redaman, dan menghemat puluhan jam kerja setiap bulan."
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ SECTION -->
+  <section class="py-16 bg-slate-950 border-t border-slate-800">
+    <div class="container mx-auto px-4 lg:px-8 max-w-4xl">
+      <div class="text-center mb-12">
+        <div class="text-xs font-mono-tech text-cyan-400 mb-1">FREQUENTLY ASKED QUESTIONS</div>
+        <h2 class="text-2xl sm:text-3xl font-bold text-white">Pertanyaan yang Sering Diajukan</h2>
+      </div>
+
+      <div class="space-y-4 font-mono-tech text-xs sm:text-sm">
+        
+        <!-- FAQ 1: AutoCAD Compatibility -->
+        <details class="cad-card p-5 rounded-xl border-slate-800 group" open>
+          <summary class="font-bold text-slate-100 cursor-pointer list-none flex items-center justify-between hover:text-cyan-300 transition-colors">
+            <span>Versi AutoCAD apa saja yang didukung oleh FTTH Design Planner?</span>
+            <i class="fa-solid fa-chevron-down text-slate-400 group-open:rotate-180 transition-transform"></i>
+          </summary>
+          <p class="text-slate-300 mt-3 leading-relaxed font-sans text-xs sm:text-sm">
+            <strong class="text-slate-100">FTTH Design Planner</strong> kompatibel penuh dengan <strong class="text-cyan-300">AutoCAD Standar versi 2018 hingga versi terbaru (2024 / 2025 / 2026 / 2027)</strong>, serta mendukung penuh <strong class="text-emerald-300">AutoCAD Map 3D versi 2024 sampai versi 2027</strong> pada sistem operasi Windows 10 & Windows 11 (64-bit).
+          </p>
+        </details>
+
+        <!-- FAQ 2: Activation Procedure -->
+        <details class="cad-card p-5 rounded-xl border-slate-800 group">
+          <summary class="font-bold text-slate-100 cursor-pointer list-none flex items-center justify-between hover:text-cyan-300 transition-colors">
+            <span>Bagaimana prosedur aktivasi lisensi setelah saya melakukan pembayaran?</span>
+            <i class="fa-solid fa-chevron-down text-slate-400 group-open:rotate-180 transition-transform"></i>
+          </summary>
+          <div class="text-slate-300 mt-3 leading-relaxed font-sans text-xs sm:text-sm space-y-2.5">
+            <p>
+              <strong class="text-cyan-300 font-semibold">• FTTH Design Planner v.3.6.9:</strong> Lisensi akan <strong class="text-slate-100">aktif secara otomatis</strong> begitu pembayaran melalui QRIS disetujui (di-<em>approve</em>) oleh Admin. Selama menunggu proses approval, Anda dapat membiarkan jendela/form aktivasi tetap terbuka agar sinkronisasi berlangsung lebih cepat, atau jendela aktivasi dapat ditutup terlebih dahulu sampai nanti muncul notifikasi bahwa lisensi telah berhasil aktif.
+            </p>
+            <p>
+              <strong class="text-emerald-300 font-semibold">• KMZ To HPDB & BOQ Converter v3.2:</strong> Software akan aktif setelah pengguna melakukan aktivasi sendiri menggunakan <strong class="text-slate-100">kunci Serial Number</strong> yang diberikan langsung oleh Admin setelah Anda melakukan pembayaran melalui QRIS.
+            </p>
+          </div>
+        </details>
+
+        <!-- FAQ 3: Community Pricing Mechanism -->
+        <details class="cad-card p-5 rounded-xl border-slate-800 group">
+          <summary class="font-bold text-slate-100 cursor-pointer list-none flex items-center justify-between hover:text-cyan-300 transition-colors">
+            <span>Bagaimana mekanisme penurunan harga Rp 50.000/bulan berjalan?</span>
+            <i class="fa-solid fa-chevron-down text-slate-400 group-open:rotate-180 transition-transform"></i>
+          </summary>
+          <div class="text-slate-300 mt-3 leading-relaxed font-sans text-xs sm:text-sm space-y-2.5">
+            <p>
+              Ini adalah komitmen ekonomi gotong royong kami. Begitu komunitas pengguna aktif FTTH Design Planner menembus angka <strong class="text-cyan-300">600 member</strong>, invoice langganan bulanan seluruh member lama maupun baru otomatis dipotong <strong class="text-emerald-300 font-semibold">50% menjadi Rp 50.000/bulan</strong>.
+            </p>
+          </div>
+        </details>
+
+        <!-- FAQ 4: Technical Support & Direct Contacts -->
+        <details class="cad-card p-5 rounded-xl border-slate-800 group">
+          <summary class="font-bold text-slate-100 cursor-pointer list-none flex items-center justify-between hover:text-cyan-300 transition-colors">
+            <span>Apakah saya mendapatkan support teknis jika mengalami kendala?</span>
+            <i class="fa-solid fa-chevron-down text-slate-400 group-open:rotate-180 transition-transform"></i>
+          </summary>
+          <div class="text-slate-300 mt-3 leading-relaxed font-sans text-xs sm:text-sm space-y-3">
+            <p>
+              Tentu! Seluruh pengguna mendapatkan akses ke Grup Komunitas WhatsApp serta dukungan teknis langsung dari tim pengembang.
+            </p>
+            <div class="p-3.5 rounded-xl bg-slate-950/80 border border-cyan-500/30 font-mono-tech text-xs space-y-2 text-slate-300">
+              <div class="text-cyan-300 font-bold">
+                Untuk pertanyaan lebih lanjut atau aktivasi software, Anda bisa menghubungi saya secara langsung melalui:
+              </div>
+              <ul class="space-y-1.5 pl-1">
+                <li class="flex items-center gap-2">
+                  <i class="fa-brands fa-whatsapp text-emerald-400"></i>
+                  <span>WhatsApp : <a href="https://wa.me/6282230696953" target="_blank" class="text-slate-100 hover:text-cyan-300 underline font-semibold">082230696953</a></span>
+                </li>
+                <li class="flex items-center gap-2 flex-wrap">
+                  <i class="fa-brands fa-telegram text-blue-400"></i>
+                  <span>Telegram : <a href="https://t.me/Syaiful_Wachid" target="_blank" class="text-slate-100 hover:text-cyan-300 underline font-semibold">@Syaiful_Wachid</a> (+62 859 106976662) / <a href="https://t.me/Wildan_Saluko" target="_blank" class="text-slate-100 hover:text-cyan-300 underline font-semibold">@Wildan_Saluko</a> (+62 822 30696953)</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </details>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-cad-dark border-t border-slate-800/80 pt-16 pb-12 text-slate-400 font-mono-tech text-xs">
+    <div class="container mx-auto px-4 lg:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+        
+        <!-- Col 1: Brand Info -->
+        <div class="space-y-3 md:col-span-2">
+          <div class="flex items-center gap-2.5">
+            <div class="w-8 h-8 rounded-lg bg-cad-panel border border-cyan-500/30 flex items-center justify-center p-1 shadow">
+              <img src="favicon.ico" alt="FTTH Planner Icon" class="w-full h-full object-contain">
+            </div>
+            <span class="font-heading font-black text-white text-base tracking-wide">FTTH DESIGN PLANNER</span>
+          </div>
+          <p class="text-slate-400 font-sans text-xs leading-relaxed max-w-md">
+            Ekosistem software otomasi perancangan jaringan FTTx, pengolahan data spasial KMZ Google Earth, dan akselerasi drafting AutoCAD terdepan di Indonesia.
+          </p>
+          <div class="pt-2 text-slate-500 text-[11px]">
+            &copy; 2026 SWD SOFT DEVELOPER • All Rights Reserved.
+          </div>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div class="space-y-2">
+          <div class="text-white font-bold mb-2">PRODUK & TOOLS</div>
+          <div><a href="#ekosistem" class="hover:text-cyan-400 transition-colors">FTTH Design Planner v3.6.9</a></div>
+          <div><a href="#ekosistem" class="hover:text-cyan-400 transition-colors">KMZ To HPDB Converter v3.2</a></div>
+          <div><a href="#ekosistem" class="hover:text-cyan-400 transition-colors">RadialMenu Setup v1.34.0</a></div>
+          <div><a href="#tools-gratis" class="hover:text-cyan-400 transition-colors">TSSR Geo TAG Capture (Gratis)</a></div>
+          <div><a href="#tools-gratis" class="hover:text-cyan-400 transition-colors">FTTH-Pro Report APK (Gratis)</a></div>
+        </div>
+
+        <!-- Col 3: Support & Contacts -->
+        <div class="space-y-2.5">
+          <div class="text-white font-bold mb-2">KONTAK RESMI & AKTIVASI</div>
+          <div>
+            <a href="https://wa.me/6282230696953" target="_blank" class="hover:text-emerald-400 transition-colors flex items-center gap-1.5">
+              <i class="fa-brands fa-whatsapp text-emerald-400"></i> WhatsApp : 082230696953
+            </a>
+          </div>
+          <div>
+            <a href="https://t.me/Syaiful_Wachid" target="_blank" class="hover:text-blue-400 transition-colors flex items-center gap-1.5">
+              <i class="fa-brands fa-telegram text-blue-400"></i> Telegram : @Syaiful_Wachid (+62 859 106976662)
+            </a>
+          </div>
+          <div>
+            <a href="https://t.me/Wildan_Saluko" target="_blank" class="hover:text-blue-400 transition-colors flex items-center gap-1.5">
+              <i class="fa-brands fa-telegram text-blue-400"></i> Telegram : @Wildan_Saluko (+62 822 30696953)
+            </a>
+          </div>
+          <div>
+            <a href="https://chat.whatsapp.com/DFjsdcWkD6b8WkG9XRYCsr" target="_blank" class="hover:text-emerald-400 transition-colors flex items-center gap-1.5">
+              <i class="fa-solid fa-users text-emerald-400"></i> Komunitas WhatsApp FTTH
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="pt-8 border-t border-slate-800/80 text-center text-slate-400 text-[11px] font-sans">
+        "Mari bekerja dengan lebih cerdas, bukan hanya lebih keras. Biarkan sistem yang menangani rutinitas."
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- FLOATING QUICK ACTION BUTTONS (WhatsApp & Telegram) -->
+  <div class="fixed bottom-6 right-6 z-50 flex flex-col gap-3">
+    
+    <!-- Telegram Floating -->
+    <a href="https://t.me/Syaiful_Wachid" target="_blank" class="w-12 h-12 rounded-full bg-sky-500 hover:bg-sky-400 text-white flex items-center justify-center shadow-lg hover:scale-110 transition-transform group relative" title="Chat Telegram Developer">
+      <i class="fa-brands fa-telegram text-2xl"></i>
+      <span class="absolute right-14 px-2.5 py-1 rounded bg-slate-900 text-white text-[10px] font-mono-tech whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity border border-slate-700">
+        Telegram Support
+      </span>
+    </a>
+
+    <!-- WhatsApp Floating -->
+    <a href="https://wa.me/6282230696953?text=Halo%20Pak%20Syaiful%20Wachid,%20saya%20tertarik%20dengan%20FTTH%20Design%20Planner." target="_blank" class="w-14 h-14 rounded-full bg-emerald-500 hover:bg-emerald-400 text-white flex items-center justify-center shadow-xl glow-emerald hover:scale-110 transition-transform group relative" title="Hubungi WhatsApp CS">
+      <i class="fa-brands fa-whatsapp text-3xl"></i>
+      <span class="absolute right-16 px-3 py-1.5 rounded-lg bg-slate-900 text-emerald-400 text-xs font-bold font-mono-tech whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity border border-emerald-500/40 shadow-lg">
+        Chat CS WhatsApp: 082230696953
+      </span>
+    </a>
+
+  </div>
+
+  <!-- LIGHTBOX & MULTI-SCREENSHOT ALBUM VIEWER -->
+  <div id="lightbox-modal" class="modal-backdrop fixed inset-0 z-50 hidden items-center justify-center p-2 sm:p-4">
+    <div class="relative max-w-6xl w-full max-h-[96vh] flex flex-col bg-cad-panel rounded-2xl border border-cyan-500/40 shadow-2xl overflow-hidden">
+      
+      <!-- Modal Header -->
+      <div class="h-14 px-4 sm:px-6 bg-slate-950 border-b border-slate-800 flex items-center justify-between shrink-0">
+        <div class="flex items-center gap-2.5 sm:gap-3 flex-wrap">
+          <span class="w-2.5 h-2.5 rounded-full bg-cyan-400 animate-pulse"></span>
+          <span id="lightbox-album-badge" class="px-2.5 py-0.5 rounded-md bg-blue-600/30 text-cyan-300 border border-cyan-500/40 text-[11px] font-mono-tech">
+            Galeri Modul
+          </span>
+          <h3 id="lightbox-title" class="text-xs sm:text-sm font-bold text-white font-mono-tech line-clamp-1 max-w-md">
+            CAD Showcase Preview
+          </h3>
+        </div>
+        
+        <div class="flex items-center gap-3">
+          <span id="lightbox-counter" class="text-xs font-mono-tech text-cyan-300 bg-slate-900 px-2.5 py-1 rounded-md border border-slate-700">
+            1 / 1
+          </span>
+          <button id="lightbox-close" class="text-slate-400 hover:text-white text-lg p-1.5 rounded-lg hover:bg-slate-800 transition-colors" title="Tutup Modal [Esc]">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Modal Body (Image) -->
+      <div class="relative flex-1 overflow-auto p-4 sm:p-6 flex items-center justify-center bg-slate-950/90 min-h-[300px] max-h-[62vh]">
+        <img id="lightbox-img" src="" alt="Zoomed Screenshot" class="max-w-full max-h-[58vh] object-contain rounded-lg shadow-2xl transition-opacity duration-300">
+        
+        <!-- Prev / Next Navigation Controls -->
+        <button id="lightbox-prev" class="absolute left-3 sm:left-6 top-1/2 -translate-y-1/2 w-10 sm:w-12 h-10 sm:h-12 rounded-full bg-slate-900/90 hover:bg-cyan-500 hover:text-slate-950 text-white border border-slate-700 flex items-center justify-center shadow-xl transition-all z-10" title="Foto Sebelumnya [Panah Kiri]">
+          <i class="fa-solid fa-chevron-left text-sm sm:text-base"></i>
+        </button>
+        <button id="lightbox-next" class="absolute right-3 sm:right-6 top-1/2 -translate-y-1/2 w-10 sm:w-12 h-10 sm:h-12 rounded-full bg-slate-900/90 hover:bg-cyan-500 hover:text-slate-950 text-white border border-slate-700 flex items-center justify-center shadow-xl transition-all z-10" title="Foto Berikutnya [Panah Kanan]">
+          <i class="fa-solid fa-chevron-right text-sm sm:text-base"></i>
+        </button>
+      </div>
+
+      <!-- Thumbnail Carousel Strip -->
+      <div id="lightbox-thumbnails" class="flex items-center gap-2 overflow-x-auto px-4 py-2 bg-slate-950 border-t border-slate-800/80 shrink-0">
+        <!-- Injected via JavaScript -->
+      </div>
+
+      <!-- Modal Footer (Caption) -->
+      <div class="p-3 sm:p-4 bg-slate-950 border-t border-slate-800 flex items-center justify-between text-xs font-mono-tech text-slate-400 shrink-0">
+        <p id="lightbox-desc" class="line-clamp-2 max-w-3xl text-slate-300 text-[11px] sm:text-xs"></p>
+        <span class="text-cyan-400 text-[10px] hidden sm:inline shrink-0 ml-4">Gunakan [←] [→] atau klik thumbnail untuk navigasi</span>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Main JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+</html>
