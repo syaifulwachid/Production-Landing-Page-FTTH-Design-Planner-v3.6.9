@@ -6,7 +6,7 @@
 
 // Configuration
 const CONFIG = {
-  BASE_USERS: 24,
+  BASE_USERS: 26, // Updated verified active users
   TARGET_USERS: 600,
   KMZ_TARGET_USERS: 300,
   WEB_APP_URL: "https://script.google.com/macros/s/AKfycbyxXaC0uMvDCv39LICS_AhljMpIEw0EKp3Ljl42nhh376ZRnYDxcVCgI_dm-1NSsQxlZw/exec"
@@ -355,6 +355,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initCommunityMilestone();
   initSocialProofNotifications();
   syncLivePricing();
+  attachContactTracking();
 });
 
 /* ==========================================================================
@@ -624,11 +625,11 @@ function openProductGallery(productId, startIndex = 0) {
 window.openProductGallery = openProductGallery;
 
 /* ==========================================================================
-   5. COMMUNITY MILESTONE TRACKER (TDW Scale Pricing - Baseline: 24 Users)
+   5. COMMUNITY MILESTONE TRACKER (TDW Scale Pricing - Dynamic Sync)
    ========================================================================== */
-function initCommunityMilestone() {
+function updateCommunityDisplay(totalUsers) {
   let extraActivity = parseInt(localStorage.getItem('ftth_extra_activity') || '0', 10);
-  const currentMembers = CONFIG.BASE_USERS + extraActivity;
+  const currentMembers = totalUsers + extraActivity;
   const targetMembers = CONFIG.TARGET_USERS;
   
   const progressPercentRaw = (currentMembers / targetMembers) * 100;
@@ -645,6 +646,43 @@ function initCommunityMilestone() {
     }, 400);
   }
   if (percentEl) percentEl.textContent = progressPercentDisplay + '%';
+}
+
+function initCommunityMilestone() {
+  updateCommunityDisplay(CONFIG.BASE_USERS);
+  fetchLiveCommunityCount();
+}
+
+function fetchLiveCommunityCount() {
+  if (!CONFIG.WEB_APP_URL) return;
+
+  fetch(CONFIG.WEB_APP_URL + '?action=getUserCount')
+    .then(res => res.json())
+    .then(data => {
+      if (data && (data.totalUsers || data.userCount || data.count)) {
+        const count = parseInt(data.totalUsers || data.userCount || data.count, 10);
+        if (!isNaN(count) && count > 0) {
+          CONFIG.BASE_USERS = count;
+          updateCommunityDisplay(count);
+          console.log('✓ Live User Count Synced from Database:', count);
+        }
+      }
+    })
+    .catch(err => {
+      // Graceful fallback to baseline
+    });
+}
+
+function attachContactTracking() {
+  const contactLinks = document.querySelectorAll('a[href*="wa.me"], a[href*="t.me"], a[href*="chat.whatsapp.com"]');
+  contactLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      let extraActivity = parseInt(localStorage.getItem('ftth_extra_activity') || '0', 10);
+      extraActivity += 1;
+      localStorage.setItem('ftth_extra_activity', extraActivity.toString());
+      updateCommunityDisplay(CONFIG.BASE_USERS);
+    });
+  });
 }
 
 /* ==========================================================================
