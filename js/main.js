@@ -770,3 +770,28 @@ window.addEventListener('load', () => {
   }
 });
 
+/* ==========================================================================
+   10. FLOATING PROMOTIONAL BANNER TOGGLE
+   ========================================================================== */
+function togglePromoBanner(show) {
+  const banner = document.getElementById('promo-floating-banner');
+  const miniBtn = document.getElementById('promo-minimized-btn');
+  if (!banner || !miniBtn) return;
+
+  if (show) {
+    banner.classList.remove('hidden', 'translate-y-8', 'opacity-0');
+    banner.classList.add('translate-y-0', 'opacity-100');
+    miniBtn.classList.add('hidden');
+    miniBtn.classList.remove('flex');
+  } else {
+    banner.classList.add('translate-y-8', 'opacity-0');
+    setTimeout(() => {
+      banner.classList.add('hidden');
+      miniBtn.classList.remove('hidden');
+      miniBtn.classList.add('flex');
+    }, 350);
+  }
+}
+window.togglePromoBanner = togglePromoBanner;
+
+
