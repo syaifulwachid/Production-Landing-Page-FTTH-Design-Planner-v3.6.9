@@ -223,7 +223,7 @@
             <div class="text-xs text-slate-400 mt-0.5">Target Komunitas 600 User</div>
           </div>
           <div class="p-3.5 rounded-xl bg-cad-card/60 border border-slate-800 text-left">
-            <div class="text-2xl font-bold text-blue-400">2 Tool</div>
+            <div class="text-2xl font-bold text-blue-400">3 Tools</div>
             <div class="text-xs text-slate-400 mt-0.5">Gratis Rp 0 Tanpa Syarat</div>
           </div>
         </div>
@@ -658,10 +658,10 @@
           </p>
         </div>
 
-        <!-- Filter Buttons (All 5 Categories) -->
+        <!-- Filter Buttons (All 6 Categories) -->
         <div class="flex items-center gap-2 flex-wrap font-mono-tech text-xs">
           <button data-gallery-filter="all" class="px-3.5 py-1.5 rounded-lg bg-cyan-500/20 text-cyan-400 border border-cyan-400 transition-all">
-            Semua Modul (52)
+            Semua Modul (53)
           </button>
           <button data-gallery-filter="planner" class="px-3.5 py-1.5 rounded-lg bg-cad-card text-gray-400 border border-gray-800 hover:text-white transition-all">
             FTTH Planner (16)
@@ -678,12 +678,35 @@
           <button data-gallery-filter="mobile" class="px-3.5 py-1.5 rounded-lg bg-cad-card text-gray-400 border border-gray-800 hover:text-white transition-all">
             Android APK (11)
           </button>
+          <button data-gallery-filter="ontop" class="px-3.5 py-1.5 rounded-lg bg-cad-card text-gray-400 border border-gray-800 hover:text-white transition-all">
+            OnTop Highlighter (1)
+          </button>
         </div>
       </div>
 
       <!-- GALLERY GRID WITH COMPREHENSIVE CARDS -->
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         
+        <!-- Utility: OnTop Highlighter -->
+        <div data-gallery-category="ontop" class="cad-card p-3 rounded-xl flex flex-col justify-between group border-amber-500/30">
+          <div class="screenshot-preview rounded-lg mb-3 cursor-pointer" onclick="openProductGallery('ontop', 0)">
+            <img src="assets/screenshots/ontop-highlighter/01_OnTop_Highlighter_Main_UI.png" 
+                 alt="OnTop Highlighter Dual Multi-Monitor Interface" 
+                 class="w-full h-48 object-cover object-top rounded-lg">
+            <div class="screenshot-overlay">
+              <span class="px-3 py-1.5 rounded-md bg-amber-500 text-slate-950 font-bold text-xs"><i class="fa-solid fa-magnifying-glass mr-1"></i> Buka Preview HD</span>
+            </div>
+          </div>
+          <div>
+            <div class="flex items-center justify-between text-xs font-mono-tech mb-1">
+              <span class="text-amber-400 font-bold">ONTOP HIGHLIGHTER</span>
+              <span class="text-slate-500">Dual Screen Focus</span>
+            </div>
+            <h4 class="text-sm font-bold text-white mb-1">Multi-Monitor Dual Highlighter v1.0</h4>
+            <p class="text-xs text-slate-400 line-clamp-2">Dual highlighter on-screen independen dengan shortcut scroll, opacity, & mode tembus klik.</p>
+          </div>
+        </div>
+
         <!-- Planner 1: Workspace Overview -->
         <div data-gallery-category="planner" class="cad-card p-3 rounded-xl flex flex-col justify-between group">
           <div class="screenshot-preview rounded-lg mb-3 cursor-pointer" onclick="openProductGallery('planner', 1)">
@@ -1261,36 +1284,61 @@
       <div class="p-8 lg:p-10 rounded-2xl bg-gradient-to-r from-emerald-950/40 via-cad-panel to-cyan-950/40 border border-emerald-500/40 shadow-xl">
         <div class="flex flex-col lg:flex-row items-center justify-between gap-8">
           
-          <div class="space-y-4 max-w-xl">
+          <div class="space-y-4 max-w-2xl">
             <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-300 text-xs font-mono-tech border border-emerald-500/40">
               <i class="fa-solid fa-gift"></i> ENTRY POINT GRATIS (Rp 0)
             </div>
             <h2 class="text-2xl lg:text-3xl font-extrabold text-white">
-              Unduh Tools Lapangan Gratis untuk Rekan Engineer
+              Unduh Tools Produktivitas & Lapangan Gratis untuk Rekan Engineer
             </h2>
             <p class="text-sm text-slate-300 leading-relaxed">
-              Kami membagikan sebagian dari ekosistem ini secara 100% GRATIS tanpa biaya langganan untuk membantu efisiensi pekerjaan survei dan pelaporan harian Anda di lapangan.
+              Kami membagikan sebagian dari utilitas ekosistem ini secara 100% GRATIS tanpa biaya langganan untuk membantu efisiensi pekerjaan survei, inspeksi lapangan, serta kenyamanan fokus drafting CAD & coding Anda.
             </p>
 
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2 font-mono-tech text-xs">
-              <div class="p-3 rounded-lg bg-slate-900/90 border border-slate-800">
-                <div class="font-bold text-cyan-300 flex items-center gap-1.5 mb-1">
-                  <i class="fa-solid fa-location-crosshairs"></i> TSSR Geo TAG v3.0
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-3.5 pt-2 font-mono-tech text-xs">
+              <!-- Tool 1: TSSR Geo TAG -->
+              <div class="p-3.5 rounded-xl bg-slate-900/90 border border-slate-800 flex flex-col justify-between">
+                <div>
+                  <div class="font-bold text-cyan-300 flex items-center gap-1.5 mb-1 text-[13px]">
+                    <i class="fa-solid fa-location-crosshairs"></i> TSSR Geo TAG v3.0
+                  </div>
+                  <p class="text-[11px] text-slate-400 mb-3 font-sans">Cap tanggal, jam, dan koordinat GPS foto survei site otomatis.</p>
                 </div>
-                <p class="text-[11px] text-slate-400 mb-3">Cap tanggal, jam, dan koordinat GPS foto survei site otomatis.</p>
-                <a href="https://drive.google.com/file/d/1vWB3Zddbc4M5mK5e9V32nzn_nC3WLM_S/view?usp=sharing" target="_blank" class="text-cyan-400 hover:text-white underline text-[11px] font-semibold">
-                  <i class="fa-solid fa-download mr-1"></i> Download TSSR (.zip)
+                <a href="https://drive.google.com/file/d/1vWB3Zddbc4M5mK5e9V32nzn_nC3WLM_S/view?usp=sharing" target="_blank" class="text-cyan-400 hover:text-white underline text-[11px] font-semibold flex items-center gap-1">
+                  <i class="fa-solid fa-download"></i> Download (.zip)
                 </a>
               </div>
 
-              <div class="p-3 rounded-lg bg-slate-900/90 border border-slate-800">
-                <div class="font-bold text-green-300 flex items-center gap-1.5 mb-1">
-                  <i class="fa-brands fa-android"></i> FTTH-Pro Report APK
+              <!-- Tool 2: FTTH-Pro Report APK -->
+              <div class="p-3.5 rounded-xl bg-slate-900/90 border border-slate-800 flex flex-col justify-between">
+                <div>
+                  <div class="font-bold text-green-300 flex items-center gap-1.5 mb-1 text-[13px]">
+                    <i class="fa-brands fa-android"></i> FTTH-Pro Report APK
+                  </div>
+                  <p class="text-[11px] text-slate-400 mb-3 font-sans">Laporan inspeksi progres sipil, FAT, dan redaman di smartphone Android.</p>
                 </div>
-                <p class="text-[11px] text-slate-400 mb-3">Laporan inspeksi progres sipil, FAT, dan redaman di smartphone Android.</p>
-                <a href="https://drive.google.com/file/d/1U8c6DZGI4J2expnOzDQLPk1q9G_2D3pF/view" target="_blank" class="text-green-400 hover:text-white underline text-[11px] font-semibold">
-                  <i class="fa-solid fa-download mr-1"></i> Download APK (.apk)
+                <a href="https://drive.google.com/file/d/1U8c6DZGI4J2expnOzDQLPk1q9G_2D3pF/view" target="_blank" class="text-green-400 hover:text-white underline text-[11px] font-semibold flex items-center gap-1">
+                  <i class="fa-solid fa-download"></i> Download (.apk)
                 </a>
+              </div>
+
+              <!-- Tool 3: OnTop Highlighter v1.0.0 -->
+              <div class="p-3.5 rounded-xl bg-slate-900/90 border border-amber-500/30 flex flex-col justify-between relative group">
+                <span class="absolute -top-2 right-2 px-1.5 py-0.2 rounded bg-amber-500 text-slate-950 text-[9px] font-bold">BARU</span>
+                <div>
+                  <div class="font-bold text-amber-300 flex items-center gap-1.5 mb-1 text-[13px]">
+                    <i class="fa-solid fa-highlighter text-amber-400"></i> OnTop Highlighter v1.0
+                  </div>
+                  <p class="text-[11px] text-slate-400 mb-3 font-sans">Dual on-screen highlighter multi-monitor untuk fokus baca blueprint CAD & tabel data.</p>
+                </div>
+                <div class="space-y-1 pt-1 border-t border-slate-800">
+                  <a href="https://drive.google.com/file/d/10sZLfVeBQ3wdJmdJG1RjVxFmbCGdyx7r/view" target="_blank" class="text-amber-400 hover:text-white underline text-[11px] font-semibold flex items-center gap-1">
+                    <i class="fa-solid fa-download"></i> Download (.exe)
+                  </a>
+                  <a href="https://www.linkedin.com/posts/syaiful-wachid-5373n_softwaredevelopment-productivitytools-developerlife-activity-7500788468302794752-vN8x" target="_blank" class="text-[10px] text-slate-400 hover:text-cyan-300 flex items-center gap-1">
+                    <i class="fa-brands fa-linkedin text-blue-400"></i> Post LinkedIn & Panduan
+                  </a>
+                </div>
               </div>
             </div>
 
@@ -1327,10 +1375,15 @@
 
       <!-- 3 Steps Onboarding -->
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12 font-mono-tech">
-        <div class="cad-card p-5 rounded-xl border-slate-800">
-          <div class="w-8 h-8 rounded-lg bg-blue-600/30 text-cyan-400 flex items-center justify-center font-bold text-sm mb-3">1</div>
-          <h3 class="text-sm font-bold text-white mb-1">Download & Install</h3>
-          <p class="text-xs text-slate-400">Unduh installer dari Google Drive resmi dan jalankan setup di komputer CAD Anda.</p>
+        <div class="cad-card p-5 rounded-xl border-slate-800 flex flex-col justify-between">
+          <div>
+            <div class="w-8 h-8 rounded-lg bg-blue-600/30 text-cyan-400 flex items-center justify-center font-bold text-sm mb-3">1</div>
+            <h3 class="text-sm font-bold text-white mb-1">Download & Install</h3>
+            <p class="text-xs text-slate-400 mb-3">Unduh installer setup versi r9 resmi dan jalankan setup di komputer CAD Anda.</p>
+          </div>
+          <a href="https://drive.google.com/file/d/1adrKSWyFHjS4FKVBYabyygNZKbmTkGyT/view?usp=sharing" target="_blank" class="text-cyan-400 hover:text-white underline text-xs font-semibold inline-flex items-center gap-1.5 pt-2 border-t border-slate-800">
+            <i class="fa-solid fa-download"></i> Download Setup (.exe)
+          </a>
         </div>
         <div class="cad-card p-5 rounded-xl border-slate-800">
           <div class="w-8 h-8 rounded-lg bg-cyan-600/30 text-cyan-300 flex items-center justify-center font-bold text-sm mb-3">2</div>
@@ -1515,6 +1568,7 @@
           <div><a href="#ekosistem" class="hover:text-cyan-400 transition-colors">RadialMenu Setup v1.34.0</a></div>
           <div><a href="#tools-gratis" class="hover:text-cyan-400 transition-colors">TSSR Geo TAG Capture (Gratis)</a></div>
           <div><a href="#tools-gratis" class="hover:text-cyan-400 transition-colors">FTTH-Pro Report APK (Gratis)</a></div>
+          <div><a href="#tools-gratis" class="hover:text-amber-400 transition-colors">OnTop Highlighter v1.0 (Gratis)</a></div>
         </div>
 
         <!-- Col 3: Support & Contacts -->

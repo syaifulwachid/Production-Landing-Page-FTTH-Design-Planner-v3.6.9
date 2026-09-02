@@ -344,6 +344,18 @@ const PRODUCT_GALLERIES = {
         desc: "Kanal dukungan dan informasi versi rilis dari SWD SOFT DEVELOPER."
       }
     ]
+  },
+  ontop: {
+    name: "OnTop Highlighter v1.0.0",
+    badge: "FREE SCREEN PRODUCTIVITY UTILITY",
+    badgeColor: "text-amber-400 bg-amber-500/20 border-amber-500/40",
+    images: [
+      {
+        src: "assets/screenshots/ontop-highlighter/01_OnTop_Highlighter_Main_UI.png",
+        title: "⚡ OnTop Highlighter v1.0.0 — Multi-Monitor Dual On-Screen Highlighter",
+        desc: "Utilitas fokus membaca blueprint CAD, baris kode, dan tabel data dengan 2 highlighter independen (ESC+Enter), shortcut scroll naik/turun (ESC+Scroll), double-click fullscreen, transparansi slider, dan mode tembus klik."
+      }
+    ]
   }
 };
 
