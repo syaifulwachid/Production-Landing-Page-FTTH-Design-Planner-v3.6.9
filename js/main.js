@@ -844,4 +844,48 @@ function togglePromoBanner(show) {
 }
 window.togglePromoBanner = togglePromoBanner;
 
+/* ==========================================================================
+   11. REAL-TIME AUTO SYNC FROM releases.json (Single Source of Truth)
+   ========================================================================== */
+async function initAutoSyncProducts() {
+  try {
+    const response = await fetch('./releases.json?t=' + Date.now());
+    if (!response.ok) return;
+    const data = await response.json();
+    if (!data || !data.products) return;
+
+    window.SWD_RELEASES = data.products;
+
+    Object.keys(data.products).forEach(key => {
+      const prod = data.products[key];
+      const verText = prod.display_version || prod.latest_version;
+
+      // 1. Update text versi
+      document.querySelectorAll(`[data-product-version="${key}"]`).forEach(el => {
+        el.textContent = verText;
+      });
+
+      // 2. Update tanggal rilis jika ada
+      document.querySelectorAll(`[data-product-date="${key}"]`).forEach(el => {
+        el.textContent = prod.release_date;
+      });
+
+      // 3. Update link download
+      document.querySelectorAll(`[data-product-download="${key}"]`).forEach(btn => {
+        if (prod.download_url) {
+          btn.href = prod.download_url;
+          btn.target = "_blank";
+          btn.rel = "noopener noreferrer";
+        }
+      });
+    });
+    console.log("✅ Auto-Sync Produk & Link Download Berhasil Dimuat dari releases.json");
+  } catch (err) {
+    console.warn("Auto-sync releases.json:", err);
+  }
+}
+window.initAutoSyncProducts = initAutoSyncProducts;
+document.addEventListener('DOMContentLoaded', initAutoSyncProducts);
+
+
 

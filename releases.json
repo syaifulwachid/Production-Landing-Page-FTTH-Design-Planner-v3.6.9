@@ -1,0 +1,79 @@
+{
+  "last_updated": "2026-09-03T07:16:00Z",
+  "products": {
+    "ftth_design_planner": {
+      "name": "FTTH Design Planner",
+      "latest_version": "3.6.9.9",
+      "display_version": "v3.6.9 (r9)",
+      "release_date": "2026-09-02",
+      "download_url": "https://drive.google.com/file/d/1adrKSWyFHjS4FKVBYabyygNZKbmTkGyT/view?usp=sharing",
+      "changelog": [
+        "Optimasi tracing redaman FAT & Splitter 2x lebih cepat",
+        "Perbaikan kompatibilitas layer CAD pada AutoCAD 2025/2026",
+        "Fitur ekspor otomatis BOQ ke KMZ Converter"
+      ],
+      "mandatory_update": false
+    },
+    "ontop_highlighter": {
+      "name": "OnTop Highlighter",
+      "latest_version": "1.0.0.0",
+      "display_version": "v1.0",
+      "release_date": "2026-09-02",
+      "download_url": "https://drive.google.com/file/d/1adrKSWyFHjS4FKVBYabyygNZKbmTkGyT/view?usp=sharing",
+      "changelog": [
+        "Rilis perdana OnTop Highlighter untuk presentasi & drafting CAD",
+        "Dukungan dual-monitor dan multi-resolusi otomatis",
+        "Fitur klik-tembus (click-through) dan mode layar penuh",
+        "Shortcut ESC+Enter untuk switch dan ESC+Scroll untuk pergeseran ultra halus"
+      ],
+      "mandatory_update": false
+    },
+    "kmz_converter": {
+      "name": "KMZ To HPDB And BOQ Converter",
+      "latest_version": "3.2.0.0",
+      "display_version": "v3.2",
+      "release_date": "2026-08-30",
+      "download_url": "https://drive.google.com/file/d/12czY1k1mWCfnPrcGLwA7bkyDLboUdIyU/view",
+      "changelog": [
+        "Konversi instan data spasial KMZ Google Earth ke database Homepass",
+        "Ekspor format BOQ standar audit proyek FTTH"
+      ],
+      "mandatory_update": false
+    },
+    "radial_menu": {
+      "name": "RadialMenu Setup",
+      "latest_version": "1.34.0.0",
+      "display_version": "v1.34.0",
+      "release_date": "2026-08-20",
+      "download_url": "https://drive.google.com/file/d/1EelBNvlsPj5CcoQ5CGetpEaDXyRIbsfM/view",
+      "changelog": [
+        "Navigasi radial shortcut interaktif AutoCAD",
+        "Dukungan custom palette perintah CAD"
+      ],
+      "mandatory_update": false
+    },
+    "tssr_geo_tag": {
+      "name": "TSSR Geo TAG Capture",
+      "latest_version": "3.0.0.0",
+      "display_version": "v3.0",
+      "release_date": "2026-08-15",
+      "download_url": "https://drive.google.com/file/d/1vWB3Zddbc4M5mK5e9V32nzn_nC3WLM_S/view?usp=sharing",
+      "changelog": [
+        "Dokumentasi foto tagging koordinat survei otomatis lapangan",
+        "Integrasi laporan TSSR siap cetak"
+      ],
+      "mandatory_update": false
+    },
+    "ftth_pro_report": {
+      "name": "FTTH-Pro Report (APK)",
+      "latest_version": "1.0.0.0",
+      "display_version": "v1.0 (APK)",
+      "release_date": "2026-08-10",
+      "download_url": "https://drive.google.com/file/d/1U8c6DZGI4J2expnOzDQLPk1q9G_2D3pF/view",
+      "changelog": [
+        "Inspeksi dan validasi redaman optik langsung dari smartphone Android"
+      ],
+      "mandatory_update": false
+    }
+  }
+}
