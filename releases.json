@@ -32,13 +32,16 @@
     },
     "kmz_converter": {
       "name": "KMZ To HPDB And BOQ Converter",
-      "latest_version": "3.2.0.0",
-      "display_version": "v3.2",
-      "release_date": "2026-08-30",
-      "download_url": "https://drive.google.com/file/d/12czY1k1mWCfnPrcGLwA7bkyDLboUdIyU/view",
+      "latest_version": "3.3.0.0",
+      "display_version": "v3.3",
+      "release_date": "2026-09-04",
+      "download_url": "https://drive.google.com/file/d/1QlSnn2TWBuPHYY_uMTnffvpfn0vWSIil/view?usp=sharing",
       "changelog": [
-        "Konversi instan data spasial KMZ Google Earth ke database Homepass",
-        "Ekspor format BOQ standar audit proyek FTTH"
+        "Fitur Baru: Auto-Update Checker Background Service terintegrasi ke manifest releases.json",
+        "Fitur Baru: Tombol interaktif 'Cek Update' pada Header Bar utama dengan notifikasi status",
+        "Perbaikan: Ekstraksi kapasitas Joint Closure (JC) Subfeeder akurat dari nama objek KMZ (144C, 96C, 48C, dll.)",
+        "Perbaikan: Pemisahan pengisian baris JC independen dari kapasitas tarikan kabel subfeeder pada sheet Excel BoM AE",
+        "Peningkatan: Preservasi sistem lisensi Machine ID & enkripsi aktivasi serial key 100% aman"
       ],
       "mandatory_update": false
     },
