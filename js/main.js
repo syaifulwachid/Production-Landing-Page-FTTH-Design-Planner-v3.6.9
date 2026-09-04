@@ -367,7 +367,6 @@ document.addEventListener('DOMContentLoaded', () => {
   initCommunityMilestone();
   initSocialProofNotifications();
   syncLivePricing();
-  attachContactTracking();
 });
 
 /* ==========================================================================
@@ -640,8 +639,7 @@ window.openProductGallery = openProductGallery;
    5. COMMUNITY MILESTONE TRACKER (TDW Scale Pricing - Dynamic Sync)
    ========================================================================== */
 function updateCommunityDisplay(totalUsers) {
-  let extraActivity = parseInt(localStorage.getItem('ftth_extra_activity') || '0', 10);
-  const currentMembers = totalUsers + extraActivity;
+  const currentMembers = totalUsers || CONFIG.BASE_USERS;
   const targetMembers = CONFIG.TARGET_USERS;
   
   const progressPercentRaw = (currentMembers / targetMembers) * 100;
@@ -681,20 +679,9 @@ function fetchLiveCommunityCount() {
       }
     })
     .catch(err => {
-      // Graceful fallback to baseline
-    });
-}
-
-function attachContactTracking() {
-  const contactLinks = document.querySelectorAll('a[href*="wa.me"], a[href*="t.me"], a[href*="chat.whatsapp.com"]');
-  contactLinks.forEach(link => {
-    link.addEventListener('click', () => {
-      let extraActivity = parseInt(localStorage.getItem('ftth_extra_activity') || '0', 10);
-      extraActivity += 1;
-      localStorage.setItem('ftth_extra_activity', extraActivity.toString());
+      // Fallback to baseline
       updateCommunityDisplay(CONFIG.BASE_USERS);
     });
-  });
 }
 
 /* ==========================================================================
@@ -780,12 +767,6 @@ function syncLivePricing() {
    8. WHATSAPP DIRECT ORDER GENERATOR & ACTIVITY TRACKER
    ========================================================================== */
 function sendWhatsAppOrder(productName, price) {
-  let extraActivity = parseInt(localStorage.getItem('ftth_extra_activity') || '0', 10);
-  extraActivity += 1;
-  localStorage.setItem('ftth_extra_activity', extraActivity.toString());
-  
-  initCommunityMilestone();
-
   const phoneNumber = '6282230696953';
   const text = `Halo Pak Syaiful Wachid (SWD SOFT DEVELOPER), saya tertarik dengan penawaran *${productName}* (${price}). Mohon info prosedur aktivasi lisensi & cara pembayarannya. Terima kasih!`;
   const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(text)}`;
