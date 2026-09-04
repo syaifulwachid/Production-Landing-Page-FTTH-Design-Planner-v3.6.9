@@ -1,16 +1,18 @@
 {
-  "last_updated": "2026-09-03T07:16:00Z",
+  "last_updated": "2026-09-04T17:02:00Z",
   "products": {
     "ftth_design_planner": {
       "name": "FTTH Design Planner",
-      "latest_version": "3.6.9.9",
-      "display_version": "v3.6.9 (r9)",
-      "release_date": "2026-09-02",
-      "download_url": "https://drive.google.com/file/d/1adrKSWyFHjS4FKVBYabyygNZKbmTkGyT/view?usp=sharing",
+      "latest_version": "3.6.9.10",
+      "display_version": "v3.6.9 (r10)",
+      "release_date": "2026-09-04",
+      "download_url": "https://drive.google.com/file/d/1c340MgD3UQeMcLhRHSSmCCNDgNrcRLgm/view?usp=sharing",
       "changelog": [
-        "Optimasi tracing redaman FAT & Splitter 2x lebih cepat",
-        "Perbaikan kompatibilitas layer CAD pada AutoCAD 2025/2026",
-        "Fitur ekspor otomatis BOQ ke KMZ Converter"
+        "Fitur Baru: Custom Kemiringan (Slanted Angle) pada Draw Home Percil dengan Sample Sudut Point A-B",
+        "Fitur Baru: Background Wipeout Otomatis pada Tabel Design Summary (Tabel bersih di atas citra satelit/peta)",
+        "Fitur Baru: Auto Reverse-Geocoding Alamat Cluster dari Internet (Auto Ambil Alamat & Pick Site)",
+        "Peningkatan: Normalisasi ekstraksi nama cluster dan optimalisasi deteksi filter label FAT",
+        "Peningkatan UI: Tema modern collapsible frame yang konsisten & stabilitas panel FTTH_SHOWPANEL"
       ],
       "mandatory_update": false
     },
