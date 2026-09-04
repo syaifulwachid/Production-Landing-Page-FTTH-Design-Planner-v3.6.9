@@ -829,44 +829,61 @@ window.togglePromoBanner = togglePromoBanner;
    11. REAL-TIME AUTO SYNC FROM releases.json (Single Source of Truth)
    ========================================================================== */
 async function initAutoSyncProducts() {
-  try {
-    const response = await fetch('./releases.json?t=' + Date.now());
-    if (!response.ok) return;
-    const data = await response.json();
-    if (!data || !data.products) return;
+  const urls = [
+    './releases.json?t=' + Date.now(),
+    'https://raw.githubusercontent.com/syaifulwachid/Production-Landing-Page-FTTH-Design-Planner-v3.6.9/main/releases.json?t=' + Date.now()
+  ];
 
-    window.SWD_RELEASES = data.products;
-
-    Object.keys(data.products).forEach(key => {
-      const prod = data.products[key];
-      const verText = prod.display_version || prod.latest_version;
-
-      // 1. Update text versi
-      document.querySelectorAll(`[data-product-version="${key}"]`).forEach(el => {
-        el.textContent = verText;
-      });
-
-      // 2. Update tanggal rilis jika ada
-      document.querySelectorAll(`[data-product-date="${key}"]`).forEach(el => {
-        el.textContent = prod.release_date;
-      });
-
-      // 3. Update link download
-      document.querySelectorAll(`[data-product-download="${key}"]`).forEach(btn => {
-        if (prod.download_url) {
-          btn.href = prod.download_url;
-          btn.target = "_blank";
-          btn.rel = "noopener noreferrer";
-        }
-      });
-    });
-    console.log("✅ Auto-Sync Produk & Link Download Berhasil Dimuat dari releases.json");
-  } catch (err) {
-    console.warn("Auto-sync releases.json:", err);
+  let data = null;
+  for (const url of urls) {
+    try {
+      const response = await fetch(url);
+      if (response.ok) {
+        data = await response.json();
+        if (data && data.products) break;
+      }
+    } catch (e) {
+      // Coba URL berikutnya
+    }
   }
+
+  if (!data || !data.products) return;
+  window.SWD_RELEASES = data.products;
+
+  Object.keys(data.products).forEach(key => {
+    const prod = data.products[key];
+    const verText = prod.display_version || prod.latest_version;
+
+    // 1. Update text versi
+    document.querySelectorAll(`[data-product-version="${key}"]`).forEach(el => {
+      el.textContent = verText;
+    });
+
+    // 2. Update tanggal rilis jika ada
+    document.querySelectorAll(`[data-product-date="${key}"]`).forEach(el => {
+      el.textContent = prod.release_date;
+    });
+
+    // 3. Update link download
+    document.querySelectorAll(`[data-product-download="${key}"]`).forEach(btn => {
+      if (prod.download_url) {
+        btn.href = prod.download_url;
+        btn.target = "_blank";
+        btn.rel = "noopener noreferrer";
+      }
+    });
+  });
+  console.log("✅ Auto-Sync Produk & Link Download Berhasil Dimuat dari releases.json");
 }
 window.initAutoSyncProducts = initAutoSyncProducts;
-document.addEventListener('DOMContentLoaded', initAutoSyncProducts);
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initAutoSyncProducts);
+} else {
+  initAutoSyncProducts();
+}
+window.addEventListener('load', initAutoSyncProducts);
+
 
 
 
