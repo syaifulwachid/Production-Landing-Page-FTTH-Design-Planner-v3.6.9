@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-04T17:02:00Z",
+  "last_updated": "2026-09-05T11:35:00Z",
   "products": {
     "ftth_design_planner": {
       "name": "FTTH Design Planner",
@@ -32,16 +32,16 @@
     },
     "kmz_converter": {
       "name": "KMZ To HPDB And BOQ Converter",
-      "latest_version": "3.3.0.0",
-      "display_version": "v3.3",
-      "release_date": "2026-09-04",
-      "download_url": "https://drive.google.com/file/d/1QlSnn2TWBuPHYY_uMTnffvpfn0vWSIil/view?usp=sharing",
+      "latest_version": "4.0.0.0",
+      "display_version": "v4.0 PRO",
+      "release_date": "2026-09-05",
+      "download_url": "https://drive.google.com/file/d/1qT95-n_NWM6IUwjUZdL3N9XMsO1pz3wt/view?usp=sharing",
       "changelog": [
-        "Fitur Baru: Auto-Update Checker Background Service terintegrasi ke manifest releases.json",
-        "Fitur Baru: Tombol interaktif 'Cek Update' pada Header Bar utama dengan notifikasi status",
-        "Perbaikan: Ekstraksi kapasitas Joint Closure (JC) Subfeeder akurat dari nama objek KMZ (144C, 96C, 48C, dll.)",
-        "Perbaikan: Pemisahan pengisian baris JC independen dari kapasitas tarikan kabel subfeeder pada sheet Excel BoM AE",
-        "Peningkatan: Preservasi sistem lisensi Machine ID & enkripsi aktivasi serial key 100% aman"
+        "Sistem Aktivasi Baru: Zero-Manual-Input (Aktivasi instan 1-klik via Dynamic QRIS & Telegram Approval)",
+        "Fitur Pembayaran: Dynamic QRIS dengan nominal unik otomatis & countdown timer 15 menit",
+        "Keamanan Tingkat Tinggi: Kriptografi Asimetris RSA-2048 Digital Signature & Anti-Clock Tampering",
+        "Notifikasi Telegram Canggih: Verifikasi mutasi otomatis & approval instan 1-klik oleh Admin",
+        "Header Widget: Badge status lisensi interaktif (🟢 Sisa Hari Aktif) & broadcast announcement"
       ],
       "mandatory_update": false
     },
