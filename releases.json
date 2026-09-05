@@ -37,11 +37,11 @@
       "release_date": "2026-09-05",
       "download_url": "https://drive.google.com/file/d/1qT95-n_NWM6IUwjUZdL3N9XMsO1pz3wt/view?usp=sharing",
       "changelog": [
-        "Sistem Aktivasi Baru: Zero-Manual-Input (Aktivasi instan 1-klik via Dynamic QRIS & Telegram Approval)",
-        "Fitur Pembayaran: Dynamic QRIS dengan nominal unik otomatis & countdown timer 15 menit",
-        "Keamanan Tingkat Tinggi: Kriptografi Asimetris RSA-2048 Digital Signature & Anti-Clock Tampering",
-        "Notifikasi Telegram Canggih: Verifikasi mutasi otomatis & approval instan 1-klik oleh Admin",
-        "Header Widget: Badge status lisensi interaktif (🟢 Sisa Hari Aktif) & broadcast announcement"
+        "Peningkatan Performa: Engine Konversi V4.0 Generasi Baru — Ekstraksi data KMZ ke HPDB & BoQ jauh lebih cepat, ringan, dan stabil",
+        "Aktivasi Instan 1-Klik: Nikmati kemudahan aktivasi otomatis tanpa repot menyalin atau mengetik kode serial panjang secara manual",
+        "Integrasi QRIS Seamless: Dukungan pembayaran digital langsung semua Bank & E-Wallet dengan konfirmasi otomatis real-time",
+        "Smart License Monitor: Widget pemantau masa aktif interaktif di Header Bar utama lengkap dengan informasi status real-time",
+        "Penyempurnaan Kalkulasi: Optimalisasi formula BoM AE dan pemetaan Joint Closure (JC) presisi tinggi"
       ],
       "mandatory_update": false
     },
