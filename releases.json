@@ -1,18 +1,18 @@
 {
-  "last_updated": "2026-09-05T11:35:00Z",
+  "last_updated": "2026-09-06T05:41:20.119Z",
   "products": {
     "ftth_design_planner": {
       "name": "FTTH Design Planner",
-      "latest_version": "3.6.9.10",
-      "display_version": "v3.6.9 (r10)",
-      "release_date": "2026-09-04",
-      "download_url": "https://drive.google.com/file/d/1c340MgD3UQeMcLhRHSSmCCNDgNrcRLgm/view?usp=sharing",
+      "latest_version": "3.6.9.11",
+      "display_version": "v3.6.9 (r11)",
+      "release_date": "2026-09-06",
+      "download_url": "https://drive.google.com/file/d/1QNjifan783aHFv1fGPjOchqjGYFzlSa0/view?usp=sharing",
       "changelog": [
-        "Fitur Baru: Custom Kemiringan (Slanted Angle) pada Draw Home Percil dengan Sample Sudut Point A-B",
-        "Fitur Baru: Background Wipeout Otomatis pada Tabel Design Summary (Tabel bersih di atas citra satelit/peta)",
-        "Fitur Baru: Auto Reverse-Geocoding Alamat Cluster dari Internet (Auto Ambil Alamat & Pick Site)",
-        "Peningkatan: Normalisasi ekstraksi nama cluster dan optimalisasi deteksi filter label FAT",
-        "Peningkatan UI: Tema modern collapsible frame yang konsisten & stabilitas panel FTTH_SHOWPANEL"
+        "Aktivasi Instan & QRIS Dinamis: Aktivasi online otomatis terintegrasi langsung dengan polling persetujuan Telegram",
+        "Pilihan Paket Fleksibel: Opsi langganan 14 Hari (Rp 50.000) untuk evaluasi dan proyek jangka pendek",
+        "Standardisasi Tema Gelap Modern: Harmonisasi tema Modern Slate-Indigo terpadu di semua dialog dan tabel",
+        "Custom ScrollBar & ComboBox: Slider scrollbar dan dropdown bergaya dark modern tanpa scrollbar klasik Windows",
+        "Startup Rapi & Ringkas: Frame kartu otomatis terlipat (collapsed) secara default, dan snap tiang otomatis aktif (true)"
       ],
       "mandatory_update": false
     },
