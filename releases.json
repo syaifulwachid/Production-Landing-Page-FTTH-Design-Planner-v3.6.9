@@ -1,18 +1,18 @@
 {
-  "last_updated": "2026-09-06T05:41:20.119Z",
+  "last_updated": "2026-09-07T23:26:40.000Z",
   "products": {
     "ftth_design_planner": {
       "name": "FTTH Design Planner",
-      "latest_version": "3.6.9.11",
-      "display_version": "v3.6.9 (r11)",
-      "release_date": "2026-09-06",
-      "download_url": "https://drive.google.com/file/d/1QNjifan783aHFv1fGPjOchqjGYFzlSa0/view?usp=sharing",
+      "latest_version": "3.6.9.17",
+      "display_version": "v3.6.9 (r17)",
+      "release_date": "2026-09-08",
+      "download_url": "https://drive.google.com/file/d/1JMd3875EJ1gOnQkjGrlI53b00yqhHToM/view?usp=sharing",
       "changelog": [
-        "Aktivasi Instan & QRIS Dinamis: Aktivasi online otomatis terintegrasi langsung dengan polling persetujuan Telegram",
-        "Pilihan Paket Fleksibel: Opsi langganan 14 Hari (Rp 50.000) untuk evaluasi dan proyek jangka pendek",
-        "Standardisasi Tema Gelap Modern: Harmonisasi tema Modern Slate-Indigo terpadu di semua dialog dan tabel",
-        "Custom ScrollBar & ComboBox: Slider scrollbar dan dropdown bergaya dark modern tanpa scrollbar klasik Windows",
-        "Startup Rapi & Ringkas: Frame kartu otomatis terlipat (collapsed) secara default, dan snap tiang otomatis aktif (true)"
+        "Integrasi SWD FTTH Assistant AI: Terhubung langsung via protokol MCP dengan multi-provider AI (Claude, Gemini, GPT-4, Ollama) untuk analisis topologi, kalkulasi optical budget, dan otomasi drafting via prompt natural.",
+        "Aksi Pesan Interaktif (Gemini-Style): Tombol Copy teks jawaban dan Edit prompt di riwayat chat asisten dengan feedback status Under Develop (Beta).",
+        "Pencegahan Otomatis Pop-up DesignCenter: Eliminasi tuntas gangguan auto-popup jendela DesignCenter saat membuka atau membuat lembar gambar DWG baru.",
+        "Deteksi Presisi Objek Model Space: Tombol status jumlah entitas kini secara akurat hanya menghitung objek di Model Space (mengabaikan Paper/Layout Space).",
+        "Standardisasi Tema Modern Slate-Indigo: Penyelarasan tema gelap terpadu di seluruh dialog, custom dark scrollbar & dropdown, serta pembersihan cache registri otomatis saat instalasi."
       ],
       "mandatory_update": false
     },
