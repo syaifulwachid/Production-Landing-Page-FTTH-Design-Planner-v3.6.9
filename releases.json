@@ -1,18 +1,17 @@
 {
-  "last_updated": "2026-09-07T23:26:40.000Z",
+  "last_updated": "2026-09-09T03:15:00.000Z",
   "products": {
     "ftth_design_planner": {
       "name": "FTTH Design Planner",
-      "latest_version": "3.6.9.17",
-      "display_version": "v3.6.9 (r17)",
-      "release_date": "2026-09-08",
-      "download_url": "https://drive.google.com/file/d/1JMd3875EJ1gOnQkjGrlI53b00yqhHToM/view?usp=sharing",
+      "latest_version": "3.6.9.18",
+      "display_version": "v3.6.9 (r18)",
+      "release_date": "2026-09-09",
+      "download_url": "https://drive.google.com/file/d/1VECA0Ekqs21RrY-8dUcWqtodz_J6ypaJ/view?usp=sharing",
       "changelog": [
-        "Integrasi SWD FTTH Assistant AI: Terhubung langsung via protokol MCP dengan multi-provider AI (Claude, Gemini, GPT-4, Ollama) untuk analisis topologi, kalkulasi optical budget, dan otomasi drafting via prompt natural.",
-        "Aksi Pesan Interaktif (Gemini-Style): Tombol Copy teks jawaban dan Edit prompt di riwayat chat asisten dengan feedback status Under Develop (Beta).",
-        "Pencegahan Otomatis Pop-up DesignCenter: Eliminasi tuntas gangguan auto-popup jendela DesignCenter saat membuka atau membuat lembar gambar DWG baru.",
-        "Deteksi Presisi Objek Model Space: Tombol status jumlah entitas kini secara akurat hanya menghitung objek di Model Space (mengabaikan Paper/Layout Space).",
-        "Standardisasi Tema Modern Slate-Indigo: Penyelarasan tema gelap terpadu di seluruh dialog, custom dark scrollbar & dropdown, serta pembersihan cache registri otomatis saat instalasi."
+        "Pemotongan Citra Satelit Native C++ (IMAGECLIP): Citra satelit yang diunduh kini otomatis terpotong rapi mengikuti lekukan poligon batas (tidak lagi kotak persegi panjang polos).",
+        "Integrasi Peta Bing Bawaan AutoCAD (Native GEOMAP): Penambahan 4 tombol kontrol langsung di panel untuk Bing Aerial streaming, Bing Road vektor, Turn Off Map, dan Capture Area ke ModelSpace DWG.",
+        "Perbaikan Unduhan Peta ESRI & Bing: Penambahan pembatas resolusi otomatis (ESRI <= Zoom 18, Bing <= Zoom 19) dan protokol HTTPS untuk mencegah kegagalan unduh (HTTP 404).",
+        "Jaminan Geometri 2D Planar Murni: Seluruh kalkulasi boundary poligon, raster image, dan vektor orientasi diratakan murni ke bidang datar Z = 0.0."
       ],
       "mandatory_update": false
     },
