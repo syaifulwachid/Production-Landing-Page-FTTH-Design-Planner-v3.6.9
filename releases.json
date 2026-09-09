@@ -1,17 +1,18 @@
 {
-  "last_updated": "2026-09-09T03:15:00.000Z",
+  "last_updated": "2026-09-09T14:30:00.000Z",
   "products": {
     "ftth_design_planner": {
       "name": "FTTH Design Planner",
-      "latest_version": "3.6.9.18",
-      "display_version": "v3.6.9 (r18)",
+      "latest_version": "3.6.9.19",
+      "display_version": "v3.6.9 (r19)",
       "release_date": "2026-09-09",
-      "download_url": "https://drive.google.com/file/d/1VECA0Ekqs21RrY-8dUcWqtodz_J6ypaJ/view?usp=sharing",
+      "download_url": "https://drive.google.com/file/d/1irOSBlb4vGEX_9qws4ewCtAHdysiwQHJ/view?usp=sharing",
       "changelog": [
-        "Pemotongan Citra Satelit Native C++ (IMAGECLIP): Citra satelit yang diunduh kini otomatis terpotong rapi mengikuti lekukan poligon batas (tidak lagi kotak persegi panjang polos).",
-        "Integrasi Peta Bing Bawaan AutoCAD (Native GEOMAP): Penambahan 4 tombol kontrol langsung di panel untuk Bing Aerial streaming, Bing Road vektor, Turn Off Map, dan Capture Area ke ModelSpace DWG.",
-        "Perbaikan Unduhan Peta ESRI & Bing: Penambahan pembatas resolusi otomatis (ESRI <= Zoom 18, Bing <= Zoom 19) dan protokol HTTPS untuk mencegah kegagalan unduh (HTTP 404).",
-        "Jaminan Geometri 2D Planar Murni: Seluruh kalkulasi boundary poligon, raster image, dan vektor orientasi diratakan murni ke bidang datar Z = 0.0."
+        "Resolusi Citra Maksimum (Zoom 21): Penghapusan pembatasan lama sehingga citra Google Earth Satellite dapat diunduh pada resolusi tertinggi (~0.07m/px) tanpa otomatis ter-clamp ke Zoom 18/19.",
+        "Unduhan Poligon Luas Adaptif: Mendukung unduhan area aktif poligon hingga 2.500 tile dengan penyesuaian bertahap jika melebihi batas, bukan anjlok langsung.",
+        "Mekanisme Parent Fallback: Otomatisasi interpolasi kuadran induk dari Zoom 20 jika server Google di koordinat tertentu belum menyediakan tile Zoom 21 (mencegah error 404/tile bolong).",
+        "Akselerasi Download Paralel: Concurrency dinaikkan menjadi 8 stream paralel untuk proses unduh tile yang jauh lebih cepat.",
+        "Preset Resolusi Baru di UI: Penambahan preset 'Ultra High (1024 tiles)' dan 'Maximum Detail (2048 tiles)' pada panel kontrol basemap."
       ],
       "mandatory_update": false
     },
