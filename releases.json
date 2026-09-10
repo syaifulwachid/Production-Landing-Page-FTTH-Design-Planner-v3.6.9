@@ -1,18 +1,18 @@
 {
-  "last_updated": "2026-09-09T14:30:00.000Z",
+  "last_updated": "2026-09-10T17:35:00.000Z",
   "products": {
     "ftth_design_planner": {
       "name": "FTTH Design Planner",
-      "latest_version": "3.6.9.19",
-      "display_version": "v3.6.9 (r19)",
-      "release_date": "2026-09-09",
-      "download_url": "https://drive.google.com/file/d/1irOSBlb4vGEX_9qws4ewCtAHdysiwQHJ/view?usp=sharing",
+      "latest_version": "3.6.9.21",
+      "display_version": "v3.6.9 (r21)",
+      "release_date": "2026-09-11",
+      "download_url": "https://drive.google.com/file/d/1a-pMlv7Pe9uySa6XdhiHYEU6bqoHlQ5Y/view?usp=sharing",
       "changelog": [
-        "Resolusi Citra Maksimum (Zoom 21): Penghapusan pembatasan lama sehingga citra Google Earth Satellite dapat diunduh pada resolusi tertinggi (~0.07m/px) tanpa otomatis ter-clamp ke Zoom 18/19.",
-        "Unduhan Poligon Luas Adaptif: Mendukung unduhan area aktif poligon hingga 2.500 tile dengan penyesuaian bertahap jika melebihi batas, bukan anjlok langsung.",
-        "Mekanisme Parent Fallback: Otomatisasi interpolasi kuadran induk dari Zoom 20 jika server Google di koordinat tertentu belum menyediakan tile Zoom 21 (mencegah error 404/tile bolong).",
-        "Akselerasi Download Paralel: Concurrency dinaikkan menjadi 8 stream paralel untuk proses unduh tile yang jauh lebih cepat.",
-        "Preset Resolusi Baru di UI: Penambahan preset 'Ultra High (1024 tiles)' dan 'Maximum Detail (2048 tiles)' pada panel kontrol basemap."
+        "Smart KMZ Import Engine: Auto-detect mode (Cluster Single/Multi FDT & Subfeeder), pemetaan otomatis folder ke layer CAD, penempatan blok simbol (Tiang NP/EP, FDT, Closure, FAT), dan seleksi entitas presisi per subfolder/Line.",
+        "Validasi Prasyarat & Notifikasi Geolocation: Peringatan toast otomatis serta banner indikator real-time kesiapan basemap (Jalan, Centerline, Trotoar, ROW, Percil) dan koordinat Geolocation lembar kerja sebelum impor.",
+        "Otomasi Geometri & Jalur Tektok: Auto-snapping kabel ke tiang dengan penanganan khusus rute balik arah (tektok) agar garis tidak bertumpuk, serta penataan kabel sling wire ke layer WIRE CABLE.",
+        "Presisi Penempatan Nomor Rumah: Pemindahan posisi teks nomor rumah otomatis ke titik centroid persil kavling (FTTH-PERCIL) dengan deteksi warna khusus untuk teks yang bertumpuk.",
+        "Standarisasi Visual Simbol & UI Lisensi: Simbol FDT terstandarisasi warna merah dengan aksen kuning, penyempurnaan ukuran palette modern, dan sinkronisasi dinamis badge versi aktivasi lisensi (r21 PRO)."
       ],
       "mandatory_update": false
     },
