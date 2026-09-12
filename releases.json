@@ -1,18 +1,18 @@
 {
-  "last_updated": "2026-09-10T17:35:00.000Z",
+  "last_updated": "2026-09-12T17:45:00.000Z",
   "products": {
     "ftth_design_planner": {
       "name": "FTTH Design Planner",
-      "latest_version": "3.6.9.21",
-      "display_version": "v3.6.9 (r21)",
-      "release_date": "2026-09-11",
-      "download_url": "https://drive.google.com/file/d/1a-pMlv7Pe9uySa6XdhiHYEU6bqoHlQ5Y/view?usp=sharing",
+      "latest_version": "3.6.9.22",
+      "display_version": "v3.6.9 (r22)",
+      "release_date": "2026-09-12",
+      "download_url": "https://drive.google.com/file/d/1QZpWTiPUgt0usktnpXuyppRBlYctXg-1/view?usp=sharing",
       "changelog": [
-        "Smart KMZ Import Engine: Auto-detect mode (Cluster Single/Multi FDT & Subfeeder), pemetaan otomatis folder ke layer CAD, penempatan blok simbol (Tiang NP/EP, FDT, Closure, FAT), dan seleksi entitas presisi per subfolder/Line.",
-        "Validasi Prasyarat & Notifikasi Geolocation: Peringatan toast otomatis serta banner indikator real-time kesiapan basemap (Jalan, Centerline, Trotoar, ROW, Percil) dan koordinat Geolocation lembar kerja sebelum impor.",
-        "Otomasi Geometri & Jalur Tektok: Auto-snapping kabel ke tiang dengan penanganan khusus rute balik arah (tektok) agar garis tidak bertumpuk, serta penataan kabel sling wire ke layer WIRE CABLE.",
-        "Presisi Penempatan Nomor Rumah: Pemindahan posisi teks nomor rumah otomatis ke titik centroid persil kavling (FTTH-PERCIL) dengan deteksi warna khusus untuk teks yang bertumpuk.",
-        "Standarisasi Visual Simbol & UI Lisensi: Simbol FDT terstandarisasi warna merah dengan aksen kuning, penyempurnaan ukuran palette modern, dan sinkronisasi dinamis badge versi aktivasi lisensi (r21 PRO)."
+        "Smart KMZ Import Feeder & Subfeeder: Peningkatan stabilitas impor file KMZ berukuran besar dengan auto-mapping folder, deteksi kapasitas closure otomatis (24, 48, 144), dan penempatan blok CAD presisi.",
+        "Penyiapan Layer Otomatis: Seluruh layer standar FTTH (FTTH-SLACK-CABLE, FTTH-CLOSURE-24/48/144, dll.) diinisialisasi di awal untuk eliminasi tuntas error eInvalidLayer.",
+        "Sanitasi & Proteksi Layer CAD: Pembersihan otomatis karakter ilegal nama layer dan fallback cerdas ke layer 0 jika layer tidak valid.",
+        "Optimasi Geometri & Snapping: Jalur tektok kabel anti-tumpuk, auto-snapping tiang ke centerline jalan, dan perataan nomor rumah ke centroid persil.",
+        "Penyempurnaan UI & Lisensi: Sinkronisasi badge versi r22 PRO, modern dark theme, dan performa tinggi .NET 4.8 & .NET 8."
       ],
       "mandatory_update": false
     },
