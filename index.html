@@ -69,6 +69,10 @@
       <a href="#community" onclick="scrollToCommunity(event)" class="ml-2 inline-flex items-center text-cyan-400 hover:text-white font-semibold underline underline-offset-2 cursor-pointer">
         Lihat Progres <i class="fa-solid fa-arrow-right ml-1 text-[10px]"></i>
       </a>
+      <span class="text-slate-500 mx-1 hidden sm:inline">|</span>
+      <a href="https://syaifulwachid.github.io/ftth-docs/changelog/" target="_blank" class="inline-flex items-center text-amber-300 hover:text-amber-200 font-bold underline underline-offset-2 ml-1">
+        <i class="fa-solid fa-clock-rotate-left mr-1"></i> Log Update v3.6.9 (r22) <i class="fa-solid fa-arrow-up-right-from-square ml-1 text-[9px]"></i>
+      </a>
     </div>
   </aside>
 
@@ -89,9 +93,9 @@
             <span class="font-heading font-extrabold text-lg text-slate-100 tracking-tight leading-none group-hover:text-white transition-colors">
               FTTH <span class="bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">PLANNER</span>
             </span>
-            <span data-product-version="ftth_design_planner" class="text-[10px] font-mono-tech font-semibold px-2 py-0.5 rounded-full bg-cyan-500/10 text-cyan-300 border border-cyan-500/30 tracking-wide">
-              v3.6.9 (r22)
-            </span>
+            <a href="https://syaifulwachid.github.io/ftth-docs/changelog/" target="_blank" data-product-version="ftth_design_planner" title="Buka Catatan Rilis & Log Update v3.6.9 (r22)" class="text-[10px] font-mono-tech font-semibold px-2 py-0.5 rounded-full bg-cyan-500/10 hover:bg-cyan-500/25 text-cyan-300 hover:text-white border border-cyan-500/30 hover:border-cyan-400 tracking-wide transition-all inline-flex items-center gap-1 cursor-pointer">
+              v3.6.9 (r22) <i class="fa-solid fa-arrow-up-right-from-square text-[8px] opacity-75"></i>
+            </a>
           </div>
           <div class="text-[11px] font-sans text-slate-400 tracking-normal mt-1 flex items-center gap-1.5">
             <span class="font-medium text-slate-300">SWD SOFT DEVELOPER</span>
@@ -102,9 +106,9 @@
       </a>
 
       <!-- Desktop Nav Menu -->
-      <nav class="hidden lg:flex items-center gap-7 text-sm font-medium text-slate-300">
+      <nav class="hidden lg:flex items-center gap-5 xl:gap-6 text-sm font-medium text-slate-300">
         <a href="#ekosistem" class="hover:text-cyan-400 transition-colors flex items-center gap-1.5">
-          <i class="fa-solid fa-cubes text-xs text-cyan-500"></i> Ekosistem Produk
+          <i class="fa-solid fa-cubes text-xs text-cyan-500"></i> Ekosistem
         </a>
         <a href="#showcase" class="hover:text-cyan-400 transition-colors flex items-center gap-1.5">
           <i class="fa-solid fa-display text-xs text-blue-400"></i> Galeri CAD
@@ -112,11 +116,14 @@
         <a href="#kalkulator" class="hover:text-cyan-400 transition-colors flex items-center gap-1.5">
           <i class="fa-solid fa-calculator text-xs text-amber-400"></i> Simulasi ROI
         </a>
-        <a href="#perbandingan" class="hover:text-cyan-400 transition-colors flex items-center gap-1.5">
-          <i class="fa-solid fa-code-compare text-xs text-emerald-400"></i> Manual vs Otomasi
-        </a>
         <a href="#harga" class="hover:text-cyan-400 transition-colors flex items-center gap-1.5">
           <i class="fa-solid fa-tags text-xs text-orange-400"></i> Paket Harga
+        </a>
+        <a href="https://syaifulwachid.github.io/ftth-docs/changelog/" target="_blank" class="text-amber-300 hover:text-white font-bold transition-all flex items-center gap-1.5 bg-amber-500/15 hover:bg-amber-500/30 px-2.5 py-1 rounded-lg border border-amber-500/40 shadow-sm">
+          <i class="fa-solid fa-clock-rotate-left text-xs text-amber-400"></i> Log Update
+        </a>
+        <a href="https://syaifulwachid.github.io/ftth-docs/" target="_blank" class="hover:text-cyan-300 transition-colors flex items-center gap-1.5 text-cyan-400">
+          <i class="fa-solid fa-book text-xs"></i> Panduan Docs
         </a>
         <a href="#tutorial" class="hover:text-cyan-400 transition-colors flex items-center gap-1.5">
           <i class="fa-brands fa-youtube text-xs text-red-500"></i> Tutorial
@@ -140,13 +147,20 @@
     </div>
 
     <!-- Mobile Dropdown Menu -->
-    <div id="mobile-menu" class="hidden lg:hidden bg-cad-panel border-b border-slate-800 px-6 py-5 space-y-4">
+    <div id="mobile-menu" class="hidden lg:hidden bg-cad-panel border-b border-slate-800 px-6 py-5 space-y-3">
+      <a href="https://syaifulwachid.github.io/ftth-docs/changelog/" target="_blank" class="nav-link-mobile block text-sm font-bold text-amber-300 hover:text-amber-200 bg-amber-500/15 px-3.5 py-2.5 rounded-lg border border-amber-500/40 flex items-center justify-between shadow-inner">
+        <span><i class="fa-solid fa-clock-rotate-left mr-2 text-amber-400"></i> Log Update & Catatan Rilis</span>
+        <span class="text-xs bg-amber-400/25 text-amber-200 font-mono-tech px-2 py-0.5 rounded border border-amber-400/40">r22 Active</span>
+      </a>
+      <a href="https://syaifulwachid.github.io/ftth-docs/" target="_blank" class="nav-link-mobile block text-sm font-semibold text-cyan-300 hover:text-cyan-200 bg-cyan-950/40 px-3.5 py-2 rounded-lg border border-cyan-500/30 flex items-center gap-2">
+        <i class="fa-solid fa-book text-xs text-cyan-400"></i> Panduan & Dokumentasi Resmi Web
+      </a>
       <a href="#ekosistem" class="nav-link-mobile block text-sm font-medium text-slate-300 hover:text-cyan-400">Ekosistem Produk</a>
       <a href="#showcase" class="nav-link-mobile block text-sm font-medium text-slate-300 hover:text-cyan-400">Galeri & Fitur CAD</a>
       <a href="#kalkulator" class="nav-link-mobile block text-sm font-medium text-slate-300 hover:text-cyan-400">Simulasi Penghematan ROI</a>
       <a href="#perbandingan" class="nav-link-mobile block text-sm font-medium text-slate-300 hover:text-cyan-400">Manual vs Otomasi</a>
       <a href="#harga" class="nav-link-mobile block text-sm font-medium text-slate-300 hover:text-cyan-400">Paket Harga & Bundling</a>
-      <a href="#tutorial" class="nav-link-mobile block text-sm font-medium text-slate-300 hover:text-cyan-400">Tutorial & Panduan</a>
+      <a href="#tutorial" class="nav-link-mobile block text-sm font-medium text-slate-300 hover:text-cyan-400">Tutorial & Panduan Video</a>
       <div class="pt-3 border-t border-slate-800 flex flex-col gap-2">
         <a href="#tools-gratis" class="w-full py-2.5 text-center text-xs font-semibold rounded-lg bg-emerald-500/10 text-emerald-400 border border-emerald-500/30">
           <i class="fa-solid fa-gift mr-1"></i> Download Lead Magnets Gratis (Rp 0)
@@ -157,6 +171,7 @@
       </div>
     </div>
   </header>
+
 
   <!-- HERO SECTION -->
   <section class="relative pt-12 pb-20 lg:pt-20 lg:pb-32 bg-cad-grid overflow-hidden">
@@ -205,6 +220,26 @@
           <a href="https://www.youtube.com/playlist?list=PLLr975-jxOLU" target="_blank" class="w-full sm:w-auto px-5 py-4 rounded-xl font-heading font-medium text-sm bg-slate-900/80 border border-slate-700 text-slate-300 hover:text-white hover:border-red-500/50 transition-all flex items-center justify-center gap-2">
             <i class="fa-brands fa-youtube text-red-500"></i>
             <span>Video Tutorial CAD</span>
+          </a>
+        </div>
+
+        <!-- Release Status & Quick Log Link -->
+        <div class="flex items-center justify-center gap-3 sm:gap-6 text-xs font-mono-tech text-slate-300 flex-wrap mb-8 bg-slate-900/70 py-2.5 px-4 rounded-xl border border-slate-800/90 max-w-2xl mx-auto backdrop-blur-sm shadow-md">
+          <span class="flex items-center gap-1.5">
+            <i class="fa-solid fa-code-commit text-cyan-400"></i>
+            <span>Versi Aktif: <strong class="text-white">v3.6.9 (r22)</strong></span>
+          </span>
+          <span class="text-slate-700 hidden sm:inline">•</span>
+          <a href="https://syaifulwachid.github.io/ftth-docs/changelog/" target="_blank" class="text-amber-300 hover:text-amber-200 font-bold underline underline-offset-4 flex items-center gap-1.5 transition-colors">
+            <i class="fa-solid fa-clock-rotate-left text-amber-400"></i>
+            <span>Buka Log Update (Changelog r1-r22)</span>
+            <i class="fa-solid fa-arrow-up-right-from-square text-[9px]"></i>
+          </a>
+          <span class="text-slate-700 hidden sm:inline">•</span>
+          <a href="https://syaifulwachid.github.io/ftth-docs/" target="_blank" class="text-cyan-400 hover:text-cyan-300 font-medium underline underline-offset-4 flex items-center gap-1.5 transition-colors">
+            <i class="fa-solid fa-book"></i>
+            <span>Panduan Web</span>
+            <i class="fa-solid fa-arrow-up-right-from-square text-[9px]"></i>
           </a>
         </div>
 
@@ -1542,17 +1577,17 @@
   <footer class="bg-cad-dark border-t border-slate-800/80 pt-16 pb-12 text-slate-400 font-mono-tech text-xs">
     <div class="container mx-auto px-4 lg:px-8">
       
-      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
         
         <!-- Col 1: Brand Info -->
-        <div class="space-y-3 md:col-span-2">
+        <div class="space-y-3">
           <div class="flex items-center gap-2.5">
             <div class="w-8 h-8 rounded-lg bg-cad-panel border border-cyan-500/30 flex items-center justify-center p-1 shadow">
               <img src="favicon.ico" alt="FTTH Planner Icon" class="w-full h-full object-contain">
             </div>
             <span class="font-heading font-black text-white text-base tracking-wide">FTTH DESIGN PLANNER</span>
           </div>
-          <p class="text-slate-400 font-sans text-xs leading-relaxed max-w-md">
+          <p class="text-slate-400 font-sans text-xs leading-relaxed max-w-sm">
             Ekosistem software otomasi perancangan jaringan FTTx, pengolahan data spasial KMZ Google Earth, dan akselerasi drafting AutoCAD terdepan di Indonesia.
           </p>
           <div class="pt-2 text-slate-500 text-[11px]">
@@ -1571,7 +1606,42 @@
           <div><a href="#tools-gratis" class="hover:text-amber-400 transition-colors">OnTop Highlighter <span data-product-version="ontop_highlighter">v1.0</span> (Gratis)</a></div>
         </div>
 
-        <!-- Col 3: Support & Contacts -->
+        <!-- Col 3: Docs & Release Logs -->
+        <div class="space-y-2">
+          <div class="text-white font-bold mb-2">DOKUMENTASI & LOG</div>
+          <div>
+            <a href="https://syaifulwachid.github.io/ftth-docs/changelog/" target="_blank" class="text-amber-300 hover:text-amber-200 font-bold transition-colors flex items-center gap-1.5">
+              <i class="fa-solid fa-clock-rotate-left text-amber-400 text-xs"></i> Log Update (r1 - r22)
+            </a>
+          </div>
+          <div>
+            <a href="https://syaifulwachid.github.io/ftth-docs/" target="_blank" class="hover:text-cyan-400 transition-colors flex items-center gap-1.5">
+              <i class="fa-solid fa-book text-cyan-400 text-xs"></i> Dokumentasi Resmi Web
+            </a>
+          </div>
+          <div>
+            <a href="https://syaifulwachid.github.io/ftth-docs/01-getting-started/design-wizard/" target="_blank" class="hover:text-cyan-400 transition-colors">
+              8-Step Design Wizard
+            </a>
+          </div>
+          <div>
+            <a href="https://syaifulwachid.github.io/ftth-docs/02-basemap-and-isolation/smart-import-kmz/" target="_blank" class="hover:text-cyan-400 transition-colors">
+              Smart KMZ Import Engine
+            </a>
+          </div>
+          <div>
+            <a href="https://syaifulwachid.github.io/ftth-docs/06-export-and-deliverables/design-validation-and-budget/" target="_blank" class="hover:text-cyan-400 transition-colors">
+              DRC QA & Link Budget Loss
+            </a>
+          </div>
+          <div>
+            <a href="https://www.youtube.com/playlist?list=PLLr975-jxOLU" target="_blank" class="hover:text-red-400 transition-colors flex items-center gap-1.5">
+              <i class="fa-brands fa-youtube text-red-500 text-xs"></i> Video Playlist Tutorial
+            </a>
+          </div>
+        </div>
+
+        <!-- Col 4: Support & Contacts -->
         <div class="space-y-2.5">
           <div class="text-white font-bold mb-2">KONTAK RESMI & AKTIVASI</div>
           <div>
