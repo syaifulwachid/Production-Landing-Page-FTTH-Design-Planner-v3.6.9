@@ -22,14 +22,39 @@ const PRODUCT_GALLERIES = {
     badgeColor: "text-cyan-400 bg-blue-500/20 border-cyan-500/40",
     images: [
       {
-        src: "assets/screenshots/ftth-design-planner/00_Windows_and_Modals/FTTH_Planner_Core_UI_Collage.png",
-        title: "Overview Workspace & Modul Inti AutoCAD",
-        desc: "Kolase antarmuka AutoCAD Model Space, Auto Cable Routing, Auto Tiang Snapping, Basemap Operations, dan FAT Loss Table."
+        src: "assets/screenshots/ftth-design-planner/00_Windows_and_Modals/01_workspace_overview.png",
+        title: "Full AutoCAD Workspace & FTTH Companion (v3.6.9 r23)",
+        desc: "Tampilan workspace AutoCAD model space terintegrasi penuh dengan panel FTTH Design Planner, FTTH Companion Lounge, StreetView, dan Topology Map."
       },
       {
-        src: "assets/screenshots/ftth-design-planner/00_Windows_and_Modals/01_workspace_overview.png",
-        title: "Full AutoCAD Workspace & Ribbon Dock",
-        desc: "Tampilan workspace AutoCAD terintegrasi penuh dengan panel FTTH Design Planner di sisi samping."
+        src: "assets/screenshots/ftth-design-planner/00_Windows_and_Modals/FTTH_Planner_Core_UI_Collage.png",
+        title: "Kolase Fitur Unggulan FTTH Design Planner (v3.6.9 r23)",
+        desc: "Kolase fitur terpadu: Full Workspace CAD, Smart KMZ Importer, Auto Road Cable Generator, Optical Link Budget Calculator, Interactive Card Guide, dan Quick Card Finder."
+      },
+      {
+        src: "assets/screenshots/ftth-design-planner/00_Windows_and_Modals/UI_Win_07_Smart_Import_KMZ.png",
+        title: "Smart KMZ Import Engine (Feeder & Subfeeder)",
+        desc: "Impor file KMZ Google Earth berukuran besar dengan auto-mapping folder, deteksi kapasitas closure otomatis (24, 48, 144), dan penempatan blok CAD presisi."
+      },
+      {
+        src: "assets/screenshots/ftth-design-planner/00_Windows_and_Modals/Auto Road Cable Generator.png",
+        title: "Auto Road Cable Generator (Tab 3 Routing)",
+        desc: "Penarikan kabel serat optik feeder & distribusi otomatis sepanjang jalur jalan dengan penyesuaian min sub, max tektok, dan auto-snapping tiang."
+      },
+      {
+        src: "assets/screenshots/ftth-design-planner/00_Windows_and_Modals/Interaktiv Card Guide.png",
+        title: "Panduan Desain FTTH Interaktif (Step-by-Step Wizard)",
+        desc: "Mode panduan alur kerja 8 langkah terpadu mulai dari basemap, persil, tiang, kabel, hingga export tanpa khawatir ada tahapan terlewat."
+      },
+      {
+        src: "assets/screenshots/ftth-design-planner/00_Windows_and_Modals/Optical Link Budget.png",
+        title: "Optical Link Budget Calculator (GPON Loss Estimator)",
+        desc: "Kalkulator redaman end-to-end (OLT - FDT - FAT - ONT) dengan estimasi dB matematis, margin daya standar ITU-T, dan trace langsung dari geometri CAD."
+      },
+      {
+        src: "assets/screenshots/ftth-design-planner/00_Windows_and_Modals/Quick Card Finder.png",
+        title: "Pencarian Cepat & Quick Action Bar (Ctrl+F)",
+        desc: "Pencarian instan kartu fitur dan aksi cepat (📍 Place, ⚡ Ortho, 🏷️ Label, 🛣️ Road, ✅ DRC, 📊 Status) untuk produktivitas drafting tanpa hambatan."
       },
       {
         src: "assets/screenshots/ftth-design-planner/01_Tab1_Basemap_Preparation/Sub1_Map_and_Basemap/01_Boundary_And_Map_Downloader.png",
