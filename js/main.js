@@ -188,7 +188,7 @@ const PRODUCT_GALLERIES = {
   },
 
   radial: {
-    name: "RadialMenu Setup v1.34.0",
+    name: "RadialMenu Setup v1.35.0",
     badge: "PRODUCTIVITY SPEED BOOSTER",
     badgeColor: "text-amber-400 bg-amber-500/20 border-amber-500/40",
     images: [

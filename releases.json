@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-13T08:15:00.000Z",
+  "last_updated": "2026-09-14T11:55:00.000Z",
   "products": {
     "ftth_design_planner": {
       "name": "FTTH Design Planner",
@@ -47,13 +47,16 @@
     },
     "radial_menu": {
       "name": "RadialMenu Setup",
-      "latest_version": "1.34.0.0",
-      "display_version": "v1.34.0",
-      "release_date": "2026-08-20",
-      "download_url": "https://drive.google.com/file/d/1EelBNvlsPj5CcoQ5CGetpEaDXyRIbsfM/view",
+      "latest_version": "1.35.0.0",
+      "display_version": "v1.35.0",
+      "release_date": "2026-09-14",
+      "download_url": "https://drive.google.com/file/d/1va-1pH9Zm12h0sRfN6Uxdh0GQZixRziM/view?usp=sharing",
       "changelog": [
-        "Navigasi radial shortcut interaktif AutoCAD",
-        "Dukungan custom palette perintah CAD"
+        "Modern Dark-Theme Toast Notifications: Notifikasi aksi & status non-blocking tanpa dialog popup memblokir layar.",
+        "Perbaikan Window Focus & State: Status & ukuran Maximized jendela aplikasi target (seperti browser/CAD) tetap terjaga utuh.",
+        "Navigasi Pengaturan Lebih Ergonomis: Tab Profiles & Filters di urutan teratas serta tombol permanen SAVE ALL CHANGES.",
+        "Tombol Cek Pembaruan & Auto-Updater: Fitur pengecekan rilis terbaru secara otomatis dan manual dengan toast pemberitahuan.",
+        "Peningkatan Multi-Key Keystrokes: Dukungan urutan shortcut (seperti Alt+C then F) dan validasi profil otomatis."
       ],
       "mandatory_update": false
     },

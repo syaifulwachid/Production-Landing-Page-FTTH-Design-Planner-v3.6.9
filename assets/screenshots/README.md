@@ -14,7 +14,7 @@ Letakkan file screenshot Anda (format `.png` atau `.jpg` beresolusi tinggi/tidak
 assets/screenshots/
 ├─ ftth-design-planner/      <- Screenshot FTTH Design Planner v.3.6.9
 ├─ kmz-to-hpdb-converter/    <- Screenshot KMZ To HPDB & BOQ Converter v3.2
-├─ radial-menu/              <- Screenshot RadialMenu Setup v1.34.0
+├─ radial-menu/              <- Screenshot RadialMenu Setup v1.35.0
 ├─ tssr-geo-tag/             <- Screenshot TSSR Geo TAG Capture v3.0
 └─ ftth-pro-report-apk/      <- Screenshot FTTH-Pro Report (Android APK)
 ```
@@ -41,7 +41,7 @@ Untuk mendapatkan materi promosi dengan daya pikat konversi tertinggi, berikut d
 
 ---
 
-### 3. 📁 `radial-menu/` (RadialMenu Setup v1.34.0)
+### 3. 📁 `radial-menu/` (RadialMenu Setup v1.35.0)
 - **`01_radial_menu_active.png`**: Menu lingkaran interaktif saat kursor melayang di atas workspace CAD.
 - **`02_shortcuts_action.png`**: Contoh saat memilih tools favorit dalam 1 kali klik cepat.
 
