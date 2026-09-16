@@ -1,18 +1,20 @@
 {
-  "last_updated": "2026-09-14T11:55:00.000Z",
+  "last_updated": "2026-09-16T12:32:00.000Z",
   "products": {
     "ftth_design_planner": {
       "name": "FTTH Design Planner",
-      "latest_version": "3.6.9.23",
-      "display_version": "v3.6.9 (r23)",
-      "release_date": "2026-09-13",
-      "download_url": "https://drive.google.com/file/d/1SupTlAjppLuEplTQ8ftbHEWo4HJyGRqR/view?usp=sharing",
+      "latest_version": "3.6.9.24",
+      "display_version": "v3.6.9 (r24)",
+      "release_date": "2026-09-16",
+      "download_url": "https://drive.google.com/file/d/1tigOYnkSeCCTaqXbRqdsAguPw0P0cOR9/view?usp=sharing",
       "changelog": [
-        "FTTH Companion (Fase 1-3): Integrasi panel interaktif live lounge dengan arsitektur Companion modern, mood selector (Focus, Chill, Sprint, Quiet), dan pemilihan work status.",
-        "Activity Feed & Telemetri Desain: Perekaman otomatis aktivitas drafting (basemap, tagging persil, penempatan tiang, penarikan kabel) ke activity feed bersama.",
-        "Quick Reaction & Emoji FTTH: 6 reaksi cepat FTTH (Aman, Gas, Dikerjakan, Cek dulu, Mantap, Ada masalah) untuk komunikasi instan sesama drafter.",
-        "Penyempurnaan Sneak Peek & UI: Sistem ToolTip native anti-flicker (bebas kedip) yang stabil, respons klik 1-kali deterministik, serta tema ComboBox gelap baku (Slate-Indigo).",
-        "Multi-Target CAD Engine: Kompilasi biner optimal untuk AutoCAD 2021-2024 (.NET 4.8) dan AutoCAD 2025+ (.NET 8.0)."
+        "Auto-Flattening Grup Nomor Rumah: Penggabungan grup nomor rumah kini otomatis membubarkan sub-grup lama; perintah UNGROUP AutoCAD membubarkan grup dalam 1 kali klik tanpa prompt [Accept/Next].",
+        "Penomoran & Proteksi Tiang Multi-FDT: Dukungan desain multi-FDT dengan pilihan format prefix (Global/Per-FDT), urutan nomor (Global Continuous/Reset per FDT), dan proteksi label tiang FDT sebelumnya agar tidak tertimpa.",
+        "Akurasi Export KMZ Tiang (AutoCAD Map 3D): Perbaikan deteksi kategori tiang (misal MR.PDA6.P94 tetap terdeteksi sebagai 7-3in dan tidak keliru menjadi 9-4in) berkat pembersihan regex label dan pencocokan BlockReference fisik.",
+        "Pencegahan Double FDT Label: Filter ketat block/layer non-FDT serta spatial deduplication 2.5m untuk mencegah label bertumpuk saat generate ulang.",
+        "Pemisahan Update Label FAT & Kabel: Penambahan checkbox opsional 'Ikut perbarui Label FAT otomatis' (default non-aktif), dan pemisahan pembuatan label kabel khusus via tombol GEN CABLE LABEL.",
+        "Visual Bounding Box & Eliminasi Sticky Highlight: Variabel sistem GROUPDISPLAYMODE=1 memastikan garis pembatas (bounding box) native CAD tetap tampil saat grup diseleksi tanpa risiko sticky highlight saat hover kursor.",
+        "AutoSnap Tiang Akurat: Penyempurnaan OSNAP Insertion Point (bit 64) otomatis saat menggambar slingwire dan kabel distribusi manual."
       ],
       "mandatory_update": false
     },

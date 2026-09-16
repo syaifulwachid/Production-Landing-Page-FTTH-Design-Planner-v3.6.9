@@ -23,12 +23,12 @@ const PRODUCT_GALLERIES = {
     images: [
       {
         src: "assets/screenshots/ftth-design-planner/00_Windows_and_Modals/01_workspace_overview.png",
-        title: "Full AutoCAD Workspace & FTTH Companion (v3.6.9 r23)",
+        title: "Full AutoCAD Workspace & FTTH Companion (v3.6.9 r24)",
         desc: "Tampilan workspace AutoCAD model space terintegrasi penuh dengan panel FTTH Design Planner, FTTH Companion Lounge, StreetView, dan Topology Map."
       },
       {
         src: "assets/screenshots/ftth-design-planner/00_Windows_and_Modals/FTTH_Planner_Core_UI_Collage.png",
-        title: "Kolase Fitur Unggulan FTTH Design Planner (v3.6.9 r23)",
+        title: "Kolase Fitur Unggulan FTTH Design Planner (v3.6.9 r24)",
         desc: "Kolase fitur terpadu: Full Workspace CAD, Smart KMZ Importer, Auto Road Cable Generator, Optical Link Budget Calculator, Interactive Card Guide, dan Quick Card Finder."
       },
       {
