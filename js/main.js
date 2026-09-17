@@ -6,7 +6,7 @@
 
 // Configuration
 const CONFIG = {
-  BASE_USERS: 26, // Updated verified active users
+  BASE_USERS: 27, // Live synced from Google Sheets database
   TARGET_USERS: 600,
   KMZ_TARGET_USERS: 300,
   WEB_APP_URL: "https://script.google.com/macros/s/AKfycbyxXaC0uMvDCv39LICS_AhljMpIEw0EKp3Ljl42nhh376ZRnYDxcVCgI_dm-1NSsQxlZw/exec"
