@@ -23,9 +23,40 @@
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   
-  <!-- Google Fonts: Perubahan 3 (Enterprise Telco Corporate - FINAL CHOICE) -->
+  <!-- Structured Data / JSON-LD for Google Rich Results & SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "FTTH Design Planner",
+    "operatingSystem": "Windows 10, Windows 11 (64-bit)",
+    "applicationCategory": "DesignApplication",
+    "softwareVersion": "3.6.9 (r24)",
+    "offers": {
+      "@type": "Offer",
+      "price": "100000",
+      "priceCurrency": "IDR",
+      "priceValidUntil": "2026-12-31",
+      "availability": "https://schema.org/InStock"
+    },
+    "author": {
+      "@type": "Person",
+      "name": "Syaiful Wachid",
+      "jobTitle": "Lead Developer & FTTx Automation Engineer"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5.0",
+      "reviewCount": "26"
+    },
+    "description": "Ekosistem software otomasi perancangan jaringan FTTx, konversi data spasial KMZ Google Earth, dan akselerasi drafting AutoCAD di Indonesia."
+  }
+  </script>
+
+  <!-- Google Fonts & CDN Preconnect -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Roboto+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
   
   <!-- Font Awesome 6 Icons -->
@@ -1206,8 +1237,12 @@
                 <span class="text-3xl font-extrabold text-white">Rp 100.000</span>
                 <span class="text-xs font-mono-tech text-slate-400">/ bulan</span>
               </div>
-              <div class="text-xs font-mono-tech text-slate-400 mt-1">Langganan Bulanan</div>
-              <div class="text-[11px] text-amber-400 font-mono-tech mt-1">
+              <div class="text-xs font-mono-tech text-slate-400 mt-1">Langganan Bulanan (Full KMZ to HPDB/BOQ)</div>
+              <div class="mt-2.5 text-[11px] text-emerald-300 font-mono-tech flex items-center justify-between border-t border-slate-800 pt-2">
+                <span>⚡ Opsi Trial Proyek (14 Hari):</span>
+                <span class="font-bold text-white bg-slate-900 px-2 py-0.5 rounded border border-emerald-500/30">Rp 50.000</span>
+              </div>
+              <div class="text-[11px] text-amber-400 font-mono-tech mt-1.5">
                 <i class="fa-solid fa-users text-[10px]"></i> Menjadi Rp 50.000/bln saat 300 users
               </div>
             </div>
@@ -1222,9 +1257,14 @@
             </ul>
           </div>
 
-          <button onclick="sendWhatsAppOrder('KMZ To HPDB Converter Standalone', 'Rp 100.000/bulan')" class="w-full py-3.5 rounded-xl font-heading font-bold text-xs bg-slate-800 hover:bg-slate-700 text-white border border-slate-700 transition-all flex items-center justify-center gap-2">
-            <i class="fa-brands fa-whatsapp text-emerald-400"></i> Order Single KMZ
-          </button>
+          <div class="space-y-2">
+            <button onclick="sendWhatsAppOrder('KMZ To HPDB Converter v4.0 PRO Standalone', 'Rp 100.000/bulan')" class="w-full py-3 rounded-xl font-heading font-bold text-xs bg-slate-800 hover:bg-slate-700 text-white border border-slate-700 transition-all flex items-center justify-center gap-2">
+              <i class="fa-brands fa-whatsapp text-emerald-400"></i> Langganan 1 Bulan (Rp 100rb)
+            </button>
+            <button onclick="sendWhatsAppOrder('KMZ To HPDB Converter v4.0 PRO Trial 14 Hari', 'Rp 50.000 / 14 Hari')" class="w-full py-2 rounded-xl font-mono-tech text-[11px] text-slate-300 hover:text-white bg-slate-900 hover:bg-slate-800 border border-slate-800 transition-all flex items-center justify-center gap-1.5">
+              <i class="fa-solid fa-bolt text-amber-400"></i> Ambil Trial 14 Hari (Rp 50rb)
+            </button>
+          </div>
         </div>
 
         <!-- CARD 2: BUNDLING UTAMA (BEST VALUE - FEATURED) -->
@@ -1247,10 +1287,14 @@
                 <span class="ml-auto px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-300 border border-amber-500/40 text-[10px] font-mono-tech font-bold">PROMO 3 BULAN</span>
               </div>
               <div class="mt-2 text-[11px] font-mono-tech text-amber-300 flex items-center gap-1.5">
-                <i class="fa-solid fa-clock text-amber-400"></i> Promo berlaku selama 3 bulan pertama (Hemat Rp 50.000/bln)!
+                <i class="fa-solid fa-clock text-amber-400"></i> Promo Welcome 3 Bulan Pertama (Hemat Rp 50.000/bln)!
               </div>
               <div class="text-[10px] font-mono-tech text-slate-400 mt-1">
-                *Setelah masa promo 3 bulan berakhir, harga normal kembali menjadi <strong>Rp 150.000/bln</strong> (FTTH Planner Rp 100rb + KMZ Converter Rp 50rb).
+                *Harga normal paska promo: <strong>Rp 150.000/bln</strong> (FTTH Planner Rp 100rb + KMZ Converter Rp 50rb).
+              </div>
+              <div class="mt-2 p-2 rounded-lg bg-emerald-950/60 border border-emerald-500/30 text-[10px] font-mono-tech text-emerald-300 flex items-center gap-1.5">
+                <i class="fa-solid fa-shield-halved text-emerald-400 shrink-0"></i>
+                <span><strong>Garansi Kunci Harga:</strong> Pengguna aktif berhak mengunci harga Rp 100.000/bln selamanya!</span>
               </div>
               <div class="mt-2 pt-2 border-t border-slate-800 text-xs font-mono-tech text-emerald-400 font-bold">
                 <i class="fa-solid fa-handshake-angle mr-1"></i> Target 600 Member Komunitas: Turun Permanen Jadi Rp 50.000/bln!
@@ -1262,8 +1306,8 @@
 
             <!-- Features -->
             <ul class="space-y-3 text-xs text-slate-200 font-mono-tech mb-8">
-              <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-cyan-400"></i> <strong>FTTH Design Planner <span data-product-version="ftth_design_planner">v3.6.9 (r22)</span></strong> (Semua Tab)</li>
-              <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-cyan-400"></i> <strong>KMZ To HPDB & BOQ Converter <span data-product-version="kmz_converter">v3.3</span></strong> Full</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-cyan-400"></i> <strong>FTTH Design Planner <span data-product-version="ftth_design_planner">v3.6.9 (r24)</span></strong> (Semua Tab)</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-cyan-400"></i> <strong>KMZ To HPDB & BOQ Converter <span data-product-version="kmz_converter">v4.0 PRO</span></strong> Full</li>
               <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-amber-400"></i> <strong>RadialMenu Setup <span data-product-version="radial_menu">v1.35.0</span> LIFETIME (GRATIS)</strong></li>
               <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-cyan-400"></i> Otomasi Basemap, Homepass, Tiang, Cable Route</li>
               <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-cyan-400"></i> Akses Video Tutorial Komprehensif</li>
@@ -1566,6 +1610,22 @@
                 </li>
               </ul>
             </div>
+          </div>
+        </details>
+        
+        <!-- FAQ 5: Price-Lock Guarantee & Promo Duration -->
+        <details class="cad-card p-5 rounded-xl border-slate-800 group">
+          <summary class="font-bold text-slate-100 cursor-pointer list-none flex items-center justify-between hover:text-cyan-300 transition-colors">
+            <span>Bagaimana jika saya berlangganan saat masa promo? Apakah harga langganan saya akan naik nanti?</span>
+            <i class="fa-solid fa-chevron-down text-slate-400 group-open:rotate-180 transition-transform"></i>
+          </summary>
+          <div class="text-slate-300 mt-3 leading-relaxed font-sans text-xs sm:text-sm space-y-2.5">
+            <p>
+              <strong class="text-emerald-300 font-semibold">Tidak akan naik!</strong> Kami menerapkan komitmen <strong class="text-white">Garansi Kunci Harga (Early Adopter Privilege)</strong>.
+            </p>
+            <p>
+              Siapapun Anda yang mulai berlangganan selama masa promo berhak mengunci harga hemat <strong class="text-cyan-300 font-semibold">Rp 100.000 / bulan selamanya</strong> selama status langganan bulanan Anda aktif tidak terputus. Bahkan saat komunitas mencapai target 600 member, biaya langganan Anda otomatis turun menjadi <strong class="text-emerald-400 font-semibold">Rp 50.000 / bulan</strong>!
+            </p>
           </div>
         </details>
 
