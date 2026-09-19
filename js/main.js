@@ -381,6 +381,28 @@ const PRODUCT_GALLERIES = {
         desc: "Utilitas fokus membaca blueprint CAD, baris kode, dan tabel data dengan 2 highlighter independen (ESC+Enter), shortcut scroll naik/turun (ESC+Scroll), double-click fullscreen, transparansi slider, dan mode tembus klik."
       }
     ]
+  },
+  pipeline: {
+    name: "FTTx Pipeline Master v1.0.0",
+    badge: "WORKSPACE & PIPELINE MANAGER",
+    badgeColor: "text-cyan-400 bg-cyan-500/20 border-cyan-500/40",
+    images: [
+      {
+        src: "assets/screenshots/fttx-pipeline-master/01_dashboard_overview.png",
+        title: "Workspace Overview & Monitoring Progres Kluster",
+        desc: "Monitoring status dan kemajuan puluhan kluster FTTx aktif (APD, Pre-ABD, ABD), SLA jatuh tempo, checklist berkas terintegrasi, dan notifikasi follow-up subkon."
+      },
+      {
+        src: "assets/screenshots/fttx-pipeline-master/02_analytics_and_charts.png",
+        title: "Statistik Progres Bulanan & Distribusi Fase Proyek",
+        desc: "Grafik analitik komparasi penyelesaian proyek bulanan dan diagram donat distribusi beban tahapan kluster yang sedang berjalan."
+      },
+      {
+        src: "assets/screenshots/fttx-pipeline-master/03_cluster_grid_specs.png",
+        title: "Homepass Specs, Folder Colorizer Native & Laporan WhatsApp",
+        desc: "Tampilan grid multi-kluster dengan ringkasan spesifikasi teknis (HP SnD, APD, ABD, Kabel, Tiang), pewarna folder Windows otomatis, dan generator laporan WhatsApp 1-klik."
+      }
+    ]
   }
 };
 
