@@ -1409,14 +1409,14 @@
             <div class="mb-6 pb-6 border-b border-slate-700/80 bg-slate-950/60 p-4 rounded-xl border border-cyan-500/30">
               <div class="flex items-baseline gap-2">
                 <span class="text-3xl lg:text-4xl font-black text-cyan-300">Rp 100.000</span>
-                <span class="text-xs font-mono-tech text-slate-400">/ bulan</span>
-                <span class="ml-auto px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-300 border border-amber-500/40 text-[10px] font-mono-tech font-bold">PROMO 3 BULAN</span>
+                <span class="text-xs font-mono-tech text-slate-400">/ bulan pertama</span>
+                <span class="ml-auto px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-300 border border-amber-500/40 text-[10px] font-mono-tech font-bold">PROMO 1 BULAN</span>
               </div>
               <div class="mt-2 text-[11px] font-mono-tech text-amber-300 flex items-center gap-1.5">
-                <i class="fa-solid fa-clock text-amber-400"></i> Promo Welcome 3 Bulan Pertama (Hemat Rp 50.000/bln)!
+                <i class="fa-solid fa-clock text-amber-400"></i> Promo Welcome Bulan Pertama: Rp 100.000 (Hemat Rp 50.000)!
               </div>
               <div class="text-[10px] font-mono-tech text-slate-400 mt-1">
-                *Harga normal paska promo: <strong>Rp 150.000/bln</strong> (FTTH Planner Rp 100rb + KMZ Converter Rp 50rb).
+                *Mulai bulan ke-2 dan seterusnya, berlaku harga normal <strong>Rp 150.000/bln</strong> (FTTH Planner Rp 100rb + KMZ Converter Rp 50rb).
               </div>
               <div class="mt-2 p-2 rounded-lg bg-emerald-950/60 border border-emerald-500/30 text-[10px] font-mono-tech text-emerald-300 flex items-center gap-1.5">
                 <i class="fa-solid fa-shield-halved text-emerald-400 shrink-0"></i>
@@ -1862,13 +1862,13 @@
     </div>
   </footer>
 
-  <!-- FLOATING PROMOTIONAL BANNER (3-MONTH BUNDLE PROMO) -->
+  <!-- FLOATING PROMOTIONAL BANNER (1-MONTH BUNDLE PROMO) -->
   <div id="promo-floating-banner" class="fixed bottom-5 left-4 sm:left-6 z-40 max-w-md w-[calc(100%-2rem)] sm:w-[430px] bg-slate-950/95 border border-amber-500/50 shadow-2xl rounded-2xl p-4 backdrop-blur-xl glow-amber transition-all duration-500 transform translate-y-0">
     <div class="flex items-start justify-between gap-2">
       <div class="flex items-center gap-2">
         <span class="w-2.5 h-2.5 rounded-full bg-amber-400 animate-ping"></span>
         <span class="px-2.5 py-0.5 rounded-md bg-amber-500/20 text-amber-300 border border-amber-500/40 text-[10px] font-mono-tech font-bold uppercase tracking-wider">
-          🔥 PROMO BUNDLE 3 BULAN
+          🔥 PROMO BULAN PERTAMA
         </span>
       </div>
       <button onclick="togglePromoBanner(false)" class="text-slate-400 hover:text-white text-xs p-1 rounded-lg hover:bg-slate-800 transition-colors" title="Sembunyikan Banner">
@@ -1878,15 +1878,15 @@
 
     <div class="mt-2.5 space-y-1.5">
       <h4 class="text-xs sm:text-sm font-extrabold text-slate-100 leading-tight">
-        Harga Bundling Rp 100.000/bln (Berlaku 3 Bulan Pertama)
+        Harga Bundling Rp 100.000 (Khusus 1 Bulan Pertama)
       </h4>
       <p class="text-[11px] text-slate-300 leading-relaxed font-sans">
-        Dapatkan akses <strong>FTTH Planner <span data-product-version="ftth_design_planner">v3.6.9 (r22)</span> + KMZ Converter <span data-product-version="kmz_converter">v3.3</span> + Bonus RadialMenu</strong> hanya <strong>Rp 100rb/bln</strong>. Setelah masa promo 3 bulan berakhir, harga normal kembali menjadi <strong>Rp 150rb/bln</strong> (Planner 100rb + KMZ 50rb).
+        Dapatkan akses <strong>FTTH Planner + KMZ Converter + Bonus RadialMenu</strong> hanya <strong>Rp 100rb</strong> untuk 1 bulan pertama (Hemat Rp 50.000). Mulai bulan ke-2 dan seterusnya, berlaku harga normal <strong>Rp 150rb/bln</strong> (Planner 100rb + KMZ 50rb).
       </p>
     </div>
 
     <div class="mt-3 pt-2.5 border-t border-slate-800 flex items-center justify-between gap-2 flex-wrap sm:flex-nowrap">
-      <button onclick="sendWhatsAppOrder('Promo Bundling 3 Bulan Pertama (Rp 100.000/bln)', 'Rp 100.000/bln')" class="px-3.5 py-1.5 rounded-lg bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-400 hover:to-orange-400 text-slate-950 text-xs font-black font-heading shadow-md transition-all flex items-center gap-1.5 cursor-pointer">
+      <button onclick="sendWhatsAppOrder('Promo Bundling 1 Bulan Pertama (Rp 100.000)', 'Rp 100.000 / bulan pertama')" class="px-3.5 py-1.5 rounded-lg bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-400 hover:to-orange-400 text-slate-950 text-xs font-black font-heading shadow-md transition-all flex items-center gap-1.5 cursor-pointer">
         <i class="fa-brands fa-whatsapp"></i> Klaim Promo Rp 100rb
       </button>
       <a href="#harga" onclick="togglePromoBanner(false)" class="text-[11px] font-mono-tech text-cyan-400 hover:text-white underline whitespace-nowrap">
@@ -1898,7 +1898,7 @@
   <!-- MINIMIZED FLOATING PROMO BADGE (If user dismissed) -->
   <button id="promo-minimized-btn" onclick="togglePromoBanner(true)" class="fixed bottom-6 left-6 z-40 hidden items-center gap-2 px-3.5 py-2 rounded-full bg-slate-950/95 border border-amber-500/50 text-amber-300 text-xs font-mono-tech font-bold shadow-2xl hover:scale-105 transition-all glow-amber cursor-pointer">
     <i class="fa-solid fa-fire text-amber-400 animate-pulse"></i>
-    <span>Promo Bundle 3 Bulan (Rp 100rb)</span>
+    <span>Promo Bundle 1 Bulan Pertama (Rp 100rb)</span>
   </button>
 
   <!-- FLOATING QUICK ACTION BUTTONS (WhatsApp & Telegram) -->
