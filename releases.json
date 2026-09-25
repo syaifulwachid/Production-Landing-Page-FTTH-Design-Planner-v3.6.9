@@ -1,12 +1,12 @@
 {
-  "last_updated": "2026-09-25T17:50:00.000Z",
+  "last_updated": "2026-09-25T18:03:00.000Z",
   "products": {
     "ftth_design_planner": {
       "name": "FTTH Design Planner",
       "latest_version": "3.6.9.25",
       "display_version": "v3.6.9 (r25)",
       "release_date": "2026-09-26",
-      "download_url": "https://drive.google.com/file/d/1tigOYnkSeCCTaqXbRqdsAguPw0P0cOR9/view?usp=sharing",
+      "download_url": "https://drive.google.com/file/d/10ehm3a7ZkcYrYKTlwb2PJ-l1P4-OgswI/view?usp=sharing",
       "changelog": [
         "Standalone Marker Parcel Geometry & Corner Roundness: Pembuatan bidang geometri kotak mandiri dari titik marker (meski hanya ada Tepi Jalan & Trotoar tanpa ROW) dengan kontrol realtime skala panjang/lebar arah X & Y, rotasi selektif per objek, serta penghalus sudut (Roundness).",
         "Road Labeling Background Toast & Hybrid Google Maps RPC (No-Billing): Pemisahan proses penarikan nama jalan ke background dengan Floating Toast Progress anti-crash, isolasi cache ketat antar provider, serta 3-Stage Hybrid Google Maps RPC yang tetap berfungsi tanpa Billing Google Cloud.",
