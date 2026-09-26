@@ -1,18 +1,19 @@
 {
-  "last_updated": "2026-09-25T18:03:00.000Z",
+  "last_updated": "2026-09-26T01:48:00.000Z",
   "products": {
     "ftth_design_planner": {
       "name": "FTTH Design Planner",
-      "latest_version": "3.6.9.25",
-      "display_version": "v3.6.9 (r25)",
+      "latest_version": "3.6.9.26",
+      "display_version": "v3.6.9 (r26)",
       "release_date": "2026-09-26",
       "download_url": "https://drive.google.com/file/d/10ehm3a7ZkcYrYKTlwb2PJ-l1P4-OgswI/view?usp=sharing",
       "changelog": [
+        "Drafter Presence & Personal Greeting System: Fitur kolaborasi realtime antar-drafter FTTH di seluruh dunia. Melihat rekan yang sedang online lengkap dengan status DWG yang dikerjakan, role, dan sapaan personal 1-klik ([👋 Sapa]).",
+        "Wizard Setup Profil 3 Langkah (Fluent Dark): Setup identitas drafter pertama kali (Nama Lengkap, Panggilan, Kota, Role, 6 Pilihan Warna Avatar), preferensi privasi (Global, Tim, Invisible), dan konfigurasi tim via kode akses unik.",
+        "Always-On In-CAD Toast Notifications: Tetap menerima notifikasi sapaan rekan drafter di layar AutoCAD via popup toast interaktif [Buka Chat] meski jendela FTTH Companion sedang tertutup.",
+        "Perbaikan Total Startup Palette & Netralisasi Cache Profile.aws: Penataan ulang nama internal PaletteSet Assistant dan StreetView menjadi perintah resmi AutoCAD (tanpa spasi) serta auto-clean Profile.aws, melenyapkan error unknown command saat AutoCAD pertama kali dibuka.",
         "Standalone Marker Parcel Geometry & Corner Roundness: Pembuatan bidang geometri kotak mandiri dari titik marker (meski hanya ada Tepi Jalan & Trotoar tanpa ROW) dengan kontrol realtime skala panjang/lebar arah X & Y, rotasi selektif per objek, serta penghalus sudut (Roundness).",
-        "Road Labeling Background Toast & Hybrid Google Maps RPC (No-Billing): Pemisahan proses penarikan nama jalan ke background dengan Floating Toast Progress anti-crash, isolasi cache ketat antar provider, serta 3-Stage Hybrid Google Maps RPC yang tetap berfungsi tanpa Billing Google Cloud.",
-        "Infinite Text Edit pada Slack Cable Tabel (Auto-Heal MText): Seluruh teks pada Slack Cable Tabel (baru maupun yang sudah ada di gambar) kini menggunakan arsitektur MText Top-DrawOrder yang bebas diedit berulang kali kapan pun melalui _textedit.",
-        "Optimasi Auto Export KML/KMZ & Diagnostik Solusi Error: Integrasi perintah FTTH_EXPORT_KMZ, indikator progress toast non-intrusif, serta pesan panduan perbaikan otomatis saat ditemukan anomali atribut jalur/LINE.",
-        "Tata Letak UI Ringkas 2-Kolom & Default Chill Mode: Penataan ulang parameter slider menjadi 2 kolom berdampingan (kanan-kiri) pada panel utama serta mode default Chill pada asisten chat FTTH Companion."
+        "Road Labeling Background Toast & Hybrid Google Maps RPC (No-Billing): Pemisahan proses penarikan nama jalan ke background dengan Floating Toast Progress anti-crash, isolasi cache ketat antar provider, serta 3-Stage Hybrid Google Maps RPC yang tetap berfungsi tanpa Billing Google Cloud."
       ],
       "mandatory_update": false
     },
