@@ -1,12 +1,12 @@
 {
-  "last_updated": "2026-09-26T01:48:00.000Z",
+  "last_updated": "2026-09-26T01:59:00.000Z",
   "products": {
     "ftth_design_planner": {
       "name": "FTTH Design Planner",
       "latest_version": "3.6.9.26",
       "display_version": "v3.6.9 (r26)",
       "release_date": "2026-09-26",
-      "download_url": "https://drive.google.com/file/d/10ehm3a7ZkcYrYKTlwb2PJ-l1P4-OgswI/view?usp=sharing",
+      "download_url": "https://drive.google.com/file/d/1o-S9GfB4Nc16VTSFq1XJEoJ2Asb1gu55/view?usp=sharing",
       "changelog": [
         "Drafter Presence & Personal Greeting System: Fitur kolaborasi realtime antar-drafter FTTH di seluruh dunia. Melihat rekan yang sedang online lengkap dengan status DWG yang dikerjakan, role, dan sapaan personal 1-klik ([👋 Sapa]).",
         "Wizard Setup Profil 3 Langkah (Fluent Dark): Setup identitas drafter pertama kali (Nama Lengkap, Panggilan, Kota, Role, 6 Pilihan Warna Avatar), preferensi privasi (Global, Tim, Invisible), dan konfigurasi tim via kode akses unik.",
