@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-26T01:59:00.000Z",
+  "last_updated": "2026-09-29T04:02:00.000Z",
   "products": {
     "ftth_design_planner": {
       "name": "FTTH Design Planner",
@@ -33,31 +33,30 @@
     },
     "kmz_converter": {
       "name": "KMZ To HPDB And BOQ Converter",
-      "latest_version": "4.0.0.0",
-      "display_version": "v4.0 PRO",
-      "release_date": "2026-09-05",
+      "latest_version": "4.1.0.0",
+      "display_version": "v4.1 PRO",
+      "release_date": "2026-09-27",
       "download_url": "https://drive.google.com/file/d/1qT95-n_NWM6IUwjUZdL3N9XMsO1pz3wt/view?usp=sharing",
       "changelog": [
-        "Peningkatan Performa: Engine Konversi V4.0 Generasi Baru — Ekstraksi data KMZ ke HPDB & BoQ jauh lebih cepat, ringan, dan stabil",
-        "Aktivasi Instan 1-Klik: Aktivasi otomatis via QRIS & Telegram Approval tanpa repot menyalin kode serial",
-        "Pilihan Paket Baru: Tersedia Paket 2 Minggu (14 Hari / Trial) seharga Rp 50.000 untuk pengujian proyek fleksibel",
-        "UI Refinement: Relokasi informasi status lisensi ke tab 'About & Support' untuk area kerja yang lebih bersih & tenang",
-        "Penyempurnaan Kalkulasi: Optimalisasi formula BoM AE dan pemetaan Joint Closure (JC) presisi tinggi"
+        "Generate Form Opname Lapangan: Otomatis menghasilkan file checklist Form Opname (3.FORM_OPNAME.xlsx) dengan nilai As Plan presisi dari hasil kalkulasi BoQ untuk pengawasan tim Wapang (sheet Aerial dipertahankan untuk pencatatan manual).",
+        "Indikator Visual 'BoQ Only' Mode Subfeeder: Notifikasi transparan dan badge UI interaktif pada mode Subfeeder bahwa proses fokus menghasilkan BoQ & Form Opname (HPDB tidak digenerate).",
+        "Parameter Kontrol Form Opname: Opsi CheckBox fleksibel di pengaturan umum untuk mengaktifkan atau menonaktifkan pembuatan Form Opname pada mode Cluster maupun Subfeeder.",
+        "Engine & Stability Update: Build self-contained .NET 9 terbaru dengan optimasi ClosedXML dan installer Inno Setup 6 yang diperbarui."
       ],
       "mandatory_update": false
     },
     "radial_menu": {
       "name": "RadialMenu Setup",
-      "latest_version": "1.35.0.0",
-      "display_version": "v1.35.0",
-      "release_date": "2026-09-14",
-      "download_url": "https://drive.google.com/file/d/1va-1pH9Zm12h0sRfN6Uxdh0GQZixRziM/view?usp=sharing",
+      "latest_version": "1.36.0.0",
+      "display_version": "v1.36.0",
+      "release_date": "2026-09-29",
+      "download_url": "https://drive.google.com/file/d/1Ji97CtdkOTxCZDiJWDlAODgU2jO3CIun/view?usp=sharing",
       "changelog": [
-        "Modern Dark-Theme Toast Notifications: Notifikasi aksi & status non-blocking tanpa dialog popup memblokir layar.",
-        "Perbaikan Window Focus & State: Status & ukuran Maximized jendela aplikasi target (seperti browser/CAD) tetap terjaga utuh.",
-        "Navigasi Pengaturan Lebih Ergonomis: Tab Profiles & Filters di urutan teratas serta tombol permanen SAVE ALL CHANGES.",
-        "Tombol Cek Pembaruan & Auto-Updater: Fitur pengecekan rilis terbaru secara otomatis dan manual dengan toast pemberitahuan.",
-        "Peningkatan Multi-Key Keystrokes: Dukungan urutan shortcut (seperti Alt+C then F) dan validasi profil otomatis."
+        "Seamless Multi-Ring Interaction: Kursor mouse dapat langsung berpindah dan memicu aktivasi menu antar-ring secara instan tanpa harus mengarahkan kursor balik ke tengah.",
+        "Profil Aplikasi Mandiri: Mode Quick Mode dan Directional Hover kini berfungsi optimal di semua profil aplikasi (seperti Mozilla Firefox, browser, dan software CAD).",
+        "Native High-DPI Resolution & Per-Monitor V2: Tampilan tajam 1:1 tanpa efek buram atau pembesaran paksa sistem (DPI virtualization) serta auto-migrasi skala menu ideal.",
+        "Auto-Clean Installer: Inno Setup v1.36.0 otomatis mendeteksi dan memperbarui instalasi versi lama secara bersih.",
+        "Reliable Launch at Startup: Registrasi startup Windows yang disempurnakan dengan penanganan pesan broadcast TaskbarCreated."
       ],
       "mandatory_update": false
     },
