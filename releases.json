@@ -1,19 +1,17 @@
 {
-  "last_updated": "2026-09-29T04:02:00.000Z",
+  "last_updated": "2026-10-01T03:55:00.000Z",
   "products": {
     "ftth_design_planner": {
       "name": "FTTH Design Planner",
-      "latest_version": "3.6.9.26",
-      "display_version": "v3.6.9 (r26)",
-      "release_date": "2026-09-26",
+      "latest_version": "3.6.9.27",
+      "display_version": "v3.6.9 (r27)",
+      "release_date": "2026-10-01",
       "download_url": "https://drive.google.com/file/d/1o-S9GfB4Nc16VTSFq1XJEoJ2Asb1gu55/view?usp=sharing",
       "changelog": [
-        "Drafter Presence & Personal Greeting System: Fitur kolaborasi realtime antar-drafter FTTH di seluruh dunia. Melihat rekan yang sedang online lengkap dengan status DWG yang dikerjakan, role, dan sapaan personal 1-klik ([👋 Sapa]).",
-        "Wizard Setup Profil 3 Langkah (Fluent Dark): Setup identitas drafter pertama kali (Nama Lengkap, Panggilan, Kota, Role, 6 Pilihan Warna Avatar), preferensi privasi (Global, Tim, Invisible), dan konfigurasi tim via kode akses unik.",
-        "Always-On In-CAD Toast Notifications: Tetap menerima notifikasi sapaan rekan drafter di layar AutoCAD via popup toast interaktif [Buka Chat] meski jendela FTTH Companion sedang tertutup.",
-        "Perbaikan Total Startup Palette & Netralisasi Cache Profile.aws: Penataan ulang nama internal PaletteSet Assistant dan StreetView menjadi perintah resmi AutoCAD (tanpa spasi) serta auto-clean Profile.aws, melenyapkan error unknown command saat AutoCAD pertama kali dibuka.",
-        "Standalone Marker Parcel Geometry & Corner Roundness: Pembuatan bidang geometri kotak mandiri dari titik marker (meski hanya ada Tepi Jalan & Trotoar tanpa ROW) dengan kontrol realtime skala panjang/lebar arah X & Y, rotasi selektif per objek, serta penghalus sudut (Roundness).",
-        "Road Labeling Background Toast & Hybrid Google Maps RPC (No-Billing): Pemisahan proses penarikan nama jalan ke background dengan Floating Toast Progress anti-crash, isolasi cache ketat antar provider, serta 3-Stage Hybrid Google Maps RPC yang tetap berfungsi tanpa Billing Google Cloud."
+        "Smart Import & Export KMZ Underground FTTH: Dukungan penuh infrastruktur bawah tanah (Boring Manual, Boring Machine, Sewer, T-Way, Open Trenching, Handholes, Subduct, Galvanis, PVC, Tali Pancing).",
+        "Komunikasi 2 Arah (Roundtrip Fidelity): Pemisahan layer simbol dan layer label (Handhole & Enclosure) serta grouping folder standar MoraRepublic 2026 sehingga hasil ekspor KML/KMZ identik dengan format KMZ teknis vendor.",
+        "Sidewalk & Road Center Snapping: Simbol Handhole dapat otomatis di-snap ke tengah trotoar dan tepi jalan mirip snapping tiang, lengkap dengan opsi toggle (on/off) yang fleksibel di UI Smart Import.",
+        "Standardisasi Layer Spasial & Lineweight: Pengaturan otomatis lineweight (2.11mm/1.00mm/0.30mm), TrueColor, dan transparansi viewport (30%/3%) dengan pengaktifan otomatis TRANSPARENCYDISPLAY di AutoCAD."
       ],
       "mandatory_update": false
     },
