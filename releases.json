@@ -1,19 +1,20 @@
 {
-  "last_updated": "2026-10-01T03:55:00.000Z",
+  "last_updated": "2026-10-05T10:55:00.000Z",
   "products": {
     "ftth_design_planner": {
       "name": "FTTH Design Planner",
-      "latest_version": "3.6.9.26",
-      "display_version": "v3.6.9 (r26)",
-      "release_date": "2026-09-26",
-      "download_url": "https://drive.google.com/file/d/1o-S9GfB4Nc16VTSFq1XJEoJ2Asb1gu55/view?usp=sharing",
+      "latest_version": "3.6.9.27",
+      "display_version": "v3.6.9 (r27)",
+      "release_date": "2026-10-05",
+      "download_url": "https://drive.google.com/file/d/1YnbIX4DB8AvT5RnQUExuuL2bkcEDqnAH/view?usp=sharing",
       "changelog": [
-        "Drafter Presence & Personal Greeting System: Fitur kolaborasi realtime antar-drafter FTTH di seluruh dunia. Melihat rekan yang sedang online lengkap dengan status DWG yang dikerjakan, role, dan sapaan personal 1-klik ([👋 Sapa]).",
-        "Wizard Setup Profil 3 Langkah (Fluent Dark): Setup identitas drafter pertama kali (Nama Lengkap, Panggilan, Kota, Role, 6 Pilihan Warna Avatar), preferensi privasi (Global, Tim, Invisible), dan konfigurasi tim via kode akses unik.",
-        "Always-On In-CAD Toast Notifications: Tetap menerima notifikasi sapaan rekan drafter di layar AutoCAD via popup toast interaktif [Buka Chat] meski jendela FTTH Companion sedang tertutup.",
-        "Perbaikan Total Startup Palette & Netralisasi Cache Profile.aws: Penataan ulang nama internal PaletteSet Assistant dan StreetView menjadi perintah resmi AutoCAD (tanpa spasi) serta auto-clean Profile.aws, melenyapkan error unknown command saat AutoCAD pertama kali dibuka.",
-        "Standalone Marker Parcel Geometry & Corner Roundness: Pembuatan bidang geometri kotak mandiri dari titik marker (meski hanya ada Tepi Jalan & Trotoar tanpa ROW) dengan kontrol realtime skala panjang/lebar arah X & Y, rotasi selektif per objek, serta penghalus sudut (Roundness).",
-        "Road Labeling Background Toast & Hybrid Google Maps RPC (No-Billing): Pemisahan proses penarikan nama jalan ke background dengan Floating Toast Progress anti-crash, isolasi cache ketat antar provider, serta 3-Stage Hybrid Google Maps RPC yang tetap berfungsi tanpa Billing Google Cloud."
+        "In-Memory Planar Graph Polygonizer & Run Placer (Auto Boundary): Algoritma ekstraksi bidang tertutup instan dari ratusan kurva polyline dan garis terbuka (Open Polyline) langsung di memori tanpa ketergantungan tampilan viewport zoom AutoCAD, dilengkapi toleransi auto-snapping (35 cm) dan T-junction splitting.",
+        "Background Toast Progress Bar: Pemisahan proses eksekusi penomoran rumah berurutan dari thread UI utama AutoCAD menggunakan floating toast progress realtime anti-freeze dan anti-crash.",
+        "Proteksi Anti-Duplikasi Nomor Rumah: Perlindungan ketat terhadap persil yang sudah memiliki nomor homepass lama, dijamin tidak akan diduplikasi, dihapus, atau ditimpa saat penomoran baru dijalankan.",
+        "Auto-Slice Overlapping Parcels: Pemotongan otomatis bidang geometri rumah yang bertumpuk dengan menyisakan jarak bersih 1 meter antar-persil sehingga rapi dan konsisten.",
+        "Realtime Selective Geometry Control: Mode seleksi otomatis instan pada seluruh persil yang baru digenerate agar siap langsung disesuaikan ukuran dimensi panjang, lebar, dan rotasinya.",
+        "Perbaikan Frame SnD Kasar & Frame APD (Multi-Sheet Layout Section): Pembersihan titik koordinat teks judul, nomor halaman (Hal- 01, Hal- 02, ...), dan penanda huruf (a, b, c, ...) di dalam frame tanpa terlempar keluar, serta penanaman XData FTTH_FRAME_SECTION untuk sinkronisasi otomatis ke Viewport Layout (FTTH_PUB_ALIGNVIEWPORTS).",
+        "Tombol Reset Frame & Section Sequence: Penyediaan kontrol 1-klik di palette untuk mereset urutan nomor halaman dan huruf penanda ke awal."
       ],
       "mandatory_update": false
     },
