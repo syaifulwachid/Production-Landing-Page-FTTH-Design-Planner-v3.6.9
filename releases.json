@@ -1,18 +1,18 @@
 {
-  "last_updated": "2026-10-17T02:45:00.000Z",
+  "last_updated": "2026-10-17T03:50:00.000Z",
   "products": {
     "ftth_design_planner": {
       "name": "FTTH Design Planner",
-      "latest_version": "3.6.9.29",
-      "display_version": "v3.6.9 (r29)",
+      "latest_version": "3.6.9.30",
+      "display_version": "v3.6.9 (r30)",
       "release_date": "2026-10-17",
       "download_url": "https://drive.google.com/file/d/1I7Er01cDXmMCMPwje_Sr9JjtsWDtTHlE/view?usp=sharing",
       "changelog": [
-        "Download Centerline Jalan Otomatis (100% Gratis): Ekstraksi otomatis seluruh garis as jalan (centerline) untuk SEMUA jenis jalan tanpa terkecuali (arteri, lokal, perumahan, gang, service, living_street, pedestrian, path) langsung dari OpenStreetMap Overpass API tanpa perlu API key atau billing.",
-        "Seleksi Closed Polyline Cepat: Kemudahan menyeleksi poligon batas area kerja (closed polyline) di AutoCAD untuk menarik seluruh jaringan as jalan yang berada di dalam atau melintasi area batas.",
-        "Opsi Checkbox Integrasi Peta: Tersedia checkbox 'Auto-download Centerline (OSM Gratis)' pada panel Boundary & Map Downloader yang otomatis mengunduh dan menggambar as jalan tepat setelah unduhan peta satelit selesai.",
-        "Tombol Mandiri 'DOWNLOAD CL' & Command FTTH_DOWNLOAD_CENTERLINE: Fleksibilitas mengunduh garis as jalan secara mandiri tanpa harus mendownload ulang peta citra satelit.",
-        "Standarisasi Layer & XData FTTH: Seluruh polyline jalan digambar presisi di layer FTTH-CENTERLINE dengan XData lengkap (nama jalan resmi, tipe highway, estimasi lebar jalan) yang langsung kompatibel dengan penempatan tiang otomatis (GeneratePoles) dan perutean kabel (AutoRouteCable)."
+        "Download Percil Bangunan / Homepass Otomatis (100% Gratis): Ekstraksi otomatis footprint poligon bangunan tapak rumah/gedung (percil homepass) langsung ke AutoCAD berdasarkan boundary closed polyline menggunakan dataset OpenStreetMap & Google Open Buildings tanpa perlu API key atau biaya token.",
+        "Otomasi Penomoran HP & Perhitungan Luas: Menghasilkan polyline tapak bangunan di layer FTTH-PERCIL, centroid DBPoint dan teks nomor urut (HP 001, HP 002, ...) di layer FTTH-PERCIL-POINT, serta metadata XData luas bangunan (m2) dan koordinat centroid yang presisi.",
+        "Opsi Checkbox Integrasi Unduh Peta: Tersedia checkbox 'Auto Percil (HP)' pada panel Boundary & Map Downloader yang otomatis mengunduh dan menomori percil bangunan tepat setelah peta citra satelit selesai digambar.",
+        "Tombol Mandiri 'DOWNLOAD HP' & Command FTTH_DOWNLOAD_HOMEPASS: Fleksibilitas menyeleksi boundary closed polyline dan mengunduh ribuan percil bangunan secara instan kapan saja.",
+        "Download Centerline Jalan Otomatis (100% Gratis): Ekstraksi otomatis seluruh garis as jalan (centerline) untuk SEMUA jenis jalan tanpa terkecuali langsung dari OpenStreetMap Overpass API."
       ],
       "mandatory_update": false
     },
