@@ -1,20 +1,20 @@
 {
-  "last_updated": "2026-10-05T10:55:00.000Z",
+  "last_updated": "2026-10-16T21:58:00.000Z",
   "products": {
     "ftth_design_planner": {
       "name": "FTTH Design Planner",
-      "latest_version": "3.6.9.27",
-      "display_version": "v3.6.9 (r27)",
-      "release_date": "2026-10-05",
-      "download_url": "https://drive.google.com/file/d/1YnbIX4DB8AvT5RnQUExuuL2bkcEDqnAH/view?usp=sharing",
+      "latest_version": "3.6.9.28",
+      "display_version": "v3.6.9 (r28)",
+      "release_date": "2026-10-16",
+      "download_url": "https://drive.google.com/file/d/1I7Er01cDXmMCMPwje_Sr9JjtsWDtTHlE/view?usp=sharing",
       "changelog": [
-        "In-Memory Planar Graph Polygonizer & Run Placer (Auto Boundary): Algoritma ekstraksi bidang tertutup instan dari ratusan kurva polyline dan garis terbuka (Open Polyline) langsung di memori tanpa ketergantungan tampilan viewport zoom AutoCAD, dilengkapi toleransi auto-snapping (35 cm) dan T-junction splitting.",
-        "Background Toast Progress Bar: Pemisahan proses eksekusi penomoran rumah berurutan dari thread UI utama AutoCAD menggunakan floating toast progress realtime anti-freeze dan anti-crash.",
-        "Proteksi Anti-Duplikasi Nomor Rumah: Perlindungan ketat terhadap persil yang sudah memiliki nomor homepass lama, dijamin tidak akan diduplikasi, dihapus, atau ditimpa saat penomoran baru dijalankan.",
-        "Auto-Slice Overlapping Parcels: Pemotongan otomatis bidang geometri rumah yang bertumpuk dengan menyisakan jarak bersih 1 meter antar-persil sehingga rapi dan konsisten.",
-        "Realtime Selective Geometry Control: Mode seleksi otomatis instan pada seluruh persil yang baru digenerate agar siap langsung disesuaikan ukuran dimensi panjang, lebar, dan rotasinya.",
-        "Perbaikan Frame SnD Kasar & Frame APD (Multi-Sheet Layout Section): Pembersihan titik koordinat teks judul, nomor halaman (Hal- 01, Hal- 02, ...), dan penanda huruf (a, b, c, ...) di dalam frame tanpa terlempar keluar, serta penanaman XData FTTH_FRAME_SECTION untuk sinkronisasi otomatis ke Viewport Layout (FTTH_PUB_ALIGNVIEWPORTS).",
-        "Tombol Reset Frame & Section Sequence: Penyediaan kontrol 1-klik di palette untuk mereset urutan nomor halaman dan huruf penanda ke awal."
+        "Draw Helper Arrow di Quickbar: Penambahan tombol '🏹 Arrow' pada quick action bar utama untuk akses instan menggambar garis bantu panah dari blok FAT ke poligon boundary.",
+        "Mode Looping Interaktif Helper Arrow: Perintah FTTH_DRAW_HELPER_ARROW kini dapat dieksekusi berulang kali (looping) secara langsung tanpa harus menekan tombol kembali (cukup tekan Enter/ESC untuk selesai).",
+        "Optimasi Performa Auto Export KMZ (Smooth Toast Loading): Implementasi rendering dispatcher yielding dan batching log konsol sehingga UI AutoCAD dan progress bar toast berjalan mulus tanpa macet/not responding.",
+        "Akselerasi Uji Geometri Spasial (Fast Bounding-Box Rejection): Peningkatan kecepatan kalkulasi titik homepass dan boundary hingga 100x lebih cepat saat proses ekspor KML/KMZ.",
+        "Dukungan Kapasitas & Skema Warna FDT 72C / 48C: Deteksi presisi kapasitas FDT 72C serta pembedaan aturan warna otomatis pada file KMZ hasil ekspor.",
+        "Auto-Retrieve Nama Cluster dari DWG: Nama cluster otomatis terisi dari nama file DWG yang aktif dengan tombol pemulih (*retrieve*) nama cluster instan.",
+        "Penyelarasan Hirarki Jalur Kabel & Labeling FAT: Perbaikan urutan pelabelan FAT pada multi-line (Line A, B, C) serta pemisahan identifikasi jalur kabel distribusi vs wire."
       ],
       "mandatory_update": false
     },
