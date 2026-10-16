@@ -1,20 +1,18 @@
 {
-  "last_updated": "2026-10-16T21:58:00.000Z",
+  "last_updated": "2026-10-17T02:45:00.000Z",
   "products": {
     "ftth_design_planner": {
       "name": "FTTH Design Planner",
-      "latest_version": "3.6.9.28",
-      "display_version": "v3.6.9 (r28)",
-      "release_date": "2026-10-16",
+      "latest_version": "3.6.9.29",
+      "display_version": "v3.6.9 (r29)",
+      "release_date": "2026-10-17",
       "download_url": "https://drive.google.com/file/d/1I7Er01cDXmMCMPwje_Sr9JjtsWDtTHlE/view?usp=sharing",
       "changelog": [
-        "Draw Helper Arrow di Quickbar: Penambahan tombol '🏹 Arrow' pada quick action bar utama untuk akses instan menggambar garis bantu panah dari blok FAT ke poligon boundary.",
-        "Mode Looping Interaktif Helper Arrow: Perintah FTTH_DRAW_HELPER_ARROW kini dapat dieksekusi berulang kali (looping) secara langsung tanpa harus menekan tombol kembali (cukup tekan Enter/ESC untuk selesai).",
-        "Optimasi Performa Auto Export KMZ (Smooth Toast Loading): Implementasi rendering dispatcher yielding dan batching log konsol sehingga UI AutoCAD dan progress bar toast berjalan mulus tanpa macet/not responding.",
-        "Akselerasi Uji Geometri Spasial (Fast Bounding-Box Rejection): Peningkatan kecepatan kalkulasi titik homepass dan boundary hingga 100x lebih cepat saat proses ekspor KML/KMZ.",
-        "Dukungan Kapasitas & Skema Warna FDT 72C / 48C: Deteksi presisi kapasitas FDT 72C serta pembedaan aturan warna otomatis pada file KMZ hasil ekspor.",
-        "Auto-Retrieve Nama Cluster dari DWG: Nama cluster otomatis terisi dari nama file DWG yang aktif dengan tombol pemulih (*retrieve*) nama cluster instan.",
-        "Penyelarasan Hirarki Jalur Kabel & Labeling FAT: Perbaikan urutan pelabelan FAT pada multi-line (Line A, B, C) serta pemisahan identifikasi jalur kabel distribusi vs wire."
+        "Download Centerline Jalan Otomatis (100% Gratis): Ekstraksi otomatis seluruh garis as jalan (centerline) untuk SEMUA jenis jalan tanpa terkecuali (arteri, lokal, perumahan, gang, service, living_street, pedestrian, path) langsung dari OpenStreetMap Overpass API tanpa perlu API key atau billing.",
+        "Seleksi Closed Polyline Cepat: Kemudahan menyeleksi poligon batas area kerja (closed polyline) di AutoCAD untuk menarik seluruh jaringan as jalan yang berada di dalam atau melintasi area batas.",
+        "Opsi Checkbox Integrasi Peta: Tersedia checkbox 'Auto-download Centerline (OSM Gratis)' pada panel Boundary & Map Downloader yang otomatis mengunduh dan menggambar as jalan tepat setelah unduhan peta satelit selesai.",
+        "Tombol Mandiri 'DOWNLOAD CL' & Command FTTH_DOWNLOAD_CENTERLINE: Fleksibilitas mengunduh garis as jalan secara mandiri tanpa harus mendownload ulang peta citra satelit.",
+        "Standarisasi Layer & XData FTTH: Seluruh polyline jalan digambar presisi di layer FTTH-CENTERLINE dengan XData lengkap (nama jalan resmi, tipe highway, estimasi lebar jalan) yang langsung kompatibel dengan penempatan tiang otomatis (GeneratePoles) dan perutean kabel (AutoRouteCable)."
       ],
       "mandatory_update": false
     },
