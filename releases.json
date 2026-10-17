@@ -1,12 +1,12 @@
 {
-  "last_updated": "2026-10-17T03:50:00.000Z",
+  "last_updated": "2026-10-17T06:05:00.000Z",
   "products": {
     "ftth_design_planner": {
       "name": "FTTH Design Planner",
       "latest_version": "3.6.9.30",
       "display_version": "v3.6.9 (r30)",
       "release_date": "2026-10-17",
-      "download_url": "https://drive.google.com/file/d/1I7Er01cDXmMCMPwje_Sr9JjtsWDtTHlE/view?usp=sharing",
+      "download_url": "https://drive.google.com/file/d/1hpcwx7G5t3pyGdjgqSJbKkADTADtAxvl/view?usp=sharing",
       "changelog": [
         "Download Percil Bangunan Otomatis (100% Gratis): Ekstraksi otomatis footprint poligon tapak bangunan rumah/gedung (percil) di layer FTTH-PERCIL dan titik anchor centroid DBPoint di layer FTTH-PERCIL-POINT berdasarkan boundary closed polyline menggunakan dataset OpenStreetMap & Google Open Buildings tanpa perlu API key atau biaya token.",
         "Sinergi Optimal dengan Fitur Run Placer: Penggambaran percil dibuat ultra cepat tanpa teks nomor statis, sehingga penomoran rumah, orientasi rotasi jalan, dan perataan blok nomor dapat digenerate secara presisi melalui fitur Run Placer.",
