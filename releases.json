@@ -8,9 +8,9 @@
       "release_date": "2026-10-17",
       "download_url": "https://drive.google.com/file/d/1I7Er01cDXmMCMPwje_Sr9JjtsWDtTHlE/view?usp=sharing",
       "changelog": [
-        "Download Percil Bangunan / Homepass Otomatis (100% Gratis): Ekstraksi otomatis footprint poligon bangunan tapak rumah/gedung (percil homepass) langsung ke AutoCAD berdasarkan boundary closed polyline menggunakan dataset OpenStreetMap & Google Open Buildings tanpa perlu API key atau biaya token.",
-        "Otomasi Penomoran HP & Perhitungan Luas: Menghasilkan polyline tapak bangunan di layer FTTH-PERCIL, centroid DBPoint dan teks nomor urut (HP 001, HP 002, ...) di layer FTTH-PERCIL-POINT, serta metadata XData luas bangunan (m2) dan koordinat centroid yang presisi.",
-        "Opsi Checkbox Integrasi Unduh Peta: Tersedia checkbox 'Auto Percil (HP)' pada panel Boundary & Map Downloader yang otomatis mengunduh dan menomori percil bangunan tepat setelah peta citra satelit selesai digambar.",
+        "Download Percil Bangunan Otomatis (100% Gratis): Ekstraksi otomatis footprint poligon tapak bangunan rumah/gedung (percil) di layer FTTH-PERCIL dan titik anchor centroid DBPoint di layer FTTH-PERCIL-POINT berdasarkan boundary closed polyline menggunakan dataset OpenStreetMap & Google Open Buildings tanpa perlu API key atau biaya token.",
+        "Sinergi Optimal dengan Fitur Run Placer: Penggambaran percil dibuat ultra cepat tanpa teks nomor statis, sehingga penomoran rumah, orientasi rotasi jalan, dan perataan blok nomor dapat digenerate secara presisi melalui fitur Run Placer.",
+        "Opsi Checkbox Integrasi Unduh Peta: Tersedia checkbox 'Auto Percil (HP)' pada panel Boundary & Map Downloader yang otomatis mengunduh percil bangunan tepat setelah peta citra satelit selesai digambar.",
         "Tombol Mandiri 'DOWNLOAD HP' & Command FTTH_DOWNLOAD_HOMEPASS: Fleksibilitas menyeleksi boundary closed polyline dan mengunduh ribuan percil bangunan secara instan kapan saja.",
         "Download Centerline Jalan Otomatis (100% Gratis): Ekstraksi otomatis seluruh garis as jalan (centerline) untuk SEMUA jenis jalan tanpa terkecuali langsung dari OpenStreetMap Overpass API."
       ],
