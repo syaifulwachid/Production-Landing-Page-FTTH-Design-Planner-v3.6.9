@@ -1,18 +1,17 @@
 {
-  "last_updated": "2026-10-17T06:05:00.000Z",
+  "last_updated": "2026-10-20T15:20:00.000Z",
   "products": {
     "ftth_design_planner": {
       "name": "FTTH Design Planner",
-      "latest_version": "3.6.9.30",
-      "display_version": "v3.6.9 (r30)",
-      "release_date": "2026-10-17",
-      "download_url": "https://drive.google.com/file/d/1hpcwx7G5t3pyGdjgqSJbKkADTADtAxvl/view?usp=sharing",
+      "latest_version": "3.6.9.31",
+      "display_version": "v3.6.9 (r31)",
+      "release_date": "2026-10-20",
+      "download_url": "https://drive.google.com/file/d/17Ufai3tqkgT2ooWdbu3YYnEbHIVVSHJU/view?usp=sharing",
       "changelog": [
-        "Download Percil Bangunan Otomatis (100% Gratis): Ekstraksi otomatis footprint poligon tapak bangunan rumah/gedung (percil) di layer FTTH-PERCIL dan titik anchor centroid DBPoint di layer FTTH-PERCIL-POINT berdasarkan boundary closed polyline menggunakan dataset OpenStreetMap & Google Open Buildings tanpa perlu API key atau biaya token.",
-        "Sinergi Optimal dengan Fitur Run Placer: Penggambaran percil dibuat ultra cepat tanpa teks nomor statis, sehingga penomoran rumah, orientasi rotasi jalan, dan perataan blok nomor dapat digenerate secara presisi melalui fitur Run Placer.",
-        "Opsi Checkbox Integrasi Unduh Peta: Tersedia checkbox 'Auto Percil (HP)' pada panel Boundary & Map Downloader yang otomatis mengunduh percil bangunan tepat setelah peta citra satelit selesai digambar.",
-        "Tombol Mandiri 'DOWNLOAD HP' & Command FTTH_DOWNLOAD_HOMEPASS: Fleksibilitas menyeleksi boundary closed polyline dan mengunduh ribuan percil bangunan secara instan kapan saja.",
-        "Download Centerline Jalan Otomatis (100% Gratis): Ekstraksi otomatis seluruh garis as jalan (centerline) untuk SEMUA jenis jalan tanpa terkecuali langsung dari OpenStreetMap Overpass API."
+        "Smart Auto-Grid Frame APD/ABD: Pembagian section frame cerdas berbasis boundary cluster kini mendukung penuh Frame APD/ABD (196.0m × 160.7m, layer Frame APD_ABD kuning) dan Frame SnD Kasar proporsional pas MView layout, lengkap dengan live scale adjustment, geser grid X/Y, seleksi hapus frame kosong, serta auto-renumbering huruf dan halaman.",
+        "Penanda Jarak Kabel Fleksibel (Cable Distance Marker): Fitur baru pada menu DRAW CABLE & WIRE untuk menempatkan marker jarak kabel (Mainfeeder/Subfeeder/Distribusi) untuk rencana Slack Cable (300m, 400m, 500m) maupun sambungan lurus Closure (1 KM, 2 KM, 3 KM, 4 KM / 1 Hasbel drum) serta custom meter.",
+        "Dual Skenario Pengukuran (Geometri & Real Cable Slack): Skenario 1 mengukur murni panjang geometri gambar, sedangkan Skenario 2 memperhitungkan akumulasi Slack Cable di sepanjang rute jalur sehingga posisi penanda akurat terhadap panjang kabel fisik di lapangan.",
+        "Penyempurnaan Align Viewports & Export SnD Kasar: Pembersihan teks judul frame agar deteksi viewport layout 100% presisi, serta sinkronisasi penamaan root folder tree pada export KMZ SnD Kasar mengikuti nama cluster aktif."
       ],
       "mandatory_update": false
     },
