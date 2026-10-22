@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-23T02:35:00.000Z",
+  "last_updated": "2026-10-23T02:46:00.000Z",
   "products": {
     "ftth_design_planner": {
       "name": "FTTH Design Planner",
@@ -8,10 +8,10 @@
       "release_date": "2026-10-23",
       "download_url": "https://drive.google.com/file/d/13v59PBr5Mz1bifdncBRHMMRVd21Fo__f/view?usp=sharing",
       "changelog": [
-        "Security & License Hardening: Pengamanan 100% seluruh perintah AutoCAD melalui Central LicenseGuard, memvalidasi otorisasi digital RSA dan sinkronisasi status masa aktif secara realtime.",
-        "Antarmuka Lisensi Informatif: Status bar dinamis dengan sisa hari akurat, tanggal jatuh tempo riil, dan tombol perpanjang instan terintegrasi QRIS.",
-        "EULA & Targeted Auto-Cleanup: Integrasi perjanjian lisensi pengguna akhir dan pembersihan residu installer lama di folder Downloads & Desktop untuk mencegah konflik dependensi sistem.",
-        "Sistem Pembaruan Mandatori (Hard Lockout): Mekanisme penguncian versi usang yang mewajibkan pengguna memperbarui ke rilis terbaru demi stabilitas jaringan lisensi."
+        "Core Engine Performance & Stability: Optimasi manajemen memori CAD untuk mempercepat proses loading data spasial, eksekusi command drafting, dan manipulasi objek berskala besar tanpa lag.",
+        "Auto-Maintenance & System Cleanup: Penambahan sistem pemeliharaan berkas otomatis untuk membersihkan residu dependensi dan cache instalasi lama guna mencegah AutoCAD not responding / crash.",
+        "Enhanced Viewport & Spatial Precision: Peningkatan sinkronisasi koordinat global saat export layout MView serta penyempurnaan akurasi kalkulasi geometri pada AutoCAD 2021-2027.",
+        "Workspace Reliability Update: Peningkatan kestabilan komunikasi internal modul palet dan pembaharuan profil environment CAD agar seluruh workflow drafting bekerja lebih responsif."
       ],
       "mandatory_update": true
     },
