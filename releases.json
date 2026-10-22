@@ -1,19 +1,19 @@
 {
-  "last_updated": "2026-10-20T15:20:00.000Z",
+  "last_updated": "2026-10-23T02:35:00.000Z",
   "products": {
     "ftth_design_planner": {
       "name": "FTTH Design Planner",
-      "latest_version": "3.6.9.31",
-      "display_version": "v3.6.9 (r31)",
-      "release_date": "2026-10-20",
-      "download_url": "https://drive.google.com/file/d/17Ufai3tqkgT2ooWdbu3YYnEbHIVVSHJU/view?usp=sharing",
+      "latest_version": "3.6.9.32",
+      "display_version": "v3.6.9 (r32)",
+      "release_date": "2026-10-23",
+      "download_url": "https://drive.google.com/file/d/13v59PBr5Mz1bifdncBRHMMRVd21Fo__f/view?usp=sharing",
       "changelog": [
-        "Smart Auto-Grid Frame APD/ABD: Pembagian section frame cerdas berbasis boundary cluster kini mendukung penuh Frame APD/ABD (196.0m × 160.7m, layer Frame APD_ABD kuning) dan Frame SnD Kasar proporsional pas MView layout, lengkap dengan live scale adjustment, geser grid X/Y, seleksi hapus frame kosong, serta auto-renumbering huruf dan halaman.",
-        "Penanda Jarak Kabel Fleksibel (Cable Distance Marker): Fitur baru pada menu DRAW CABLE & WIRE untuk menempatkan marker jarak kabel (Mainfeeder/Subfeeder/Distribusi) untuk rencana Slack Cable (300m, 400m, 500m) maupun sambungan lurus Closure (1 KM, 2 KM, 3 KM, 4 KM / 1 Hasbel drum) serta custom meter.",
-        "Dual Skenario Pengukuran (Geometri & Real Cable Slack): Skenario 1 mengukur murni panjang geometri gambar, sedangkan Skenario 2 memperhitungkan akumulasi Slack Cable di sepanjang rute jalur sehingga posisi penanda akurat terhadap panjang kabel fisik di lapangan.",
-        "Penyempurnaan Align Viewports & Export SnD Kasar: Pembersihan teks judul frame agar deteksi viewport layout 100% presisi, serta sinkronisasi penamaan root folder tree pada export KMZ SnD Kasar mengikuti nama cluster aktif."
+        "Security & License Hardening: Pengamanan 100% seluruh perintah AutoCAD melalui Central LicenseGuard, memvalidasi otorisasi digital RSA dan sinkronisasi status masa aktif secara realtime.",
+        "Antarmuka Lisensi Informatif: Status bar dinamis dengan sisa hari akurat, tanggal jatuh tempo riil, dan tombol perpanjang instan terintegrasi QRIS.",
+        "EULA & Targeted Auto-Cleanup: Integrasi perjanjian lisensi pengguna akhir dan pembersihan residu installer lama di folder Downloads & Desktop untuk mencegah konflik dependensi sistem.",
+        "Sistem Pembaruan Mandatori (Hard Lockout): Mekanisme penguncian versi usang yang mewajibkan pengguna memperbarui ke rilis terbaru demi stabilitas jaringan lisensi."
       ],
-      "mandatory_update": false
+      "mandatory_update": true
     },
     "ontop_highlighter": {
       "name": "OnTop Highlighter",
