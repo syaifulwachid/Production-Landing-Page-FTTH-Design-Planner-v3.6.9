@@ -1,17 +1,17 @@
 {
-  "last_updated": "2026-10-23T02:46:00.000Z",
+  "last_updated": "2026-10-25T17:15:00.000Z",
   "products": {
     "ftth_design_planner": {
       "name": "FTTH Design Planner",
-      "latest_version": "3.6.9.32",
-      "display_version": "v3.6.9 (r32)",
-      "release_date": "2026-10-23",
-      "download_url": "https://drive.google.com/file/d/13v59PBr5Mz1bifdncBRHMMRVd21Fo__f/view?usp=sharing",
+      "latest_version": "3.6.9.33",
+      "display_version": "v3.6.9 (r33)",
+      "release_date": "2026-10-25",
+      "download_url": "https://drive.google.com/file/d/1-631TOGbE77qw2LvHmOwzsZ768imXDs7/view?usp=sharing",
       "changelog": [
-        "Core Engine Performance & Stability: Optimasi manajemen memori CAD untuk mempercepat proses loading data spasial, eksekusi command drafting, dan manipulasi objek berskala besar tanpa lag.",
-        "Auto-Maintenance & System Cleanup: Penambahan sistem pemeliharaan berkas otomatis untuk membersihkan residu dependensi dan cache instalasi lama guna mencegah AutoCAD not responding / crash.",
-        "Enhanced Viewport & Spatial Precision: Peningkatan sinkronisasi koordinat global saat export layout MView serta penyempurnaan akurasi kalkulasi geometri pada AutoCAD 2021-2027.",
-        "Workspace Reliability Update: Peningkatan kestabilan komunikasi internal modul palet dan pembaharuan profil environment CAD agar seluruh workflow drafting bekerja lebih responsif."
+        "Auto-Geolocation & Boundary Calibration: Impor batas KMZ dan PDF QGIS pada lembar kerja kosong baru kini otomatis mengkalibrasi Georeferensi (WGS 84 / UTM CRS lokal), mengatur unit Meter, dan me-load boundary langsung di posisi real-world aslinya tanpa perlu setup geolokasi manual.",
+        "StreetView Topmost Indicator & Sightline Guide: Garis panah navigasi StreetView ditingkatkan dengan render DirectTopmost (selalu tampil di lapisan teratas tanpa tertutup citra satelit) dan dilengkapi garis panduan putus-putus (Sightline Guide 0-20m) yang kolinear presisi dengan titik penempatan tiang.",
+        "Interactive Visual Range Control: Penambahan parameter fleksibel pada kartu Helper Options untuk mengatur ukuran panah (Arrow Size) dan jangkauan garis panduan (Guide Range) secara real-time.",
+        "Core Runtime Integrity & Stability: Penguatan proteksi komunikasi thread internal, optimasi keandalan session database CAD, serta peningkatan kompatibilitas multi-versi (AutoCAD 2021-2027)."
       ],
       "mandatory_update": true
     },
