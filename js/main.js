@@ -130,7 +130,7 @@ const PRODUCT_GALLERIES = {
   },
 
   kmz: {
-    name: "KMZ To HPDB & BOQ Converter v3.2",
+    name: "KMZ To HPDB & BOQ Converter v4.3 PRO",
     badge: "SPATIAL DATA CONVERTER",
     badgeColor: "text-emerald-400 bg-emerald-500/20 border-emerald-500/40",
     images: [
@@ -740,7 +740,7 @@ const RECENT_ACTIVITIES = [
   { text: "Drafter dari Jakarta Selatan mengambil Paket Bundling + Bonus RadialMenu Lifetime", icon: "fa-crown", color: "text-yellow-400" },
   { text: "Rekan praktisi dari Semarang bergabung ke Komunitas WhatsApp FTTH", icon: "fa-whatsapp", color: "text-emerald-400" },
   { text: "Surveyor lapangan dari Malang mengunduh FTTH-Pro Report APK Android", icon: "fa-android", color: "text-green-400" },
-  { text: "User dari Bekasi mengaktifkan KMZ to HPDB & BOQ Converter v3.2", icon: "fa-file-excel", color: "text-emerald-400" }
+  { text: "User dari Bekasi mengaktifkan KMZ to HPDB & BOQ Converter v4.3 PRO", icon: "fa-file-excel", color: "text-emerald-400" }
 ];
 
 function initSocialProofNotifications() {
