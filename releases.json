@@ -1,17 +1,16 @@
 {
-  "last_updated": "2026-10-27T04:20:00.000Z",
+  "last_updated": "2026-10-27T14:04:00.000Z",
   "products": {
     "ftth_design_planner": {
       "name": "FTTH Design Planner",
-      "latest_version": "3.6.9.33",
-      "display_version": "v3.6.9 (r33)",
-      "release_date": "2026-10-25",
-      "download_url": "https://drive.google.com/file/d/1-631TOGbE77qw2LvHmOwzsZ768imXDs7/view?usp=sharing",
+      "latest_version": "3.6.9.34",
+      "display_version": "v3.6.9 (r34)",
+      "release_date": "2026-10-27",
+      "download_url": "https://drive.google.com/file/d/1pNE_E6mtg44bFzFfpMC3dxnqB8mCHYgu/view?usp=sharing",
       "changelog": [
-        "Auto-Geolocation & Boundary Calibration: Impor batas KMZ dan PDF QGIS pada lembar kerja kosong baru kini otomatis mengkalibrasi Georeferensi (WGS 84 / UTM CRS lokal), mengatur unit Meter, dan me-load boundary langsung di posisi real-world aslinya tanpa perlu setup geolokasi manual.",
-        "StreetView Topmost Indicator & Sightline Guide: Garis panah navigasi StreetView ditingkatkan dengan render DirectTopmost (selalu tampil di lapisan teratas tanpa tertutup citra satelit) dan dilengkapi garis panduan putus-putus (Sightline Guide 0-20m) yang kolinear presisi dengan titik penempatan tiang.",
-        "Interactive Visual Range Control: Penambahan parameter fleksibel pada kartu Helper Options untuk mengatur ukuran panah (Arrow Size) dan jangkauan garis panduan (Guide Range) secara real-time.",
-        "Core Runtime Integrity & Stability: Penguatan proteksi komunikasi thread internal, optimasi keandalan session database CAD, serta peningkatan kompatibilitas multi-versi (AutoCAD 2021-2027)."
+        "Smart KMZ Export (Homepass Subscriber Metric): Penambahan kalkulasi otomatis Jumlah Subscriber Homepass per FAT AREA (Jumlah_Homepass) dan Total Akumulasi Homepass se-cluster (Total_Homepass, eksklusif di luar HP UNCOVER) langsung pada popup tabel polygon Google Earth.",
+        "Smart KMZ Import (Auto-Group by FAT Area): Integrasi parameter baru 'Auto-Group Homepass by FAT Area' yang otomatis mengelompokkan subscriber homepass ke dalam AutoCAD Group per cakupan poligon batas FAT, menjaga poligon batas tetap independen untuk kemudahan revisi dan fleksibilitas drafting.",
+        "Core Runtime Integrity & Stability: Pembaruan deteksi fleksibel layer homepass dan optimasi engine spasial CAD."
       ],
       "mandatory_update": true
     },
