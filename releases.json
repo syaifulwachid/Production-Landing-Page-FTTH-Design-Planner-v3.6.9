@@ -1,12 +1,12 @@
 {
-  "last_updated": "2026-11-13T01:58:00.000Z",
+  "last_updated": "2026-11-13T02:02:00.000Z",
   "products": {
     "ftth_design_planner": {
       "name": "FTTH Design Planner",
       "latest_version": "3.6.9.35",
       "display_version": "v3.6.9 (r35)",
       "release_date": "2026-11-13",
-      "download_url": "https://drive.google.com/file/d/1pNE_E6mtg44bFzFfpMC3dxnqB8mCHYgu/view?usp=sharing",
+      "download_url": "https://drive.google.com/file/d/1QYKjXHvVmxZUFjrIcXTWbUoqhN28bPHb/view?usp=sharing",
       "changelog": [
         "Customizable Placeholder Text in Street Naming: Pengguna dapat mengustomisasi teks placeholder yang ingin diganti ('Jl. Nama Jalan', 'DUMMY', dll) baik dengan mengetik langsung pada TextBox atau memilih sampel teks langsung dari gambar AutoCAD (tombol 🎯 Sample) yang otomatis mendeteksi teks dan layernya.",
         "Dedicated UI Buttons in Isolation Manager: Tombol 'Create' (gambar polygon baru titik demi titik) dan 'Select' (pilih polyline yang sudah ada) kini hadir langsung di antarmuka jendela di bawah frame 'Gambar Polyline Area', menggantikan prompt teks baris perintah.",
