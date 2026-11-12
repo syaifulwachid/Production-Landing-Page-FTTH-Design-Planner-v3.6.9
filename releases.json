@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-13T02:02:00.000Z",
+  "last_updated": "2026-11-13T02:18:00.000Z",
   "products": {
     "ftth_design_planner": {
       "name": "FTTH Design Planner",
@@ -8,12 +8,12 @@
       "release_date": "2026-11-13",
       "download_url": "https://drive.google.com/file/d/1QYKjXHvVmxZUFjrIcXTWbUoqhN28bPHb/view?usp=sharing",
       "changelog": [
+        "Fitur Ganti Jenis Kabel (Change Cable Type): Tombol baru 'CHANGE CABLE TYPE' tepat di samping 'DRAW CABLE LINE' pada tab DRAW CABLE & WIRE untuk langsung mengubah jenis/kapasitas, layer (FTTH-CABLE-*), warna standar ACI, dan ketebalan polyline kabel yang dipilih di gambar sesuai opsi dropdown aktif (perintah: FTTH_CHANGE_CABLE).",
         "Customizable Placeholder Text in Street Naming: Pengguna dapat mengustomisasi teks placeholder yang ingin diganti ('Jl. Nama Jalan', 'DUMMY', dll) baik dengan mengetik langsung pada TextBox atau memilih sampel teks langsung dari gambar AutoCAD (tombol 🎯 Sample) yang otomatis mendeteksi teks dan layernya.",
         "Dedicated UI Buttons in Isolation Manager: Tombol 'Create' (gambar polygon baru titik demi titik) dan 'Select' (pilih polyline yang sudah ada) kini hadir langsung di antarmuka jendela di bawah frame 'Gambar Polyline Area', menggantikan prompt teks baris perintah.",
         "Outer Boundary High-Contrast Area Labels: Otomatis membuat teks label nama area isolasi berwarna kontras tinggi (Yellow ACI 2) yang menempel tepat di sisi luar batas atas polyline, serta otomatis tersinkronisasi saat nama area diubah atau visibilitas disembunyikan.",
         "Scenario 3 HC-First Tracing Integrity: Memastikan seluruh tiang House Connection (HC) yang terhubung via kawat/sling/drop cable ke tiang jalur distribusi diselesaikan dan dihitung nomor urutnya terlebih dahulu sebelum algoritma melompat ke tiang distribusi berikutnya.",
-        "Multi-FDT Pole Labeling Option Decoupling: Pemisahan independen radio button (Prefix Kode Tiang vs Penomoran Series Tiang) pada panel Multi-FDT sehingga pengguna bebas mengombinasikan gaya prefix dan sistem nomor urut (4 skenario fleksibel).",
-        "Realistic Street Naming Engine Integration: Penyertaan modul SWD.StreetNaming.Engine ke dalam installer bundle resmi (.NET 4.8 & .NET 8) serta tombol di tab ISOLATION MANAGER untuk membuka dialog visual (FTTH_STREET_UI) dan instant fill nama jalan dummy realistis khas Indonesia (FTTH_DUMMY_STREET_FILL)."
+        "Multi-FDT Pole Labeling Option Decoupling: Pemisahan independen radio button (Prefix Kode Tiang vs Penomoran Series Tiang) pada panel Multi-FDT sehingga pengguna bebas mengombinasikan gaya prefix dan sistem nomor urut (4 skenario fleksibel)."
       ],
       "mandatory_update": true
     },
