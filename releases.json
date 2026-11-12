@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-13T02:18:00.000Z",
+  "last_updated": "2026-11-12T19:48:13Z",
   "products": {
     "ftth_design_planner": {
       "name": "FTTH Design Planner",
@@ -8,6 +8,7 @@
       "release_date": "2026-11-13",
       "download_url": "https://drive.google.com/file/d/1QYKjXHvVmxZUFjrIcXTWbUoqhN28bPHb/view?usp=sharing",
       "changelog": [
+        "Perbaikan Penomoran Tiang HC & Inherit FDT (Sling Wire): Penelusuran tiang HC pada kawat sling wire kini berjalan rekursif penuh dan mewarisi kode/handle FDT tiang induk distribusi secara konsisten, sehingga nomor urut tiang HC melanjutkan urutan dari tiang induk sebelum masuk ke jalur HC tanpa mereset ke nomor 1 atau mempengaruhi urutan penomoran pada klaster FDT lainnya.",
         "Fitur Ganti Jenis Kabel (Change Cable Type): Tombol baru 'CHANGE CABLE TYPE' tepat di samping 'DRAW CABLE LINE' pada tab DRAW CABLE & WIRE untuk langsung mengubah jenis/kapasitas, layer (FTTH-CABLE-*), warna standar ACI, dan ketebalan polyline kabel yang dipilih di gambar sesuai opsi dropdown aktif (perintah: FTTH_CHANGE_CABLE).",
         "Customizable Placeholder Text in Street Naming: Pengguna dapat mengustomisasi teks placeholder yang ingin diganti ('Jl. Nama Jalan', 'DUMMY', dll) baik dengan mengetik langsung pada TextBox atau memilih sampel teks langsung dari gambar AutoCAD (tombol 🎯 Sample) yang otomatis mendeteksi teks dan layernya.",
         "Dedicated UI Buttons in Isolation Manager: Tombol 'Create' (gambar polygon baru titik demi titik) dan 'Select' (pilih polyline yang sudah ada) kini hadir langsung di antarmuka jendela di bawah frame 'Gambar Polyline Area', menggantikan prompt teks baris perintah.",
