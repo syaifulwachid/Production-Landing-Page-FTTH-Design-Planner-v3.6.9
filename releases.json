@@ -1,16 +1,19 @@
 {
-  "last_updated": "2026-10-27T14:04:00.000Z",
+  "last_updated": "2026-11-13T00:50:00.000Z",
   "products": {
     "ftth_design_planner": {
       "name": "FTTH Design Planner",
-      "latest_version": "3.6.9.34",
-      "display_version": "v3.6.9 (r34)",
-      "release_date": "2026-10-27",
+      "latest_version": "3.6.9.35",
+      "display_version": "v3.6.9 (r35)",
+      "release_date": "2026-11-13",
       "download_url": "https://drive.google.com/file/d/1pNE_E6mtg44bFzFfpMC3dxnqB8mCHYgu/view?usp=sharing",
       "changelog": [
-        "Smart KMZ Export (Homepass Subscriber Metric): Penambahan kalkulasi otomatis Jumlah Subscriber Homepass per FAT AREA (Jumlah_Homepass) dan Total Akumulasi Homepass se-cluster (Total_Homepass, eksklusif di luar HP UNCOVER) langsung pada popup tabel polygon Google Earth.",
-        "Smart KMZ Import (Auto-Group by FAT Area): Integrasi parameter baru 'Auto-Group Homepass by FAT Area' yang otomatis mengelompokkan subscriber homepass ke dalam AutoCAD Group per cakupan poligon batas FAT, menjaga poligon batas tetap independen untuk kemudahan revisi dan fleksibilitas drafting.",
-        "Core Runtime Integrity & Stability: Pembaruan deteksi fleksibel layer homepass dan optimasi engine spasial CAD."
+        "Multi-FDT Pole Labeling Option Decoupling: Pemisahan independen radio button (Prefix Kode Tiang vs Penomoran Series Tiang) pada panel Multi-FDT sehingga pengguna bebas mengombinasikan gaya prefix dan sistem nomor urut.",
+        "Dukungan Penuh 4 Skenario Multi-FDT: (1) Per-FDT + Reset per-FDT (kembali ke P001 dengan kode FDT masing-masing), (2) Global + Reset per-FDT (kembali ke P001 dengan kode FDT utama/global), (3) Per-FDT + Global Continuous (nomor lanjut terus dari P001 s/d selesai dengan kode masing-masing FDT), dan (4) Global + Global Continuous.",
+        "Smart Spatial Clustering & Isolation Area Association: Tiang dikelompokkan secara terurut per klaster FDT berbasis poligon area isolasi dan proximity kabel, memastikan urutan penomoran teratur dan tidak melompat antar klaster.",
+        "Auto-Detection Kode FDT: Otomatisasi pembacaan atribut blok FDT dan XData dengan fallback FdtCodeHelper yang presisi.",
+        "KML/KMZ Feature Selector on Import Point: Menampilkan jendela selektor fitur hierarkis saat Import Point pada panel Parcels & Homepass.",
+        "Marker Name Labeling Option & Georeferencing Integrity: Opsi impor nama marker KML/KMZ sebagai label teks koordinat dan stabilitas transaksi AutoCAD."
       ],
       "mandatory_update": true
     },
