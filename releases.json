@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-13T00:50:00.000Z",
+  "last_updated": "2026-11-13T01:25:00.000Z",
   "products": {
     "ftth_design_planner": {
       "name": "FTTH Design Planner",
@@ -8,12 +8,12 @@
       "release_date": "2026-11-13",
       "download_url": "https://drive.google.com/file/d/1pNE_E6mtg44bFzFfpMC3dxnqB8mCHYgu/view?usp=sharing",
       "changelog": [
-        "Multi-FDT Pole Labeling Option Decoupling: Pemisahan independen radio button (Prefix Kode Tiang vs Penomoran Series Tiang) pada panel Multi-FDT sehingga pengguna bebas mengombinasikan gaya prefix dan sistem nomor urut.",
-        "Dukungan Penuh 4 Skenario Multi-FDT: (1) Per-FDT + Reset per-FDT (kembali ke P001 dengan kode FDT masing-masing), (2) Global + Reset per-FDT (kembali ke P001 dengan kode FDT utama/global), (3) Per-FDT + Global Continuous (nomor lanjut terus dari P001 s/d selesai dengan kode masing-masing FDT), dan (4) Global + Global Continuous.",
+        "Scenario 3 HC-First Tracing Integrity: Memastikan seluruh tiang House Connection (HC) yang terhubung via kawat/sling/drop cable ke tiang jalur distribusi diselesaikan dan dihitung nomor urutnya terlebih dahulu sebelum algoritma melompat ke tiang distribusi berikutnya.",
+        "Multi-FDT Pole Labeling Option Decoupling: Pemisahan independen radio button (Prefix Kode Tiang vs Penomoran Series Tiang) pada panel Multi-FDT sehingga pengguna bebas mengombinasikan gaya prefix dan sistem nomor urut (4 skenario fleksibel).",
+        "Realistic Street Naming Engine Integration: Penyertaan modul SWD.StreetNaming.Engine ke dalam installer bundle resmi (.NET 4.8 & .NET 8) serta penambahan tombol di tab ISOLATION MANAGER untuk membuka dialog visual (FTTH_STREET_UI) dan instant fill nama jalan dummy realistis khas Indonesia (FTTH_DUMMY_STREET_FILL).",
         "Smart Spatial Clustering & Isolation Area Association: Tiang dikelompokkan secara terurut per klaster FDT berbasis poligon area isolasi dan proximity kabel, memastikan urutan penomoran teratur dan tidak melompat antar klaster.",
         "Auto-Detection Kode FDT: Otomatisasi pembacaan atribut blok FDT dan XData dengan fallback FdtCodeHelper yang presisi.",
-        "KML/KMZ Feature Selector on Import Point: Menampilkan jendela selektor fitur hierarkis saat Import Point pada panel Parcels & Homepass.",
-        "Marker Name Labeling Option & Georeferencing Integrity: Opsi impor nama marker KML/KMZ sebagai label teks koordinat dan stabilitas transaksi AutoCAD."
+        "KML/KMZ Feature Selector on Import Point: Menampilkan jendela selektor fitur hierarkis saat Import Point pada panel Parcels & Homepass."
       ],
       "mandatory_update": true
     },
