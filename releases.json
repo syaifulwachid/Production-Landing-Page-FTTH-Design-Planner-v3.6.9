@@ -1,19 +1,20 @@
 {
-  "last_updated": "2026-11-13T15:24:20Z",
+  "last_updated": "2026-11-18T18:47:00Z",
   "products": {
     "ftth_design_planner": {
       "name": "FTTH Design Planner",
-      "latest_version": "3.6.9.36",
-      "display_version": "v3.6.9 (r36)",
-      "release_date": "2026-11-13",
+      "latest_version": "3.6.9.37",
+      "display_version": "v3.6.9 (r37)",
+      "release_date": "2026-11-18",
       "download_url": "https://drive.google.com/file/d/1IvzuqdPtbglTIssGHtuWGK5ApLU4g89-/view?usp=sharing",
       "changelog": [
-        "Dedikasi Sub-Tab Road Labeling (Tab 1): Pemisahan kartu Road Labeling ke dalam sub-tab tersendiri (ROAD LABELING) di antara MAP & BASEMAP dan PARCELS & HOMEPASS dengan tombol aksi modern visual (GENERATE LABELS, LOG, REVERT).",
-        "Optimasi Sub-Tab Modular Survey & Export: Pembagian Tab 2 (SURVEY & ASSETS) dan Tab 5 (EXPORTS & REPORTS) ke dalam sub-tab tematik modern dengan tombol aksi berwarna dan ikon intuitif untuk efisiensi navigasi tanpa scrolling panjang.",
-        "Auto-Launch Palette saat Startup: Palette FTTH Design Planner otomatis terbuka saat AutoCAD dibuka pertama kali tanpa perlu memanggil perintah FTTH_SHOWPANEL secara manual.",
-        "Default Anchor Right & AutoHide Off: Konfigurasi default dock palette otomatis menempel di sisi kanan layar AutoCAD (Dock Right) dengan AutoHide OFF (terbuka penuh siap pakai).",
-        "Penyempurnaan Penomoran Multi-FDT: Resolusi penomoran FDT dan relasi penomoran FAT pada skenario multi-FDT sehingga FAT otomatis mewarisi kode induk FDT yang bersangkutan secara konsisten.",
-        "Proteksi Tingkat Lanjut Anti-REA: Penguatan enkripsi string, penyamaran simbol, dan kontrol alur kode yang lulus 100% audit integritas LeanREA."
+        "Simbol Baru Tiang Existing LinkNet & Telkom: Penambahan 4 varian simbol resmi tiang existing (eP7 LN, eP9 LN, eP7 TEL, eP9 TEL) dengan geometri presisi dan alokasi layer otomatis (FTTH-POLE-EXISTING-LN-7/9 & FTTH-POLE-EXISTING-TEL-7/9).",
+        "Standardisasi EXT 3rd Partner: Konversi tiang existing umum/sebelumnya menjadi 'EXT 3rd Partner' untuk mengklasifikasi tiang existing milik mitra lain di luar LinkNet dan Telkom.",
+        "Parameter Mode Cetak Teks Putih: Parameter baru untuk mengatur warna teks anotasi tiang existing menjadi putih agar tidak terlihat saat plotting/cetak (sesuai standar simbol murni tanpa teks), namun tetap jelas terbaca di DWG saat drafting.",
+        "Klasifikasi Export KMZ Partner 7-4 & 9-4: Seluruh tiang existing baru otomatis dipetakan ke dalam 2 folder standar KMZ ('EXISTING POLE PARTNER 7-4' & 'EXISTING POLE PARTNER 9-4') dengan penyertaan metadata tipe tiang lengkap.",
+        "Auto-Focus Viewport Smart Import: Saat DWG belum memiliki geolokasi awal, layar AutoCAD otomatis zoom presisi tepat ke koordinat objek KMZ yang berhasil diimpor tanpa perlu zoom extend manual.",
+        "Export Rumah Reduce (HP UNCOVER) ke KMZ: Seluruh nomor rumah yang di-reduce/uncover (layer FTTH-UNCOVER-HOME) kini otomatis diekspor ke folder 'HP UNCOVER' pada file KMZ dengan metadata dan pengelompokan FAT yang konsisten.",
+        "Smart Import & BOQ Sync: Integrasi menyeluruh pada modul Smart Import KMZ, Route Cable Generator, BOQ Summary, dan pelabelan otomatis tanpa merusak relasi kontrak."
       ],
       "mandatory_update": false
     },
