@@ -85,6 +85,22 @@
         "Inspeksi dan validasi redaman optik langsung dari smartphone Android"
       ],
       "mandatory_update": false
+    },
+    "fiberdocs": {
+      "name": "FiberDocs - FTTH Automated Documentation Platform",
+      "latest_version": "3.0.0.0",
+      "display_version": "v3.0.0",
+      "release_date": "2026-11-22",
+      "download_url": "https://github.com/syaifulwachid/FiberDocs/releases/latest",
+      "changelog": [
+        "Rilis perdana FiberDocs v3.0: Enterprise Automated Acceptance Test Procedure (ATP) Documentation Platform.",
+        "Generator dokumen PDF ATP FTTH 55 halaman persis standar Telco: Cover, Lembar Pengesahan, Rekapitulasi, Matrix Foto Evidence (136 slot), dan Trace OTDR (26 uji).",
+        "WhatsApp Photo Organizer dengan Auto-Detection, Slot Mapping, dan visual badge validasi.",
+        "Multi-Vendor OTDR Trace Parser (EXFO, Anritsu, ShinewayTech, Yokogawa) dengan QC PASS/FAIL otomatis.",
+        "Sistem Lisensi Terintegrasi Telegram Bot & Google Apps Script Web App dengan notifikasi real-time.",
+        "Auto-Update Engine cerdas (Google Web App & GitHub Releases fallback) dengan prompt konfirmasi langsung di aplikasi."
+      ],
+      "mandatory_update": false
     }
   }
 }
