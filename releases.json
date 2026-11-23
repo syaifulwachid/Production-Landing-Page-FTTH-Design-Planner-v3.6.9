@@ -34,17 +34,18 @@
     },
     "kmz_converter": {
       "name": "KMZ To HPDB And BOQ Converter",
-      "latest_version": "4.4.0.0",
-      "display_version": "v4.4 PRO",
-      "release_date": "2026-11-19",
-      "download_url": "https://drive.google.com/file/d/1UsA7yQDVJIqnWpJ96zrUhHK25SkVI3vR/view?usp=sharing",
+      "latest_version": "4.5.0.0",
+      "display_version": "v4.5 PRO",
+      "release_date": "2026-11-23",
+      "download_url": "https://drive.google.com/file/d/1LVOkI52hLU6Y1feeBXEI8Jwj9cmL_MAE/view?usp=sharing",
       "changelog": [
-        "Peningkatan Akurasi Audit Desain Spasial: Algoritma validasi struktur folder multi-FDT presisi tinggi dengan pemetaan hierarki composite key, mencegah overcount kalkulasi kapasitas FAT antar-FDT.",
-        "Validasi Kapasitas Splitter Standar 1:8 s/d 1:16: Standarisasi ambang batas subscriber FAT (8 hingga 16 Homepass) dinilai optimal dan normal sesuai standar teknis Telco.",
-        "Fitur Ekspor Form Opname PDF Langsung: Penambahan opsi fleksibel pembuatan dokumen Form Opname lapangan langsung dalam format PDF siap cetak, Excel saja (.xlsx), atau keduanya secara simultan.",
-        "Standarisasi Tata Letak Cetak Form Opname A4: Penyelarasan format halaman Summary (Portrait A4) dan Opname Checklist Lapangan (Portrait A4 lengkap dengan kolom tanda tangan SPV) presisi 2 halaman tanpa terpotong.",
-        "Flawless Drag & Drop File: Dukungan penyerahan file .KMZ / .KML langsung ke jendela program dengan deteksi dan auto-sinkronisasi metadata spasial instan.",
-        "Penyempurnaan Antarmuka & Performa Engine: Penyesuaian responsivitas kalkulator kabel, optimasi tombol Audit KMZ, dan peningkatan kestabilan engine konversi."
+        "Auto-Sinkronisasi Cerdas Metadata KMZ & Reverse Geocode: Pengambilan metadata spasial otomatis memadukan integrasi internet OpenStreetMap dan fallback hierarki folder KMZ internal.",
+        "Hierarki Ekstraksi Cluster Name Presisi: Deteksi 3-tier otomatis berurutan dari Deskripsi Root Folder, Deskripsi Child Folder 1-step, hingga Fallback Nama Folder Utama.",
+        "Indikator 3 Warna Asal Data: Visualisasi titik status data (Hijau = Internet Geocode, Ungu Muda = KMZ Internal, Merah = Default / Manual).",
+        "Pencarian & Sinkronisasi Cepat OLT: Input OLT Code kini mendukung pencarian prefix & suffix serta sinkronisasi dinamis ke OLT Hostname secara real-time.",
+        "Manajemen Database OLT Tersimpan: Kemudahan mengelola, mencari, memilih, dan menghapus daftar OLT tersimpan langsung dari UI.",
+        "Deteksi & Auto-Injeksi Deskripsi Kabel: Analisis LineString kabel otomatis dengan penentuan toleransi 5%, slack 20 meter, dan kapasitas core FO (24C, 36C, 48C, 96C) langsung ke file sumber KMZ.",
+        "Davi Installer V4.5 Terproteksi: Clean Install otomatis dengan engine instalasi Davi Studio Flat White Glass terlindungi enkripsi AES-256-GCM & Obfuscar."
       ],
       "mandatory_update": false
     },
