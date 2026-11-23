@@ -1,20 +1,18 @@
 {
-  "last_updated": "2026-11-19T07:08:00Z",
+  "last_updated": "2026-11-23T23:05:00Z",
   "products": {
     "ftth_design_planner": {
       "name": "FTTH Design Planner",
-      "latest_version": "3.6.9.37",
-      "display_version": "v3.6.9 (r37)",
-      "release_date": "2026-11-18",
-      "download_url": "https://drive.google.com/file/d/1sITwSfwNSvk99i9FcJVBmQrVrzE57eSg/view?usp=sharing",
+      "latest_version": "3.6.9.38",
+      "display_version": "v3.6.9 (r38)",
+      "release_date": "2026-11-23",
+      "download_url": "https://drive.google.com/file/d/1ExCwaTgYUJF0DrPg90kNzNc9Hw88HXfw/view?usp=sharing",
       "changelog": [
-        "Simbol Baru Tiang Existing LinkNet & Telkom: Penambahan 4 varian simbol resmi tiang existing (eP7 LN, eP9 LN, eP7 TEL, eP9 TEL) dengan geometri presisi dan alokasi layer otomatis (FTTH-POLE-EXISTING-LN-7/9 & FTTH-POLE-EXISTING-TEL-7/9).",
-        "Standardisasi EXT 3rd Partner: Konversi tiang existing umum/sebelumnya menjadi 'EXT 3rd Partner' untuk mengklasifikasi tiang existing milik mitra lain di luar LinkNet dan Telkom.",
-        "Parameter Mode Cetak Teks Putih: Parameter baru untuk mengatur warna teks anotasi tiang existing menjadi putih agar tidak terlihat saat plotting/cetak (sesuai standar simbol murni tanpa teks), namun tetap jelas terbaca di DWG saat drafting.",
-        "Klasifikasi Export KMZ Partner 7-4 & 9-4: Seluruh tiang existing baru otomatis dipetakan ke dalam 2 folder standar KMZ ('EXISTING POLE PARTNER 7-4' & 'EXISTING POLE PARTNER 9-4') dengan penyertaan metadata tipe tiang lengkap.",
-        "Auto-Focus Viewport Smart Import: Saat DWG belum memiliki geolokasi awal, layar AutoCAD otomatis zoom presisi tepat ke koordinat objek KMZ yang berhasil diimpor tanpa perlu zoom extend manual.",
-        "Export Rumah Reduce (HP UNCOVER) ke KMZ: Seluruh nomor rumah yang di-reduce/uncover (layer FTTH-UNCOVER-HOME) kini otomatis diekspor ke folder 'HP UNCOVER' pada file KMZ dengan metadata dan pengelompokan FAT yang konsisten.",
-        "Smart Import & BOQ Sync: Integrasi menyeluruh pada modul Smart Import KMZ, Route Cable Generator, BOQ Summary, dan pelabelan otomatis tanpa merusak relasi kontrak."
+        "Fitur Baru — Polygon Island Slicer (FTTH_SLICE_BOUNDARY): Memecah polyline boundary tertutup besar menjadi 2 atau lebih objek Polyline Tertutup (Closed = true) yang berdiri sendiri menggunakan garis potong lurus maupun berbelok-belok mengikuti jalan tanpa perlu menggambar ulang garis potongan.",
+        "Fitur Baru — Batch Slice Boundary Multi-FDT (FTTH_BATCH_SLICE_BOUNDARY): Membelah 1 boundary cluster besar sekaligus dengan beberapa garis/polyline pemotong untuk 3–5 FDT dalam 1 langkah (poligon induk & garis bantu pemotong otomatis dihapus).",
+        "Fitur Baru — Konversi Pulau Boundary ke Polygonal MView di Layout (FTTH_ISLAND_TO_MVIEW): Mengirim pulau boundary tertutup dari Model Space menjadi Non-Rectangular Viewport (MView Object) di Paper Space Layout aktif dengan kamera otomatis zoom tepat ke area FDT tersebut.",
+        "Integrasi Area Isolasi & Deteksi FDT Otomatis: Pulau-pulau hasil slice otomatis terdaftar di layer FTTH-ISOLATION-AREA lengkap dengan XData dan penamaan otomatis mengikuti kode FDT di dalam masing-masing pulau.",
+        "Davi Installer Engine v1.2 Terproteksi: Paket instalasi modern berbasis Davi Installer Flat White Glass dengan enkripsi payload AES-256-GCM In-Memory Stream dan deteksi proses AutoCAD cerdas."
       ],
       "mandatory_update": false
     },
